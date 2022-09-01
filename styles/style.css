@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap");
+:root {
+  --upch-primary: #B80A28;
+  --upch-primary-dark: #9b001b;
+  --upch-secondary: #FFD500;
+  --upch-dark: #a70723;
+  --upch-web-bg: #F4F4F4;
+  --upch-footer-bg: #C3C3C3;
+}
+
+.vh-95 {
+  height: 95vh;
+}
+
+.vh-75 {
+  height: 75vh;
+}
+
+.va-middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-send {
+  background: var(--upch-primary);
+  border: 1pxx solid var(--upch-primary);
+  color: white;
+  width: 212px;
+  height: 40px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+.container-check {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.container-check input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.container-check input:checked ~ .checkmark {
+  background-color: white;
+  border-radius: 1px solid black;
+}
+.container-check input:checked ~ .checkmark:after {
+  display: block;
+}
+.container-check:hover input ~ .checkmark {
+  background-color: #E0E0E0;
+}
+.container-check .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: -23px;
+  height: 18px;
+  width: 18px;
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 3px;
+}
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+body {
+  background-color: var(--upch-web-bg);
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+}
+
+.footer {
+  background-color: var(--upch-footer-bg);
+  height: 54px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer p {
+  margin-bottom: 0;
+}
+
+.login .card {
+  border-radius: 0.65rem;
+}
+.login h1 {
+  text-transform: uppercase;
+  text-align: center;
+}
+.login .login-header {
+  padding: 1.5rem;
+  border-bottom: 1px solid #BABABA;
+}
+.login .login-header img {
+  height: 100%;
+}
+.login .login-header h5 {
+  padding-left: 12px;
+}
+.login form {
+  width: 50%;
+  margin: 0 auto;
+}
+.login form .login-control {
+  background: #E9ECEF;
+  border: 1px solid #E9ECEF;
+  border-radius: 10px;
+}
+.login .carousel-item img {
+  object-fit: cover;
+  border-radius: 0.65rem 0 0 0.65rem;
+}
+.login .carousel-inner {
+  border-radius: 0.65rem 0 0 0.65rem;
+}
+.login .carousel-caption {
+  left: 6%;
+}
+.login .carousel-indicators {
+  justify-content: flex-start;
+  margin-left: 5%;
+}
+.login .carousel-indicators [data-bs-target] {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  margin-right: 6px;
+  margin-left: 6px;
+}
+
+/*# sourceMappingURL=style.css.map */

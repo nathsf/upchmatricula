@@ -1,0 +1,53 @@
+
+
+.login {
+    .card{
+        border-radius: 0.65rem;
+    }
+    h1 {
+        text-transform: uppercase;
+        text-align: center;
+    }
+    .login-header {
+        padding: 1.5rem;
+        border-bottom: 1px solid #BABABA;
+        img {
+            height: 100%;
+        }
+        h5 {
+            padding-left: 12px;
+        }
+    }
+    form {
+        width: 50%;
+        margin: 0 auto;
+        .login-control {
+            background: #E9ECEF;
+            border: 1px solid #E9ECEF;
+            border-radius: 10px;
+        }
+    }
+    .carousel-item {
+        img{
+            object-fit: cover;
+            border-radius: 0.65rem 0 0 0.65rem;
+        }
+    }
+    .carousel-inner {
+        border-radius: 0.65rem 0 0 0.65rem;
+    }
+    .carousel-caption {
+        left: 6%;
+    }
+    .carousel-indicators {
+        justify-content: flex-start;
+        margin-left: 5%;
+    }
+    .carousel-indicators [data-bs-target] {
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        margin-right: 6px;
+        margin-left: 6px;
+    }
+}
