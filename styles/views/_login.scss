@@ -7,15 +7,36 @@
     h1 {
         text-transform: uppercase;
         text-align: center;
+        font-size: 23px;
+        margin-bottom: 3px;
     }
     .login-header {
-        padding: 1.5rem;
+        padding: 1.25rem 1.25rem 1.05rem;
         border-bottom: 1px solid #BABABA;
-        img {
+        img {            
             height: 100%;
+            width: 28px;
         }
         h5 {
             padding-left: 12px;
+            font-size: 1.05rem;
+        }
+    }
+    .login-content{
+        padding: 2rem 0;
+        a {
+            font-size: 13px;
+        }
+        .log-title {            
+            width: fit-content;
+            margin: 0 auto;
+            margin-bottom: 1.2rem;
+            .separator {
+                width: 45%;
+                height: 3px;
+                background-color: var(--upch-secondary);                
+                margin: 0 auto;
+            }
         }
     }
     form {
@@ -24,7 +45,8 @@
         .login-control {
             background: #E9ECEF;
             border: 1px solid #E9ECEF;
-            border-radius: 10px;
+            border-radius: 6px;
+            padding: .325rem .65rem;
         }
     }
     .carousel-item {

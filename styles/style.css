@@ -24,12 +24,13 @@
 
 .btn-send {
   background: var(--upch-primary);
-  border: 1pxx solid var(--upch-primary);
+  border: 1px solid var(--upch-primary);
   color: white;
   width: 212px;
-  height: 40px;
+  height: 38px;
   border-radius: 10px;
-  font-size: 18px;
+  font-size: 16px;
+  padding-bottom: 7px;
 }
 
 .container-check {
@@ -98,6 +99,10 @@ body {
   font-weight: 500;
 }
 
+a {
+  color: var(--upch-primary-dark);
+}
+
 .footer {
   background-color: var(--upch-footer-bg);
   height: 54px;
@@ -119,16 +124,37 @@ body {
 .login h1 {
   text-transform: uppercase;
   text-align: center;
+  font-size: 23px;
+  margin-bottom: 3px;
 }
 .login .login-header {
-  padding: 1.5rem;
+  padding: 1.25rem 1.25rem 1.05rem;
   border-bottom: 1px solid #BABABA;
 }
 .login .login-header img {
   height: 100%;
+  width: 28px;
 }
 .login .login-header h5 {
   padding-left: 12px;
+  font-size: 1.05rem;
+}
+.login .login-content {
+  padding: 2rem 0;
+}
+.login .login-content a {
+  font-size: 13px;
+}
+.login .login-content .log-title {
+  width: fit-content;
+  margin: 0 auto;
+  margin-bottom: 1.2rem;
+}
+.login .login-content .log-title .separator {
+  width: 45%;
+  height: 3px;
+  background-color: var(--upch-secondary);
+  margin: 0 auto;
 }
 .login form {
   width: 50%;
@@ -137,7 +163,8 @@ body {
 .login form .login-control {
   background: #E9ECEF;
   border: 1px solid #E9ECEF;
-  border-radius: 10px;
+  border-radius: 6px;
+  padding: 0.325rem 0.65rem;
 }
 .login .carousel-item img {
   object-fit: cover;
