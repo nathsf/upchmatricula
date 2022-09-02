@@ -10,6 +10,22 @@
         font-size: 23px;
         margin-bottom: 3px;
     }
+    .config-lang {
+        float: right;
+        padding-top: 6px;
+        .select-lang {
+            width: fit-content;
+            border: 0;
+            display: initial;
+            padding: 0 2rem 0 0;
+            font-size: 13px;
+        }
+        .fa-globe{
+            vertical-align: middle;
+            font-size: 14px;
+        }
+    }
+    
     .login-header {
         padding: 1.25rem 1.25rem 1.05rem;
         border-bottom: 1px solid #BABABA;

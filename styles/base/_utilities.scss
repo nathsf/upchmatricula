@@ -9,6 +9,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+}
+.red-primary {
+	color: var(--upch-primary);
 }
 .btn-send {
     background: var(--upch-primary);

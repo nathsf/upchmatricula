@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap");
+@import url(../assets/icons/font-awesome/css/font-awesome.min.css);
+@import url(../assets/icons/font-awesome/css/all.css);
 :root {
   --upch-primary: #B80A28;
   --upch-primary-dark: #9b001b;
@@ -20,6 +22,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.red-primary {
+  color: var(--upch-primary);
 }
 
 .btn-send {
@@ -127,6 +133,21 @@ a {
   text-align: center;
   font-size: 23px;
   margin-bottom: 3px;
+}
+.login .config-lang {
+  float: right;
+  padding-top: 6px;
+}
+.login .config-lang .select-lang {
+  width: fit-content;
+  border: 0;
+  display: initial;
+  padding: 0 2rem 0 0;
+  font-size: 13px;
+}
+.login .config-lang .fa-globe {
+  vertical-align: middle;
+  font-size: 14px;
 }
 .login .login-header {
   padding: 1.25rem 1.25rem 1.05rem;
