@@ -16,8 +16,8 @@
         <div class="row vh-95 va-middle" >
             <div class="card vh-80">
                 <div class="row">
-                    <div class="col-md-6 col-lg-6 d-sm-none d-md-block px-0">
-                        <div id="carouselExampleCaptions" class="carousel slide d-sm-none d-md-block" data-bs-ride="carousel">
+                    <div class="col-6 px-0 d-sm-none  d-md-block ">
+                        <div id="carouselExampleCaptions" class="d-sm-none  d-md-block carousel slide" data-bs-ride="carousel">
                             <div class="carousel-indicators">
                               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -61,46 +61,30 @@
                         <div class="login-content va-middle">
                           
                           <div class="center">
-                            <div class="log-title">
-                              <h1>Iniciar Sesión</h1>
-                              <div class="separator"></div>
+                            <div class="text-center">
+                              <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="35" cy="35" r="33.5" fill="#00A76D" stroke="#00A76D" stroke-width="3"/>
+                                <g clip-path="url(#clip0_144_132)">
+                                <path d="M47.4754 26.8817C48.173 27.5792 48.173 28.7064 47.4754 29.404L33.1897 43.6897C32.4922 44.3872 31.365 44.3872 30.6674 43.6897L23.523 36.5468C22.8257 35.8493 22.8257 34.7221 23.523 34.0245C24.2204 33.327 25.351 33.327 26.0485 34.0245L31.8783 39.9006L44.9531 26.8817C45.6507 26.183 46.7779 26.183 47.4754 26.8817Z" fill="white"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_144_132">
+                                <rect width="25" height="28.5714" fill="white" transform="translate(23 21)"/>
+                                </clipPath>
+                                </defs>
+                                </svg>
                             </div>
                               
-                              <form>
-                                  <div class="mb-4">
-                                      <label for="exampleFormControlInput1" class="visually-hidden">Email address</label>
-                                      <div class="input-group flex-nowrap">
-                                        <input type="email" class="form-control login-control form-control-sm" id="exampleFormControlInput1" placeholder="Email">
-                                        <span class="input-group-text login-control " id="addon-wrapping"> <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                          <path d="M10.0002 3.33325C10.8842 3.33325 11.7321 3.68444 12.3572 4.30956C12.9823 4.93468 13.3335 5.78253 13.3335 6.66659C13.3335 7.55064 12.9823 8.39849 12.3572 9.02361C11.7321 9.64873 10.8842 9.99992 10.0002 9.99992C9.11611 9.99992 8.26826 9.64873 7.64314 9.02361C7.01802 8.39849 6.66683 7.55064 6.66683 6.66659C6.66683 5.78253 7.01802 4.93468 7.64314 4.30956C8.26826 3.68444 9.11611 3.33325 10.0002 3.33325ZM10.0002 4.99992C9.55814 4.99992 9.13421 5.17551 8.82165 5.48807C8.50909 5.80063 8.3335 6.22456 8.3335 6.66659C8.3335 7.10861 8.50909 7.53254 8.82165 7.8451C9.13421 8.15766 9.55814 8.33325 10.0002 8.33325C10.4422 8.33325 10.8661 8.15766 11.1787 7.8451C11.4912 7.53254 11.6668 7.10861 11.6668 6.66659C11.6668 6.22456 11.4912 5.80063 11.1787 5.48807C10.8661 5.17551 10.4422 4.99992 10.0002 4.99992ZM10.0002 10.8333C12.2252 10.8333 16.6668 11.9416 16.6668 14.1666V16.6666H3.3335V14.1666C3.3335 11.9416 7.77516 10.8333 10.0002 10.8333ZM10.0002 12.4166C7.52516 12.4166 4.91683 13.6333 4.91683 14.1666V15.0833H15.0835V14.1666C15.0835 13.6333 12.4752 12.4166 10.0002 12.4166Z" fill="#5F5F5F"/>
-                                          </svg>
-                                          
-                                        </span>
+                            <div class="log-title my-4">
+                              <h1>CAMBIO DE CONTRASEÑA <br>
+                                SATISFACTORIAMENTE</h1>
+                            </div>
+                              
+                              
+                              <div class="text-center mt-5">
+                                <a href="#" class="mt-5 d-block">Volver a inicio de sesión</a>
 
-                                      </div>
-                                    </div>
-                                    <div class="mb-3">
-                                      <label for="inputPassword2" class="visually-hidden">Password</label>
-                                      <div class="input-group flex-nowrap">
-                                        <input type="password" class="form-control login-control form-control-sm" id="inputPassword2" placeholder="Contraseña">
-                                        <span class="input-group-text login-control " id="addon-wrapping"> <svg width="20" height="13" viewBox="0 0 20 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                          <path d="M10.0002 4.125C10.6632 4.125 11.2991 4.37522 11.7679 4.82062C12.2368 5.26602 12.5002 5.87011 12.5002 6.5C12.5002 7.12989 12.2368 7.73398 11.7679 8.17938C11.2991 8.62478 10.6632 8.875 10.0002 8.875C9.33712 8.875 8.70124 8.62478 8.2324 8.17938C7.76356 7.73398 7.50016 7.12989 7.50016 6.5C7.50016 5.87011 7.76356 5.26602 8.2324 4.82062C8.70124 4.37522 9.33712 4.125 10.0002 4.125ZM10.0002 0.5625C14.1668 0.5625 17.7252 3.02458 19.1668 6.5C17.7252 9.97542 14.1668 12.4375 10.0002 12.4375C5.8335 12.4375 2.27516 9.97542 0.833496 6.5C2.27516 3.02458 5.8335 0.5625 10.0002 0.5625ZM2.65016 6.5C4.02516 9.16 6.86683 10.8542 10.0002 10.8542C13.1335 10.8542 15.9752 9.16 17.3502 6.5C15.9752 3.84 13.1335 2.14583 10.0002 2.14583C6.86683 2.14583 4.02516 3.84 2.65016 6.5Z" fill="#5F5F5F"/>
-                                          </svg>
-                                          
-
-                                      </div>
-                                    </div>
-                                    <label class="container-checkbox">Recordar usuario
-                                      <input type="checkbox">
-                                      <span class="checkmark"></span>
-                                    </label>
-                                    <div class="text-center mt-5">
-                                      <button type="submit" class="btn btn-send mb-3">Ingresar</button>
-                                      <a href="#" class="mt-4 d-block">¿Olvidaste tu contraseña?</a>
-  
-                                    </div>
-  
-                              </form>
+                              </div>
                           </div>
                         </div>
                         

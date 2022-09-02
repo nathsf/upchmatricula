@@ -18,7 +18,7 @@
     background: var(--upch-primary);
     border: 1px solid var(--upch-primary);
     color: white;
-    width: 212px;
+    width: 205px;
     height: 38px;
     border-radius: 10px;
     font-size: 16px;
@@ -91,4 +91,11 @@
 		position: absolute;
 		display: none;
 	}
+}
+
+@media (max-width:767px){
+	.d-sm-none {
+		display: none;
+	}
+	
 }

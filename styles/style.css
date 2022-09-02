@@ -32,7 +32,7 @@
   background: var(--upch-primary);
   border: 1px solid var(--upch-primary);
   color: white;
-  width: 212px;
+  width: 205px;
   height: 38px;
   border-radius: 10px;
   font-size: 16px;
@@ -96,6 +96,11 @@
   display: none;
 }
 
+@media (max-width: 767px) {
+  .d-sm-none {
+    display: none;
+  }
+}
 body {
   background-color: var(--upch-web-bg);
 }
@@ -103,6 +108,23 @@ body {
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
   font-family: "Barlow", sans-serif;
   font-weight: 500;
+}
+
+p, label, a {
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+}
+
+p {
+  font-size: 15px;
+}
+
+:focus {
+  outline: none;
+}
+
+:focus:not(:focus-visible) {
+  outline: none;
 }
 
 a {
@@ -128,6 +150,12 @@ a {
 .login .card {
   border-radius: 0.65rem;
 }
+.login .text-browsers {
+  position: absolute;
+  bottom: -45px;
+  left: 0;
+  font-size: 13px;
+}
 .login h1 {
   text-transform: uppercase;
   text-align: center;
@@ -142,8 +170,9 @@ a {
   width: fit-content;
   border: 0;
   display: initial;
-  padding: 0 2rem 0 0;
+  padding: 0 2rem 0 4px;
   font-size: 13px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='%23b01333' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3E%3C/svg%3E");
 }
 .login .config-lang .fa-globe {
   vertical-align: middle;
@@ -162,10 +191,18 @@ a {
   font-size: 1.05rem;
 }
 .login .login-content {
-  padding: 2rem 0;
+  width: 100%;
+  height: 74%;
 }
 .login .login-content a {
   font-size: 13px;
+}
+.login .login-content .description p {
+  width: 340px;
+}
+.login .login-content .description a {
+  color: #313131;
+  margin: 0.55rem 0 1.4rem 0;
 }
 .login .login-content .log-title {
   width: fit-content;
@@ -179,7 +216,7 @@ a {
   margin: 0 auto;
 }
 .login form {
-  width: 50%;
+  width: 300px;
   margin: 0 auto;
 }
 .login form .login-control {
@@ -187,6 +224,13 @@ a {
   border: 1px solid #E9ECEF;
   border-radius: 6px;
   padding: 0.325rem 0.65rem;
+}
+.login form .login-control:focus {
+  color: #000000;
+  background-color: #E9ECEF;
+  border-color: #E9ECEF;
+  outline: 0;
+  box-shadow: none;
 }
 .login .carousel-item img {
   object-fit: cover;
@@ -209,6 +253,21 @@ a {
   border-radius: 50%;
   margin-right: 6px;
   margin-left: 6px;
+}
+
+@media (max-width: 767px) {
+  .login .card {
+    border-radius: 0;
+  }
+  .login .vh-80, .login .vh-95 {
+    height: 100vh;
+  }
+  .login .login-content {
+    height: 65vh;
+  }
+  .login .text-browsers {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
