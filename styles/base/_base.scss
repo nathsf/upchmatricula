@@ -1,5 +1,7 @@
 body {
     background-color: var(--upch-web-bg);
+    overflow-x: hidden;
+	margin: 0;
 }
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
@@ -7,7 +9,7 @@ body {
     font-weight: 500;
 }
 
-p, label, a {
+p, label, a , select, input{
     font-family: 'Barlow', sans-serif;
     font-weight: 400;
 
@@ -27,5 +29,7 @@ p {
 a {
     color: var(--upch-primary-dark);
 }
+
+
 
 

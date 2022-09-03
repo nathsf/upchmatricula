@@ -4,6 +4,7 @@
 :root {
   --upch-primary: #B80A28;
   --upch-primary-dark: #9b001b;
+  --upch-red-dark: #8A0018;
   --upch-secondary: #FFD500;
   --upch-dark: #a70723;
   --upch-web-bg: #F4F4F4;
@@ -37,6 +38,11 @@
   border-radius: 10px;
   font-size: 16px;
   padding-bottom: 7px;
+}
+.btn-send:hover {
+  color: #ffffff;
+  background-color: var(--upch-primary-dark);
+  border: 1px solid var(--upch-primary-dark);
 }
 
 .container-checkbox {
@@ -96,6 +102,14 @@
   display: none;
 }
 
+.btn-250 {
+  width: 250px;
+}
+
+.bg-primary-upch {
+  background-color: var(--upch-primary);
+}
+
 @media (max-width: 767px) {
   .d-sm-none {
     display: none;
@@ -103,6 +117,8 @@
 }
 body {
   background-color: var(--upch-web-bg);
+  overflow-x: hidden;
+  margin: 0;
 }
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
@@ -110,7 +126,7 @@ body {
   font-weight: 500;
 }
 
-p, label, a {
+p, label, a, select, input {
   font-family: "Barlow", sans-serif;
   font-weight: 400;
 }
@@ -129,6 +145,20 @@ p {
 
 a {
   color: var(--upch-primary-dark);
+}
+
+.navbar.bg-primary-upch .nav-link {
+  width: 100px;
+  text-align: center;
+  height: 40px;
+  border-right: 1px solid var(--upch-red-dark);
+  color: white;
+}
+.navbar.bg-primary-upch .nav-link.active {
+  background: #A50924;
+}
+.navbar.bg-primary-upch .navbar-nav {
+  border-left: 1px solid var(--upch-red-dark);
 }
 
 .footer {
@@ -174,7 +204,11 @@ a {
   font-size: 13px;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='%23b01333' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3E%3C/svg%3E");
 }
-.login .config-lang .fa-globe {
+.login .config-lang .select-lang:focus {
+  box-shadow: none;
+  outline: none;
+}
+.login .config-lang .select-lang .fa-globe {
   vertical-align: middle;
   font-size: 14px;
 }
@@ -255,7 +289,88 @@ a {
   margin-left: 6px;
 }
 
+.vcode {
+  margin: 2.5rem 0;
+}
+
+.vcode-input {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+  border: 1px solid #828282;
+  border-radius: 5px;
+  margin: 0 3px;
+}
+.vcode-input:focus {
+  border-color: var(--upch-primary);
+}
+
+.success-animation {
+  margin: 0 auto 40px;
+}
+
+.checkmark-animation {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  display: block;
+  stroke-width: 2;
+  stroke: #00A76D;
+  stroke-miterlimit: 10;
+  box-shadow: inset 0px 0px 0px #00A76D;
+  animation: fill 0.4s ease-in-out 0.4s forwards, scale 0.3s ease-in-out 0.9s both;
+  position: relative;
+  top: 5px;
+  right: 0;
+  margin: 0 auto;
+}
+
+.checkmark__circle {
+  stroke-dasharray: 166;
+  stroke-dashoffset: 166;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+  stroke: #00A76D;
+  fill: #fff;
+  animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+}
+
+.checkmark__check {
+  transform-origin: 50% 50%;
+  stroke-dasharray: 48;
+  stroke-dashoffset: 48;
+  animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+}
+
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes scale {
+  0%, 100% {
+    transform: none;
+  }
+  50% {
+    transform: scale3d(1.1, 1.1, 1);
+  }
+}
+@keyframes fill {
+  100% {
+    box-shadow: inset 0px 0px 0px 30px #00A76D;
+  }
+}
 @media (max-width: 767px) {
+  .login h1 {
+    width: 160px;
+  }
+  .login .btn-send {
+    width: 100%;
+  }
+  .login h1.title-success {
+    width: auto;
+  }
   .login .card {
     border-radius: 0;
   }
@@ -265,8 +380,14 @@ a {
   .login .login-content {
     height: 65vh;
   }
+  .login .login-content .description p {
+    width: 325px;
+  }
   .login .text-browsers {
     display: none;
+  }
+  .login .login-header {
+    border-bottom: 2px solid var(--upch-primary);
   }
 }
 
