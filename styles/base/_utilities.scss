@@ -29,7 +29,17 @@
     	border: 1px solid var(--upch-primary-dark);
 	}
 }
-
+.btn-primary {
+	background: var(--upch-primary);
+    border: 1px solid var(--upch-primary);
+    color: white;
+	border-radius: 0.45rem;
+	&:hover {
+		color: #ffffff;
+    	background-color: var(--upch-primary-dark);
+    	border: 1px solid var(--upch-primary-dark);
+	}
+}
 .container-checkbox {
 	display: block;
 	position: relative;
@@ -111,4 +121,7 @@
 		display: none;
 	}
 	
+}
+.fw-medium {
+	font-weight: 500;
 }

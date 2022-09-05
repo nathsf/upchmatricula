@@ -5,12 +5,12 @@ body {
 }
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-    font-family: 'Barlow', sans-serif;
+    font-family: var(--font-upch);
     font-weight: 500;
 }
 
 p, label, a , select, input{
-    font-family: 'Barlow', sans-serif;
+    font-family: var(--font-upch);
     font-weight: 400;
 
 }
@@ -29,7 +29,28 @@ p {
 a {
     color: var(--upch-primary-dark);
 }
+.card {
+    border-radius: 0.45rem;
+}
+.page-wrapper {
+    overflow-y: auto;
+}
 
-
-
-
+.mx-auto {
+    margin: 0 auto;
+}
+.text-primart {
+    color: var(--upch-primary)!important;
+}
+.text-secondary {
+    color: var(--upch-secondary)!important;
+}
+ul {
+    padding-left: 0;
+    li {
+        list-style: none;
+    }
+}
+.card-wrapper{
+    display: flex;
+}

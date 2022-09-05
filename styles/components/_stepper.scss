@@ -1,0 +1,113 @@
+.steps-icon {
+    padding: 25px;
+    overflow: hidden;
+    color: var(--bs-gray-500);    
+    background: #fbb9000f;
+    margin-bottom: 0;
+}
+
+.steps-icon .active {
+    color: black;
+}
+
+.steps-icon li {
+    list-style-type: none;
+    font-size: 13px;
+    width: 16.66%;
+    float: left;
+    position: relative;
+    font-weight: 500;
+    font-family: var(--font-upch);
+}
+
+.steps-icon li .step-round {
+    width: 50px;
+    height: 50px;
+    line-height: 43px!important;
+    display: block;
+    font-size: 19px;
+    color: #ffffff;
+    background: white;
+    border: 2px solid  var(--bs-gray-300);
+    border-radius: 50%;
+    margin: 0 auto 10px auto;
+    padding: 2px;
+    position: inherit;
+    z-index: 2;
+    text-align: center;
+}
+
+.steps-icon li .step-round i{
+    &:before {
+        color: var(--bs-gray-500);
+    }
+}
+
+.steps-icon li:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: var(--bs-gray-300);
+    position: absolute;
+    left: 0;
+    top: 25px;
+    z-index: 1;
+}
+
+
+.steps-icon li:first-child:after {
+    width: 50%;
+    right: 0 ; 
+    left: auto;
+}
+
+
+.steps-icon li:last-child:after {
+    width: 50%;
+}
+
+.steps-icon li.active .step-round{              
+    background: white;
+    border-color: var(--upch-secondary);
+}
+.steps-icon li.active:after  {
+    border: 1px solid var(--upch-secondary);
+
+}
+.steps-icon li.active .step-round i:before {
+    color: var(--upch-secondary);
+}
+.steps-icon li.completed .step-round, .steps-icon li.completed:after {
+    background: var(--upch-secondary);
+    border-color:  var(--upch-secondary);
+}
+.steps-icon li.completed .step-round i:before {
+    color:white;
+}
+.steps-icon li.completed .step-title {
+    color: black;
+}
+
+.steps-icon .step-round i.fa-edit{
+    padding-left: 3px;
+    position: relative;
+    top: -1px;
+}
+
+.site-home {
+    .steps-icon li .step-round {
+        border: 2px solid  var(--upch-secondary);
+    }
+    .steps-icon li .step-round i{
+        &:before {
+            color: var(--upch-secondary);
+        }
+    }
+    .steps-icon li:after {
+        background: var(--upch-secondary);
+
+    }
+    .steps-icon li {
+        color:#2B2B2B;
+    }
+}

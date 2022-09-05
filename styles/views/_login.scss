@@ -5,10 +5,10 @@
         border-radius: 0.65rem;
     }
     .text-browsers {
-        position: absolute;
-        bottom: -45px;
-        left: 0;
-        font-size: 13px;
+        font-size: 12.5px;
+        padding: 1.2rem 0;
+        position: relative;
+        left: -10px;
     }
     h1 {
         text-transform: uppercase;
@@ -210,7 +210,7 @@
 			border-radius: 0;
 		}
 		.vh-80 , .vh-95 {
-			height: 100vh;
+			height: 94vh;
 		}
         .login-content {
             height: 65vh;
