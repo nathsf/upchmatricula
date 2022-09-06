@@ -126,9 +126,9 @@
 .icon-obli, .icon-ele, .icon-com {
   position: relative;
   top: 2px;
-  height: 20px;
+  height: 19px;
   width: 20px;
-  line-height: 1;
+  line-height: 1.2;
   text-align: center;
   border-radius: 20px;
   color: white;
@@ -170,7 +170,7 @@ body {
   font-weight: 500;
 }
 
-p, label, a, select, input {
+p, label, a, select, input, span {
   font-family: var(--font-upch);
   font-weight: 400;
 }
@@ -371,6 +371,14 @@ ul li {
 .form-select:focus {
   box-shadow: none;
   outline: none;
+}
+
+.search-input {
+  border-right-color: white;
+}
+
+.form-control-sm, .form-select-sm {
+  border-radius: 0.32rem;
 }
 
 .login .card {
@@ -600,7 +608,8 @@ ul li {
   text-align: right;
   font-family: var(--font-upch);
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
+  color: #2f2f2f;
 }
 
 .badge-secondary {
@@ -610,6 +619,33 @@ ul li {
   font-size: 13px;
   border-radius: 25px;
   padding: 0.15rem 1.25rem;
+}
+
+.btn-outline-secondary {
+  font-size: 12.5px !important;
+  padding: 0.15rem 0.1rem;
+  border: 1px solid #FFD500;
+  color: #171717;
+  border-radius: 6px;
+}
+.btn-outline-secondary:hover {
+  background: rgba(255, 213, 0, 0.0784313725);
+}
+
+.fs-sm {
+  font-size: 13.5px;
+}
+
+.asig-list {
+  background: #F6F6F6;
+  padding: 0.5rem 1.1rem;
+  border-radius: 10px;
+}
+
+.site-home .nav-tabs .nav-item.show .nav-link, .site-home .nav-tabs .nav-link.active {
+  color: #495057;
+  background-color: #fff;
+  border-color: #ffffff #ffffff #FFD500;
 }
 
 /*# sourceMappingURL=style.css.map */

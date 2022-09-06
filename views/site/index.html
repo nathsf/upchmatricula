@@ -100,27 +100,27 @@
                             <ul class="steps-icon bg-transparent ">
                                <li class="">
                                   <span class="step-round"><i class="far fa-edit"></i></span>
-                                  <div class="text-center step-title">Actualización de datos</div>
+                                  <div class="text-center step-title">1. Actualización de datos</div>
                                </li>
                                <li  class="">
                                   <span class="step-round"><i class="far fa-file-certificate"></i></span>
-                                  <div class="text-center  step-title">Reglamento de estudios</div>
+                                  <div class="text-center  step-title">2. Reglamento de estudios</div>
                                </li>
                                <li>
                                   <span class="step-round"><i class="far fa-first-aid"></i></span>
-                                  <div class="text-center step-title">Seguro de accidentes</div>
+                                  <div class="text-center step-title">3. Seguro contra accidentes</div>
                                </li>
                                <li>
                                   <span class="step-round"><i class="far fa-edit"></i></span>
-                                  <div class="text-center step-title">Selección de horario</div>
+                                  <div class="text-center step-title">4. Horario</div>
                                </li>
                                <li>
                                   <span class="step-round"><i class="far fa-credit-card"></i></span>
-                                  <div class="text-center step-title">Pago</div>
+                                  <div class="text-center step-title">5. Pago</div>
                                </li>
                                <li>
                                   <span class="step-round"><i class="far fa-check"></i></span>
-                                  <div class="text-center step-title">Confirmación</div>
+                                  <div class="text-center step-title">6. Confirmación</div>
                                </li>
                             </ul>
                          </div>
@@ -130,7 +130,7 @@
             <div class="row mt-4">
                 <div class="col-sm-12 col-md-12 col-lg-4">
                     <label class="fw-regular mb-2">Seleccionar facultad:</label>
-                    <select class="form-select form-control form-control-sm" aria-label="Default select example">
+                    <select class="form-select form-select-sm" aria-label="Default select example">
                         <option selected>Psicología</option>
                         <option value="1">Medicina Humana</option>
                         <option value="2">Two</option>
@@ -169,15 +169,15 @@
                                     <ul class=" requirements-list list-group mb-0" data-role="tasklist">
                                         <li class="list-group-item border-0 mb-0 py-1 pe-3 ps-0" data-role="task">
                                           <div class="form-check form-check-inline w-100">
-                                            <input type="checkbox" id="inputRecieve" class="form-check-input success check-light-success" name="inputCheckboxesRecieve" checked disabled>
-                                            <label for="inputRecieve" class="form-check-label">
+                                            <input type="checkbox" id="inputRecieve" class="form-check-input success check-light-success" name="inputCheckboxesRecieve" checked >
+                                            <label for="inputRecieve" class="form-check-label text-black">
                                               <span>No presenta deudas en el periodo anterior</span>
                                             </label>
                                           </div>
                                         </li>
                                         <li class="list-group-item border-0 mb-0 py-1 pe-3 ps-0" data-role="task">
                                           <div class="form-check form-check-inline w-100">
-                                            <input type="checkbox" id="inputRecieve" class="form-check-input success check-light-success" name="inputCheckboxesRecieve"  disabled>
+                                            <input type="checkbox" id="inputRecieve" class="form-check-input success check-light-success" name="inputCheckboxesRecieve" disabled>
                                             <label for="inputRecieve" class="form-check-label">
                                               <span>Habilitación de cursos en el periodo 2023-1</span>
                                             </label>
@@ -194,15 +194,15 @@
                                     <ul>
                                         <li>
                                             <span class="text-secondary"><i class="fal fa-file-pdf"></i></span>
-                                            <a href="javascript:void(0);">Reglamento de Estudios</a>
+                                            <a href="javascript:void(0);" class="text-black">Reglamento de Estudios</a>
                                         </li>
                                         <li>
                                             <span class="text-secondary"><i class="fal fa-file-pdf"></i></span>
-                                            <a href="javascript:void(0);">Reglamento de Estudios</a>
+                                            <a href="javascript:void(0);" class="text-black">Reglamento de Estudios</a>
                                         </li>
                                         <li>
                                             <span class="text-secondary"><i class="fal fa-file-pdf"></i></span>
-                                            <a href="javascript:void(0);">Reglamento de Estudios</a>
+                                            <a href="javascript:void(0);" class="text-black" >Reglamento de Estudios</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -210,7 +210,7 @@
                         </div>
                     </div>
 
-                    <div class="card mt-4"> 
+                    <div class="card shadow-sm mt-4"> 
                         <div class="card-body">
                             <ul class="nav nav-tabs" id="myTab" role="tablist">
                                 <li class="nav-item" role="presentation">
@@ -221,10 +221,10 @@
                               <div class="tab-content" id="myTabContent">
                                 <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                                     <div class="row">
-                                        <div class="mb-4">
+                                        <div class="my-4">
                                             <div class="input-group flex-nowrap">
-                                              <input type="email" class="form-control login-control form-control-sm" id="exampleFormControlInput1" placeholder="Buscar por asignatura">
-                                              <span class="input-group-text login-control " id="addon-wrapping">
+                                              <input type="email" class="search-input form-control form-control-sm" id="exampleFormControlInput1" placeholder="Buscar por asignatura">
+                                              <span class="input-group-text login-control bg-white" id="addon-wrapping">
                                                 <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M6.5 0C8.22391 0 9.87721 0.684819 11.0962 1.90381C12.3152 3.12279 13 4.77609 13 6.5C13 8.11 12.41 9.59 11.44 10.73L11.71 11H12.5L17.5 16L16 17.5L11 12.5V11.71L10.73 11.44C9.59 12.41 8.11 13 6.5 13C4.77609 13 3.12279 12.3152 1.90381 11.0962C0.684819 9.87721 0 8.22391 0 6.5C0 4.77609 0.684819 3.12279 1.90381 1.90381C3.12279 0.684819 4.77609 0 6.5 0ZM6.5 2C4 2 2 4 2 6.5C2 9 4 11 6.5 11C9 11 11 9 11 6.5C11 4 9 2 6.5 2Z" fill="#B80A28"/>
                                                     </svg>
@@ -232,26 +232,195 @@
                                             </div>
                                             
                                         </div>
-                                        <div class="d-flex">
-                                            <p class="fw-medium w-25">Facultad de Psicología</p>
-                                            <p class="fw-medium w-25">Límite de Asignaturas:</p>
+                                        <div class="d-flex va-middle mb-4">
+                                            <p class="fw-medium w-25 mb-0">Facultad de Psicología</p>
+                                            <p class="fw-medium w-25 mb-0">Límite de Asignaturas:</p>
 
-                                            <p class="fw-medium w-25">Límite de créditos:</p>
+                                            <p class="fw-medium w-25 mb-0">Límite de créditos:</p>
 
-                                            <button class="btn btn-outline-secondary">Ver grupos habilitados</button>
+                                            <button class="btn btn-sm btn-outline-secondary w-25">
+                                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M9.99992 7.125C10.663 7.125 11.2988 7.37522 11.7677 7.82062C12.2365 8.26602 12.4999 8.87011 12.4999 9.5C12.4999 10.1299 12.2365 10.734 11.7677 11.1794C11.2988 11.6248 10.663 11.875 9.99992 11.875C9.33688 11.875 8.70099 11.6248 8.23215 11.1794C7.76331 10.734 7.49992 10.1299 7.49992 9.5C7.49992 8.87011 7.76331 8.26602 8.23215 7.82062C8.70099 7.37522 9.33688 7.125 9.99992 7.125M9.99992 3.5625C14.1666 3.5625 17.7249 6.02458 19.1666 9.5C17.7249 12.9754 14.1666 15.4375 9.99992 15.4375C5.83325 15.4375 2.27492 12.9754 0.833252 9.5C2.27492 6.02458 5.83325 3.5625 9.99992 3.5625ZM2.64992 9.5C4.02492 12.16 6.86659 13.8542 9.99992 13.8542C13.1333 13.8542 15.9749 12.16 17.3499 9.5C15.9749 6.84 13.1333 5.14583 9.99992 5.14583C6.86659 5.14583 4.02492 6.84 2.64992 9.5Z" fill="#FFD500"/>
+                                                    </svg>
+                                                    
+                                                &nbsp; Ver grupos habilitados</button>
 
                                         </div>
-                                        <div class="asignatura">
-                                                <div class="d-flex">
-                                                    <p class="text-uppercase fw-bolder w-50">EP001  - ESTADÍSTICA APLICADA A LA PSICOLOGÍA I
+                                        <div class="asignaturas">
+                                                <div class="d-flex asig-list mb-3">
+                                                    <p class="text-uppercase fw-bolder w-50 fs-sm mb-0">EP001  - ESTADÍSTICA APLICADA A LA PSICOLOGÍA I
                                                     </p>
                                                     <div class="w-50 d-flex justify-content-end">
-                                                        <span class="icon-obli"> O </span>
-                                                        <p class="w-25 ms-3">Ciclo:  II</p>
+                                                        <span class="icon-obli ms-3 fs-sm"> O </span>
+                                                        <p class="w-25  mb-0 fs-sm fw-medium text-end">Ciclo:  II</p>
 
-                                                        <p class="w-25">Vez:  2</p>
-                                                        <p class="w-25">Sumilla:  <i class="fal fa-circle-info"></i> </p>
-                                                        <p class="w-25">Créditos:  2 </p>
+                                                        <p class="w-25 mb-0 fs-sm fw-medium text-center">Vez:  2</p>
+                                                        <div class="w-25  d-flex">
+                                                            <p class="mb-0 fs-sm fw-medium">Sumilla:</p>
+                                                            <span style="    position: relative;
+                                                            bottom: 3px;
+                                                            margin-left: 4px;">
+                                                                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M6.01675 4.71675H7.31675V3.41675H6.01675M6.66675 11.8667C3.80025 11.8667 1.46675 9.53325 1.46675 6.66675C1.46675 3.80025 3.80025 1.46675 6.66675 1.46675C9.53325 1.46675 11.8667 3.80025 11.8667 6.66675C11.8667 9.53325 9.53325 11.8667 6.66675 11.8667ZM6.66675 0.166748C5.81316 0.166748 4.96792 0.334876 4.17931 0.661531C3.39069 0.988187 2.67413 1.46697 2.07055 2.07055C0.851567 3.28954 0.166748 4.94284 0.166748 6.66675C0.166748 8.39065 0.851567 10.044 2.07055 11.2629C2.67413 11.8665 3.39069 12.3453 4.17931 12.672C4.96792 12.9986 5.81316 13.1667 6.66675 13.1667C8.39065 13.1667 10.044 12.4819 11.2629 11.2629C12.4819 10.044 13.1667 8.39065 13.1667 6.66675C13.1667 5.81316 12.9986 4.96792 12.672 4.17931C12.3453 3.39069 11.8665 2.67413 11.2629 2.07055C10.6594 1.46697 9.94281 0.988187 9.15419 0.661531C8.36557 0.334876 7.52034 0.166748 6.66675 0.166748M6.01675 9.91675H7.31675V6.01675H6.01675V9.91675Z" fill="#FFC702"/>
+                                                                    </svg>
+                                                            </span>
+                                                                
+                                                        </div>
+                                                        <p class="w-25 mb-0 fs-sm fw-medium text-center">Créditos:  2 </p>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex asig-list mb-3">
+                                                    <p class="text-uppercase fw-bolder w-50 fs-sm mb-0">EP001  - ESTADÍSTICA APLICADA A LA PSICOLOGÍA I
+                                                    </p>
+                                                    <div class="w-50 d-flex justify-content-end">
+                                                        <span class="icon-obli ms-3 fs-sm"> O </span>
+                                                        <p class="w-25  mb-0 fs-sm fw-medium text-end">Ciclo:  II</p>
+
+                                                        <p class="w-25 mb-0 fs-sm fw-medium text-center">Vez:  2</p>
+                                                        <div class="w-25  d-flex">
+                                                            <p class="mb-0 fs-sm fw-medium">Sumilla:</p>
+                                                            <span style="    position: relative;
+                                                            bottom: 3px;
+                                                            margin-left: 4px;">
+                                                                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M6.01675 4.71675H7.31675V3.41675H6.01675M6.66675 11.8667C3.80025 11.8667 1.46675 9.53325 1.46675 6.66675C1.46675 3.80025 3.80025 1.46675 6.66675 1.46675C9.53325 1.46675 11.8667 3.80025 11.8667 6.66675C11.8667 9.53325 9.53325 11.8667 6.66675 11.8667ZM6.66675 0.166748C5.81316 0.166748 4.96792 0.334876 4.17931 0.661531C3.39069 0.988187 2.67413 1.46697 2.07055 2.07055C0.851567 3.28954 0.166748 4.94284 0.166748 6.66675C0.166748 8.39065 0.851567 10.044 2.07055 11.2629C2.67413 11.8665 3.39069 12.3453 4.17931 12.672C4.96792 12.9986 5.81316 13.1667 6.66675 13.1667C8.39065 13.1667 10.044 12.4819 11.2629 11.2629C12.4819 10.044 13.1667 8.39065 13.1667 6.66675C13.1667 5.81316 12.9986 4.96792 12.672 4.17931C12.3453 3.39069 11.8665 2.67413 11.2629 2.07055C10.6594 1.46697 9.94281 0.988187 9.15419 0.661531C8.36557 0.334876 7.52034 0.166748 6.66675 0.166748M6.01675 9.91675H7.31675V6.01675H6.01675V9.91675Z" fill="#FFC702"/>
+                                                                    </svg>
+                                                            </span>
+                                                                
+                                                        </div>
+                                                        <p class="w-25 mb-0 fs-sm fw-medium text-center">Créditos:  2 </p>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex asig-list mb-3">
+                                                    <p class="text-uppercase fw-bolder w-50 fs-sm mb-0">EP001  - ESTADÍSTICA APLICADA A LA PSICOLOGÍA I
+                                                    </p>
+                                                    <div class="w-50 d-flex justify-content-end">
+                                                        <span class="icon-obli ms-3 fs-sm"> O </span>
+                                                        <p class="w-25  mb-0 fs-sm fw-medium text-end">Ciclo:  II</p>
+
+                                                        <p class="w-25 mb-0 fs-sm fw-medium text-center">Vez:  2</p>
+                                                        <div class="w-25  d-flex">
+                                                            <p class="mb-0 fs-sm fw-medium">Sumilla:</p>
+                                                            <span style="    position: relative;
+                                                            bottom: 3px;
+                                                            margin-left: 4px;">
+                                                                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M6.01675 4.71675H7.31675V3.41675H6.01675M6.66675 11.8667C3.80025 11.8667 1.46675 9.53325 1.46675 6.66675C1.46675 3.80025 3.80025 1.46675 6.66675 1.46675C9.53325 1.46675 11.8667 3.80025 11.8667 6.66675C11.8667 9.53325 9.53325 11.8667 6.66675 11.8667ZM6.66675 0.166748C5.81316 0.166748 4.96792 0.334876 4.17931 0.661531C3.39069 0.988187 2.67413 1.46697 2.07055 2.07055C0.851567 3.28954 0.166748 4.94284 0.166748 6.66675C0.166748 8.39065 0.851567 10.044 2.07055 11.2629C2.67413 11.8665 3.39069 12.3453 4.17931 12.672C4.96792 12.9986 5.81316 13.1667 6.66675 13.1667C8.39065 13.1667 10.044 12.4819 11.2629 11.2629C12.4819 10.044 13.1667 8.39065 13.1667 6.66675C13.1667 5.81316 12.9986 4.96792 12.672 4.17931C12.3453 3.39069 11.8665 2.67413 11.2629 2.07055C10.6594 1.46697 9.94281 0.988187 9.15419 0.661531C8.36557 0.334876 7.52034 0.166748 6.66675 0.166748M6.01675 9.91675H7.31675V6.01675H6.01675V9.91675Z" fill="#FFC702"/>
+                                                                    </svg>
+                                                            </span>
+                                                                
+                                                        </div>
+                                                        <p class="w-25 mb-0 fs-sm fw-medium text-center">Créditos:  2 </p>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex asig-list mb-3">
+                                                    <p class="text-uppercase fw-bolder w-50 fs-sm mb-0">EP001  - ESTADÍSTICA APLICADA A LA PSICOLOGÍA I
+                                                    </p>
+                                                    <div class="w-50 d-flex justify-content-end">
+                                                        <span class="icon-obli ms-3 fs-sm"> O </span>
+                                                        <p class="w-25  mb-0 fs-sm fw-medium text-end">Ciclo:  II</p>
+
+                                                        <p class="w-25 mb-0 fs-sm fw-medium text-center">Vez:  2</p>
+                                                        <div class="w-25  d-flex">
+                                                            <p class="mb-0 fs-sm fw-medium">Sumilla:</p>
+                                                            <span style="    position: relative;
+                                                            bottom: 3px;
+                                                            margin-left: 4px;">
+                                                                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M6.01675 4.71675H7.31675V3.41675H6.01675M6.66675 11.8667C3.80025 11.8667 1.46675 9.53325 1.46675 6.66675C1.46675 3.80025 3.80025 1.46675 6.66675 1.46675C9.53325 1.46675 11.8667 3.80025 11.8667 6.66675C11.8667 9.53325 9.53325 11.8667 6.66675 11.8667ZM6.66675 0.166748C5.81316 0.166748 4.96792 0.334876 4.17931 0.661531C3.39069 0.988187 2.67413 1.46697 2.07055 2.07055C0.851567 3.28954 0.166748 4.94284 0.166748 6.66675C0.166748 8.39065 0.851567 10.044 2.07055 11.2629C2.67413 11.8665 3.39069 12.3453 4.17931 12.672C4.96792 12.9986 5.81316 13.1667 6.66675 13.1667C8.39065 13.1667 10.044 12.4819 11.2629 11.2629C12.4819 10.044 13.1667 8.39065 13.1667 6.66675C13.1667 5.81316 12.9986 4.96792 12.672 4.17931C12.3453 3.39069 11.8665 2.67413 11.2629 2.07055C10.6594 1.46697 9.94281 0.988187 9.15419 0.661531C8.36557 0.334876 7.52034 0.166748 6.66675 0.166748M6.01675 9.91675H7.31675V6.01675H6.01675V9.91675Z" fill="#FFC702"/>
+                                                                    </svg>
+                                                            </span>
+                                                                
+                                                        </div>
+                                                        <p class="w-25 mb-0 fs-sm fw-medium text-center">Créditos:  2 </p>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex asig-list mb-3">
+                                                    <p class="text-uppercase fw-bolder w-50 fs-sm mb-0">EP001  - ESTADÍSTICA APLICADA A LA PSICOLOGÍA I
+                                                    </p>
+                                                    <div class="w-50 d-flex justify-content-end">
+                                                        <span class="icon-obli ms-3 fs-sm"> O </span>
+                                                        <p class="w-25  mb-0 fs-sm fw-medium text-end">Ciclo:  II</p>
+
+                                                        <p class="w-25 mb-0 fs-sm fw-medium text-center">Vez:  2</p>
+                                                        <div class="w-25  d-flex">
+                                                            <p class="mb-0 fs-sm fw-medium">Sumilla:</p>
+                                                            <span style="    position: relative;
+                                                            bottom: 3px;
+                                                            margin-left: 4px;">
+                                                                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M6.01675 4.71675H7.31675V3.41675H6.01675M6.66675 11.8667C3.80025 11.8667 1.46675 9.53325 1.46675 6.66675C1.46675 3.80025 3.80025 1.46675 6.66675 1.46675C9.53325 1.46675 11.8667 3.80025 11.8667 6.66675C11.8667 9.53325 9.53325 11.8667 6.66675 11.8667ZM6.66675 0.166748C5.81316 0.166748 4.96792 0.334876 4.17931 0.661531C3.39069 0.988187 2.67413 1.46697 2.07055 2.07055C0.851567 3.28954 0.166748 4.94284 0.166748 6.66675C0.166748 8.39065 0.851567 10.044 2.07055 11.2629C2.67413 11.8665 3.39069 12.3453 4.17931 12.672C4.96792 12.9986 5.81316 13.1667 6.66675 13.1667C8.39065 13.1667 10.044 12.4819 11.2629 11.2629C12.4819 10.044 13.1667 8.39065 13.1667 6.66675C13.1667 5.81316 12.9986 4.96792 12.672 4.17931C12.3453 3.39069 11.8665 2.67413 11.2629 2.07055C10.6594 1.46697 9.94281 0.988187 9.15419 0.661531C8.36557 0.334876 7.52034 0.166748 6.66675 0.166748M6.01675 9.91675H7.31675V6.01675H6.01675V9.91675Z" fill="#FFC702"/>
+                                                                    </svg>
+                                                            </span>
+                                                                
+                                                        </div>
+                                                        <p class="w-25 mb-0 fs-sm fw-medium text-center">Créditos:  2 </p>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex asig-list mb-3">
+                                                    <p class="text-uppercase fw-bolder w-50 fs-sm mb-0">EP001  - ESTADÍSTICA APLICADA A LA PSICOLOGÍA I
+                                                    </p>
+                                                    <div class="w-50 d-flex justify-content-end">
+                                                        <span class="icon-obli ms-3 fs-sm"> O </span>
+                                                        <p class="w-25  mb-0 fs-sm fw-medium text-end">Ciclo:  II</p>
+
+                                                        <p class="w-25 mb-0 fs-sm fw-medium text-center">Vez:  2</p>
+                                                        <div class="w-25  d-flex">
+                                                            <p class="mb-0 fs-sm fw-medium">Sumilla:</p>
+                                                            <span style="    position: relative;
+                                                            bottom: 3px;
+                                                            margin-left: 4px;">
+                                                                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M6.01675 4.71675H7.31675V3.41675H6.01675M6.66675 11.8667C3.80025 11.8667 1.46675 9.53325 1.46675 6.66675C1.46675 3.80025 3.80025 1.46675 6.66675 1.46675C9.53325 1.46675 11.8667 3.80025 11.8667 6.66675C11.8667 9.53325 9.53325 11.8667 6.66675 11.8667ZM6.66675 0.166748C5.81316 0.166748 4.96792 0.334876 4.17931 0.661531C3.39069 0.988187 2.67413 1.46697 2.07055 2.07055C0.851567 3.28954 0.166748 4.94284 0.166748 6.66675C0.166748 8.39065 0.851567 10.044 2.07055 11.2629C2.67413 11.8665 3.39069 12.3453 4.17931 12.672C4.96792 12.9986 5.81316 13.1667 6.66675 13.1667C8.39065 13.1667 10.044 12.4819 11.2629 11.2629C12.4819 10.044 13.1667 8.39065 13.1667 6.66675C13.1667 5.81316 12.9986 4.96792 12.672 4.17931C12.3453 3.39069 11.8665 2.67413 11.2629 2.07055C10.6594 1.46697 9.94281 0.988187 9.15419 0.661531C8.36557 0.334876 7.52034 0.166748 6.66675 0.166748M6.01675 9.91675H7.31675V6.01675H6.01675V9.91675Z" fill="#FFC702"/>
+                                                                    </svg>
+                                                            </span>
+                                                                
+                                                        </div>
+                                                        <p class="w-25 mb-0 fs-sm fw-medium text-center">Créditos:  2 </p>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex asig-list mb-3">
+                                                    <p class="text-uppercase fw-bolder w-50 fs-sm mb-0">EP001  - ESTADÍSTICA APLICADA A LA PSICOLOGÍA I
+                                                    </p>
+                                                    <div class="w-50 d-flex justify-content-end">
+                                                        <span class="icon-obli ms-3 fs-sm"> O </span>
+                                                        <p class="w-25  mb-0 fs-sm fw-medium text-end">Ciclo:  II</p>
+
+                                                        <p class="w-25 mb-0 fs-sm fw-medium text-center">Vez:  2</p>
+                                                        <div class="w-25  d-flex">
+                                                            <p class="mb-0 fs-sm fw-medium">Sumilla:</p>
+                                                            <span style="    position: relative;
+                                                            bottom: 3px;
+                                                            margin-left: 4px;">
+                                                                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M6.01675 4.71675H7.31675V3.41675H6.01675M6.66675 11.8667C3.80025 11.8667 1.46675 9.53325 1.46675 6.66675C1.46675 3.80025 3.80025 1.46675 6.66675 1.46675C9.53325 1.46675 11.8667 3.80025 11.8667 6.66675C11.8667 9.53325 9.53325 11.8667 6.66675 11.8667ZM6.66675 0.166748C5.81316 0.166748 4.96792 0.334876 4.17931 0.661531C3.39069 0.988187 2.67413 1.46697 2.07055 2.07055C0.851567 3.28954 0.166748 4.94284 0.166748 6.66675C0.166748 8.39065 0.851567 10.044 2.07055 11.2629C2.67413 11.8665 3.39069 12.3453 4.17931 12.672C4.96792 12.9986 5.81316 13.1667 6.66675 13.1667C8.39065 13.1667 10.044 12.4819 11.2629 11.2629C12.4819 10.044 13.1667 8.39065 13.1667 6.66675C13.1667 5.81316 12.9986 4.96792 12.672 4.17931C12.3453 3.39069 11.8665 2.67413 11.2629 2.07055C10.6594 1.46697 9.94281 0.988187 9.15419 0.661531C8.36557 0.334876 7.52034 0.166748 6.66675 0.166748M6.01675 9.91675H7.31675V6.01675H6.01675V9.91675Z" fill="#FFC702"/>
+                                                                    </svg>
+                                                            </span>
+                                                                
+                                                        </div>
+                                                        <p class="w-25 mb-0 fs-sm fw-medium text-center">Créditos:  2 </p>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex asig-list mb-3">
+                                                    <p class="text-uppercase fw-bolder w-50 fs-sm mb-0">EP001  - ESTADÍSTICA APLICADA A LA PSICOLOGÍA I
+                                                    </p>
+                                                    <div class="w-50 d-flex justify-content-end">
+                                                        <span class="icon-obli ms-3 fs-sm"> O </span>
+                                                        <p class="w-25  mb-0 fs-sm fw-medium text-end">Ciclo:  II</p>
+
+                                                        <p class="w-25 mb-0 fs-sm fw-medium text-center">Vez:  2</p>
+                                                        <div class="w-25  d-flex">
+                                                            <p class="mb-0 fs-sm fw-medium">Sumilla:</p>
+                                                            <span style="    position: relative;
+                                                            bottom: 3px;
+                                                            margin-left: 4px;">
+                                                                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M6.01675 4.71675H7.31675V3.41675H6.01675M6.66675 11.8667C3.80025 11.8667 1.46675 9.53325 1.46675 6.66675C1.46675 3.80025 3.80025 1.46675 6.66675 1.46675C9.53325 1.46675 11.8667 3.80025 11.8667 6.66675C11.8667 9.53325 9.53325 11.8667 6.66675 11.8667ZM6.66675 0.166748C5.81316 0.166748 4.96792 0.334876 4.17931 0.661531C3.39069 0.988187 2.67413 1.46697 2.07055 2.07055C0.851567 3.28954 0.166748 4.94284 0.166748 6.66675C0.166748 8.39065 0.851567 10.044 2.07055 11.2629C2.67413 11.8665 3.39069 12.3453 4.17931 12.672C4.96792 12.9986 5.81316 13.1667 6.66675 13.1667C8.39065 13.1667 10.044 12.4819 11.2629 11.2629C12.4819 10.044 13.1667 8.39065 13.1667 6.66675C13.1667 5.81316 12.9986 4.96792 12.672 4.17931C12.3453 3.39069 11.8665 2.67413 11.2629 2.07055C10.6594 1.46697 9.94281 0.988187 9.15419 0.661531C8.36557 0.334876 7.52034 0.166748 6.66675 0.166748M6.01675 9.91675H7.31675V6.01675H6.01675V9.91675Z" fill="#FFC702"/>
+                                                                    </svg>
+                                                            </span>
+                                                                
+                                                        </div>
+                                                        <p class="w-25 mb-0 fs-sm fw-medium text-center">Créditos:  2 </p>
                                                     </div>
                                                 </div>
                                         </div>
