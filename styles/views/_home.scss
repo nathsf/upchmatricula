@@ -33,7 +33,22 @@
     border-radius: 6px;
     &:hover {
         background: #ffd50014;
+        border: 1px solid #FFD500;
+        color: #171717;
     }
+    &:active {
+        box-shadow: none;
+        &:focus{
+            box-shadow: none;
+        }
+    }
+    &:focus {   
+        color: #000000;
+        background-color: white;
+        border-color: #FFD500;
+        outline: 0;
+        box-shadow: none;
+}
 }
 
 .fs-sm {
