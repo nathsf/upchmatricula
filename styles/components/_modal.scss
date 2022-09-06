@@ -1,0 +1,30 @@
+.modal-footer {
+    align-items: center;
+    justify-content: center;
+    border-top: 0;
+    margin-bottom: 1rem;
+    .btn-primary {
+        padding: 0.25rem 3rem;
+        font-size: 15px;
+        border-radius: 6px;
+    }
+}
+
+.btn-close {
+    opacity: 1!important;
+    width: 2em;
+    &:focus {
+        outline: 0;
+        box-shadow: none;
+    }
+}
+
+.btn-sumilla {
+    padding: 0;
+    margin-left: 3px;
+    svg {
+        vertical-align: initial;
+        position: relative;
+        top: -2px;
+    }
+}

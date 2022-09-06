@@ -25,46 +25,84 @@
     padding: 0.15rem 1.25rem;
 }
 
-.btn-outline-secondary {
-    font-size: 12.5px !important;
-    padding: 0.15rem 0.1rem;
-    border: 1px solid #FFD500;
-    color: #171717;
-    border-radius: 6px;
-    &:hover {
-        background: #ffd50014;
-        border: 1px solid #FFD500;
-        color: #171717;
-    }
-    &:active {
-        box-shadow: none;
-        &:focus{
-            box-shadow: none;
-        }
-    }
-    &:focus {   
-        color: #000000;
-        background-color: white;
-        border-color: #FFD500;
-        outline: 0;
-        box-shadow: none;
-}
-}
+
 
 .fs-sm {
     font-size: 13.5px;
 }
-
+.fs-reg {
+    font-size: 15px;
+}
 .asig-list {
     background: #F6F6F6;
     padding: 0.5rem 1.1rem;
     border-radius: 10px;
+    p.text-uppercase {
+        color: #505050;
+    }
 }
 
 .site-home {
+    .btn-outline-secondary {
+        font-size: 12px !important;
+        padding: 0.15rem 0.1rem;
+        border: 1px solid #FFD500;
+        color: #171717;
+        border-radius: 6px;
+        svg{
+            vertical-align: text-top;
+        }
+        &:hover {
+            background: #ffd50014;
+            border: 1px solid #FFD500;
+            color: #171717;
+        }
+        &:active {
+            box-shadow: none;
+            &:focus{
+                box-shadow: none;
+            }
+        }
+        &:focus {   
+            color: #000000;
+            background-color: white;
+            border-color: #FFD500;
+            outline: 0;
+            box-shadow: none;
+    }
+    }
     .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
-        color: #495057;
+        color: black;
+        font-weight: 500;
         background-color: #fff;
         border-color: #ffffff #ffffff #FFD500;
+        font-family: var(--font-upch);
+        font-size: 15px;
+        text-transform: uppercase;
+        padding-top: 0;
+    }
+    .card-wrapper{
+        display: flex;
+        @media(max-width:1199px){
+            display: block;
+        }
+        .card.w-50 {
+
+            @media(max-width:1199px){
+                width: 100% !important;
+                margin: 0 0 1rem 0!important;
+            }
+        }
+    }
+    
+}
+
+
+@media (max-width: 767px) {
+    .site-home{
+        .order-wrapper { display: flex; flex-flow: column; }
+    .three { order: 3; }
+    .two { order: 2; }
+    .one { order: 1; }
     }
 }

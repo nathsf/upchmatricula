@@ -1,0 +1,24 @@
+.tooltip[data-color=required] .tooltip-inner {
+	background-color: #FF5B1F;
+  }
+  
+.tooltip[data-color=required] .tooltip-arrow:before {
+	border-right-color: #FF5B1F;
+  }
+
+.tooltip[data-color=elective] .tooltip-inner {
+	background-color: #85754D;
+}
+  
+.tooltip[data-color=elective] .tooltip-arrow:before {
+	border-right-color: #85754D;
+}
+  
+.tooltip[data-color=complementary] .tooltip-inner {
+	background-color: #F6CE00;
+}
+  
+.tooltip[data-color=complementary] .tooltip-arrow:before {
+	border-right-color: #F6CE00;
+}
+  

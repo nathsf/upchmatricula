@@ -1,10 +1,4 @@
-.vh-95{
-    height: 95vh;
-}
 
-.vh-80 {
-    height: 80vh;
-}
 .va-middle{
     display: flex;
     justify-content: center;
@@ -124,9 +118,10 @@
 .icon-obli, .icon-ele, .icon-com{
 	position: relative;
     top: 2px;
-    height: 20px;
-    width: 19px;
-    line-height: 1.2;
+    height: 18px;
+    font-size: 12px!important;
+    width: 18px;
+    line-height: 0.1;
     text-align: center;
     border-radius: 100%;
     color: white;
@@ -146,30 +141,7 @@
 	background: #F6CE00;
 }
 
-.tooltip[data-color=required] .tooltip-inner {
-	background-color: #FF5B1F;
-  }
-  
-.tooltip[data-color=required] .tooltip-arrow:before {
-	border-right-color: #FF5B1F;
-  }
 
-.tooltip[data-color=elective] .tooltip-inner {
-	background-color: #85754D;
-}
-  
-.tooltip[data-color=elective] .tooltip-arrow:before {
-	border-right-color: #85754D;
-}
-  
-.tooltip[data-color=complementary] .tooltip-inner {
-	background-color: #F6CE00;
-}
-  
-.tooltip[data-color=complementary] .tooltip-arrow:before {
-	border-right-color: #F6CE00;
-}
-  
 
 @media (max-width:767px){
 	.d-sm-none {

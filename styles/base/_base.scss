@@ -31,9 +31,7 @@ a {
 }
 .card {
     border-radius: 0.45rem;
-}
-.page-wrapper {
-    overflow-y: auto;
+    border: none;
 }
 
 .mx-auto {
@@ -51,6 +49,10 @@ ul {
         list-style: none;
     }
 }
-.card-wrapper{
-    display: flex;
+
+.page-wrapper {
+    margin-top: 122px;
+    @media(max-width:767px){
+        margin-top: 80px;
+    }
 }
