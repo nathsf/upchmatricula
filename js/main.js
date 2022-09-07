@@ -23,6 +23,7 @@ jQuery(function($) {
   $("button").hover(function() {
     $(".tooltip").attr('data-color', $(this).data("color"));
   });
+
 });
 
 //reloj tiempo real

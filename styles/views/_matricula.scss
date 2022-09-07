@@ -8,6 +8,42 @@
     }
 }
 
+@media(max-width:767px) {
+    .steps-container {
+        .card {
+            background: #f4f4f4;
+            box-shadow: none!important;
+            .card-body {
+                background-color: #f4f4f4;
+                padding: 0;
+                box-shadow: none!important;
+                fieldset {
+                    position: relative;
+                    opacity: 1;
+                    background: #f4f4f4;
+                    box-shadow: none!important;
+                    padding: 0;
+                    .form-body {
+                        width: 100%;
+                        padding: 2rem;
+                        border-radius: 0.45rem;
+                        margin-bottom: 2rem;
+                    }
+                    .btn.next {
+                        width: 100%;
+                        margin-bottom: 1rem;
+                    }
+                    .btn.previous {
+                        width: 100%;
+                        margin-right: 0;
+                        margin-bottom: 1.5rem;
+                        margin-top: 0.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
 .control-label {
     margin-bottom: 10px;
 }

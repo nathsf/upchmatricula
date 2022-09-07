@@ -42,7 +42,7 @@
 }
 .asig-list {
     background: #F6F6F6;
-    padding: 0.5rem 1.1rem;
+    padding: 0.35rem 1rem;
     border-radius: 10px;
     p.text-uppercase {
         color: #505050;
@@ -174,7 +174,7 @@
             }
             .btn-outline-secondary {
                 margin-top: 1.5rem!important;
-                width: 60%!important;
+                width: 175px !important;
             }
         }
         .asignaturas {
@@ -192,6 +192,7 @@
                     position: absolute;
                     width: 85%!important;
                     padding-top: 15px;
+                    margin-left: -2px;
                 }
                 .icon-obli, .icon-ele, .icon-com {
                     padding: 0!important;
