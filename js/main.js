@@ -3,13 +3,13 @@ jQuery(document).ready(function($){
   var agentID = deviceAgent.match(/(iPad|iPhone|iPod)/i);
   if (agentID) {     
       window.addEventListener('DOMContentLoaded',function() {
-          $("html").addClass('iphone');
+          $("body").addClass('iphone');
      });     
   }
   else
   {
       $(document).ready(function () {
-        $("html").addClass('default');
+        $("#main-wrapper").addClass('default');
       });
   }
 });
