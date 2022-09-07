@@ -1012,7 +1012,7 @@ ul li {
   }
   .site-home .course-info-1 .btn-outline-secondary {
     margin-top: 1.5rem !important;
-    width: 50% !important;
+    width: 60% !important;
   }
   .site-home .asignaturas .course-info-2 {
     display: block !important;
@@ -1034,6 +1034,9 @@ ul li {
     margin-left: 0 !important;
     height: 17px;
   }
+}
+.iphone .icon-obli, .iphone .icon-ele, .iphone .icon-com {
+  width: 13px !important;
 }
 
 /*# sourceMappingURL=style.css.map */
