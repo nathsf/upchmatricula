@@ -118,14 +118,21 @@
 .icon-obli, .icon-ele, .icon-com{
 	position: relative;
     top: 2px;
-    height: 18px;
-    font-size: 12px!important;
-    width: 18px;
-    line-height: 0.1;
+    height: 16px;
+    font-size: 12px !important;
+    width: 17px;
+    line-height: 0;
     text-align: center;
     border-radius: 100%;
     color: white;
+    padding: 0 !important;
 	font-family: var(--font-upch);
+	span {		
+		position: relative;
+		left: 0px;
+		top: -1px;
+		vertical-align: initial;
+	}
 }
 .icon-obli{
 	background: var(--upch-web-required);

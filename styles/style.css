@@ -126,14 +126,21 @@
 .icon-obli, .icon-ele, .icon-com {
   position: relative;
   top: 2px;
-  height: 18px;
+  height: 16px;
   font-size: 12px !important;
-  width: 18px;
-  line-height: 0.1;
+  width: 17px;
+  line-height: 0;
   text-align: center;
   border-radius: 100%;
   color: white;
+  padding: 0 !important;
   font-family: var(--font-upch);
+}
+.icon-obli span, .icon-ele span, .icon-com span {
+  position: relative;
+  left: 0px;
+  top: -1px;
+  vertical-align: initial;
 }
 
 .icon-obli {
@@ -299,12 +306,10 @@ ul li {
   }
 }
 
-.iphone {
-  background-color: #424242;
-}
 .iphone .icon-obli, .iphone .icon-ele, .iphone .icon-com {
   width: 13px !important;
   width: 13px !important;
+  margin: 0 !important;
 }
 
 .header {
@@ -1101,9 +1106,10 @@ s .form-control-sm:disabled::placeholder, s .form-select-sm:disabled::placeholde
     padding-top: 15px;
   }
   .site-home .asignaturas .course-info-2 .icon-obli, .site-home .asignaturas .course-info-2 .icon-ele, .site-home .asignaturas .course-info-2 .icon-com {
-    margin-left: 0 !important;
+    padding: 0 !important;
     height: 17px;
     width: 17px;
+    margin: 0 !important;
   }
 }
 .matricula-title {
