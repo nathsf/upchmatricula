@@ -1,0 +1,9 @@
+.matricula-title {            
+    width: fit-content;
+    margin-bottom: 1.6rem;
+    .separator {
+        width: 85%;
+        height: 3px;
+        background-color: var(--upch-secondary);                
+    }
+}

@@ -294,6 +294,14 @@ ul li {
   }
 }
 
+.iphone {
+  background-color: #424242;
+}
+.iphone .icon-obli, .iphone .icon-ele, .iphone .icon-com {
+  width: 13px !important;
+  width: 13px !important;
+}
+
 .header {
   position: fixed;
   width: 100%;
@@ -1033,10 +1041,17 @@ ul li {
   .site-home .asignaturas .course-info-2 .icon-obli, .site-home .asignaturas .course-info-2 .icon-ele, .site-home .asignaturas .course-info-2 .icon-com {
     margin-left: 0 !important;
     height: 17px;
+    width: 17px;
   }
 }
-.iphone .icon-obli, .iphone .icon-ele, .iphone .icon-com {
-  width: 13px !important;
+.matricula-title {
+  width: fit-content;
+  margin-bottom: 1.6rem;
+}
+.matricula-title .separator {
+  width: 85%;
+  height: 3px;
+  background-color: var(--upch-secondary);
 }
 
 /*# sourceMappingURL=style.css.map */

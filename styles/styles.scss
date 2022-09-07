@@ -5,6 +5,7 @@
 @import "base/variables";
 @import "base/utilities";
 @import "base/base";
+@import "base/device";
 @import "layout/header";
 @import "layout/footer";
 @import "components/modal";
@@ -13,5 +14,6 @@
 @import "components/forms";
 @import "views/login";
 @import "views/home";
-@import "base/device";
+@import "views/matricula";
+
 
