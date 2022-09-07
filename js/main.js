@@ -38,4 +38,6 @@ setInterval(function() {
         );
 }, 500);
 
-
+if(navigator.userAgent.match(/iPhone/)) {
+  $('html').addClass('iphone');
+}
