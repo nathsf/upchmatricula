@@ -58,12 +58,12 @@
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Santiago Tavares Castro
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarScrollingDropdown">
-                                    <li><a class="dropdown-item" href="#">Item</a></li>
-                                    <li><a class="dropdown-item" href="#">Item</a></li>
+                                    <li><a class="dropdown-item" href="#">Item 1</a></li>
+                                    <li><a class="dropdown-item" href="#">Item 2</a></li>
                                     <li>
                                         <hr class="dropdown-divider">
                                     </li>
-                                    <li><a class="dropdown-item" href="#">Item</a></li>
+                                    <li><a class="dropdown-item" href="../login/index.html">Cerrar sesión</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -102,59 +102,248 @@
         </div>
         <div class="container" >    
             <div class="row ">
-                <div class="col-12 mb-4 ">
-                    <div class="card mt-3 shadow-sm ">
-                        <div class="card-body">
-                            <ul class="steps-icon bg-transparent ">
-                               <li class="active">
-                                  <span class="step-round"><i class="far fa-edit"></i></span>
-                                  <div class="text-center step-title">1. <span>Actualización de datos</span> </div>
-                               </li>
-                               <li  class="">
-                                  <span class="step-round"><i class="far fa-file-certificate"></i></span>
-                                  <div class="text-center  step-title">2. <span>Reglamento de estudios</span></div>
-                               </li>
-                               <li>
-                                  <span class="step-round"><i class="far fa-first-aid"></i></span>
-                                  <div class="text-center step-title">3. <span>contra accidentes</span> </div>
-                               </li>
-                               <li>
-                                  <span class="step-round"><i class="far fa-edit"></i></span>
-                                  <div class="text-center step-title">4. <span>Horario</span></div>
-                               </li>
-                               <li>
-                                  <span class="step-round"><i class="far fa-credit-card"></i></span>
-                                  <div class="text-center step-title">5. <span>Pago</span></div>
-                               </li>
-                               <li>
-                                  <span class="step-round"><i class="far fa-check"></i></span>
-                                  <div class="text-center step-title">6. <span>Confirmación</span></div>
-                               </li>
-                            </ul>
-
-                            <ul class="steps-list-text">
-                                <li><p class="mb-0">1. Actualización de datos</p></li>
-                                <li><p class="mb-0">2. Reglamento de estudios</p></li>
-                                <li><p class="mb-0">3. Seguro contra accidentes</p></li>
-                                <li><p class="mb-0">4. Horario</p></li>
-                                <li><p class="mb-0">5. Pago</p></li>
-                                <li><p class="mb-0">6. Confirmación</p></li>
-
-                            </ul>
-                         </div>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-12 col-lg-12  ">
-                    <div class="card shadow-sm">
-                        <div class="card-body">
-                            <div class="matricula-title">
-                                <h6 class="text-uppercase">Actualización de datos</h6>
-                                <div class="separator"></div>
-                            </div>
-                            <p>Hola</p>
+                <form class="steps-form">
+                    <div class="col-12 mb-4 ">
+                        <div class="card mt-3 shadow-sm ">
+                            <div class="card-body">
+                                <ul class="steps-icon bg-transparent ">
+                                   <li class="active">
+                                      <span class="step-round"><i class="far fa-edit"></i></span>
+                                      <div class="text-center step-title">1. <span>Actualización de datos</span> </div>
+                                   </li>
+                                   <li  class="">
+                                      <span class="step-round"><i class="far fa-file-certificate"></i></span>
+                                      <div class="text-center  step-title">2. <span>Reglamento de estudios</span></div>
+                                   </li>
+                                   <li>
+                                      <span class="step-round"><i class="far fa-first-aid"></i></span>
+                                      <div class="text-center step-title">3. <span>Seguro contra accidentes</span> </div>
+                                   </li>
+                                   <li>
+                                      <span class="step-round"><i class="far fa-edit"></i></span>
+                                      <div class="text-center step-title">4. <span>Horario</span></div>
+                                   </li>
+                                   <li>
+                                      <span class="step-round"><i class="far fa-credit-card"></i></span>
+                                      <div class="text-center step-title">5. <span>Pago</span></div>
+                                   </li>
+                                   <li>
+                                      <span class="step-round"><i class="far fa-check"></i></span>
+                                      <div class="text-center step-title">6. <span>Confirmación</span></div>
+                                   </li>
+                                </ul>
+    
+                                
+                             </div>
                         </div>
                     </div>
-                </div>
+                    <div class="col-sm-12 col-md-12 col-lg-12  ">
+                        <div class="card shadow-sm">
+                            <div class="card-body">
+                                <fieldset>
+                                    <div class="form-body">
+                                        <div class="matricula-title">
+                                            <h5 class="text-uppercase">Actualización de datos</h5>
+                                            <div class="separator"></div>
+                                        </div>
+                                        <div class="row mt-3">
+                                          <div class="col-md-4">
+                                            <div class="mb-3">
+                                              <label class="control-label">Tipo de documento</label>
+                                              <select class="form-control form-control-sm custom-select" disabled>
+                                                <option value="">DNI</option>
+                                                <option value="">Carnet de extranjería</option>
+                                                <option value="">Pasaporte</option>
+                                              </select>
+                                            </div>
+                                          </div>
+                                          <!--/span-->
+                                          <div class="col-md-4">
+                                            <div class="mb-3">
+                                              <label class="control-label">Número de documento</label>
+                                              <input type="text" id="lastName" disabled class="form-control form-control-sm form-control-danger" placeholder="56781234">
+                                            </div>
+                                          </div>
+                                          
+                                         
+                                        </div>
+                                        <div class="row ">
+                                            <div class="col-md-4">
+                                              <div class="mb-3">
+                                                <label class="control-label">Nombres</label>
+                                                <input type="text" id="firstName" disabled class="form-control form-control-sm" placeholder="SANTIAGO ALEJANDRO">
+                                              </div>
+                                            </div>
+                                            
+                                            <div class="col-md-4">
+                                              <div class="mb-3">
+                                                <label class="control-label">Primer Apellido</label>
+                                                <input type="text" id="lastName" disabled class="form-control form-control-sm form-control-danger" placeholder="TAVARES">
+                                              </div>
+                                            </div> 
+                                            
+                                            <div class="col-md-4">
+                                              <div class="mb-3">
+                                                <label class="control-label">Segundo Apellido</label>
+                                                <input type="text" id="lastName" disabled class="form-control form-control-sm form-control-danger" placeholder="CASTRO">
+                                              </div>
+                                            </div>
+                                            
+                                          </div>
+   
+                                        <div class="row">
+                                          <div class="col-md-4">
+                                            <div class="mb-3">
+                                              <label class="control-label">Celular</label>
+                                              <input type="text" id="firstName"  class="form-control form-control-sm" value="998877665">
+                                            </div>
+                                          </div>
+                                          <!--/span-->
+                                          <div class="col-md-4">
+                                            <div class="mb-3">
+                                              <label class="control-label">Correo personal</label>
+                                              <input type="text" id="lastName"  class="form-control form-control-sm form-control-danger" value="sant@gmail.com">
+                                            </div>
+                                          </div> 
+                                          <!--/span-->
+                                        </div>
+                                        <div class="col-12">
+                                            <small class="form-control-feedback">
+                                              <p style="line-height: 1.5;
+                                              font-size: 13px;margin-top:1rem;">*La actualización de datos personales es para las siguientes finalidades: Contactarme y brindarme información sobre los servicios educativos que ofrece,
+                                                así como para invitarme a talleres, charla y eventos informativos;  absolver mis dudas, reclamos y sugerencias;  generar estadísticas o información histórica, de manera anonimizada o disociada.</p>
+                                            </small>
+                                          </div>
+   
+                                    </div>
+                                    <button type="button" class="btn waves-effect waves-light btn-primary next">Continuar</button>
+                                 </fieldset>
+                                 <fieldset>
+                                    <div class="form-body" >
+                                        <div class="matricula-title">
+                                            <h5 class="text-uppercase">Reglamento de estudios</h5>
+                                            <div class="separator"></div>
+                                        </div>
+                                        <p class="fw-medium text-uppercase">DECLARACIÓN</p>
+                                        <p class="fw-regular">Yo, declaro haber leído y comprendido los reglamentos de la universidad y mi facultad.</p>
+                                        <p class="fw-regular">Reglamentos Generales:</p>
+                                        <ul>
+                                            <li class="mb-2">
+                                                <label class="container-checkbox d-inline-block">
+                                                    <input type="checkbox">
+                                                    <span class="checkmark"></span>
+                                                  </label>
+                                                <a href="javascript:void(0);" class="text-black ">Reglamento de Estudios</a>
+                                            </li>
+                                            <li class="mb-2">
+                                                <label class="container-checkbox d-inline-block">
+                                                    <input type="checkbox">
+                                                    <span class="checkmark"></span>
+                                                  </label>
+                                                <a href="javascript:void(0);" class="text-black ">Reglamento de la actividad académica</a>
+                                            </li>
+                                            <li class="mb-2">
+                                                <label class="container-checkbox d-inline-block">
+                                                    <input type="checkbox">
+                                                    <span class="checkmark"></span>
+                                                  </label>
+                                                <a href="javascript:void(0);" class="text-black " >Reglamento de Estudios</a>
+                                            </li>
+                                            <li class="mb-2">
+                                                <label class="container-checkbox d-inline-block">
+                                                    <input type="checkbox">
+                                                    <span class="checkmark"></span>
+                                                  </label>
+                                                <a href="javascript:void(0);" class="text-black ">Reglamento de la actividad académica</a>
+                                            </li>
+                                            <li class="mb-2">
+                                                <label class="container-checkbox d-inline-block">
+                                                    <input type="checkbox">
+                                                    <span class="checkmark"></span>
+                                                  </label>
+                                                <a href="javascript:void(0);" class="text-black " >Reglamento de Estudios</a>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                    <button type="button" class="btn waves-effect waves-light btn-light-secondary previous">Volver</button>
+                                    <button type="button" class="btn waves-effect waves-light btn-primary next">Continuar</button>
+                                 </fieldset>
+                                 <fieldset>
+                                    <div class="form-body">
+                                        <div class="matricula-title">
+                                            <h5 class="text-uppercase">Seguro contra accidentes</h5>
+                                            <div class="separator"></div>
+
+                                        </div>
+
+                                       <p class="fw-bolder"> ¿Cuenta con seguro contra Accidentes? </p>
+
+                                       <ul>
+                                        <li class="mb-2">
+                                            <div class="form-check-inline">
+                                                <input type="radio" name="styles" id="box-shadow" class="custom-radio">
+                                              <label  class="text-black ">Cuento con un seguro comprado en UPCH</label>
+                                            </div>
+                                            
+                                        </li>
+                                        <li class="mb-2">
+                                            <div class="form-check-inline">
+                                                <input type="radio" name="styles" id="box-shadow" class="custom-radio">
+                                              <label  class="text-black ">Tengo Seguro Integral de Salud (SIS)  -  (SOLO BECARIOS)</label>
+                                            </div>
+                                            </li>
+                                        <li class="mb-2">
+                                            
+                                                <div class="form-check-inline">
+                                                    <input type="radio" name="styles" id="box-shadow" class="custom-radio">
+                                                    <label  class="text-black ">Tengo un seguro de Accidentes Personal</label>
+                                                </div>
+                                               
+                                        </li>
+                                        
+                                    </ul>
+                                    </div>
+                                    <button type="button" class="btn waves-effect waves-light btn-light-secondary previous">Volver</button>
+                                    <button type="button" class="btn waves-effect waves-light btn-primary next">Continuar</button>
+                                 </fieldset>
+                                 <fieldset>
+                                    <div class="form-body">
+                                       <div class="matricula-title">
+                                            <h5 class="text-uppercase">Selección de horario</h5>
+                                            <div class="separator"></div>
+                                        </div>
+                                       <p> contenido 4</p>
+                                    </div>
+                                    <button type="button" class="btn waves-effect waves-light btn-light-secondary previous">Volver</button>
+                                    <button type="button" class="btn waves-effect waves-light btn-primary next">Continuar</button>
+                                 </fieldset>
+                                 <fieldset>
+                                    <div class="form-body">
+                                        <div class="matricula-title">
+                                            <h5 class="text-uppercase">Pago</h5>
+                                            <div class="separator"></div>
+                                        </div>
+
+                                       <p> contenido 5</p>
+                                    </div>
+                                    <button type="button" class="btn waves-effect waves-light btn-light-secondary previous">Volver</button>
+                                    <button type="button" class="btn waves-effect waves-light btn-primary next">Continuar</button>
+                                 </fieldset>
+                                 <fieldset>
+                                    <div class="form-body">
+                                       <div class="matricula-title">
+                                            <h5 class="text-uppercase">Confirmación</h5>
+                                            <div class="separator"></div>
+                                        </div>
+                                       <p> contenido 6</p>
+                                    </div>
+                                 </fieldset>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </form>
                 
                 
             </div>
@@ -169,8 +358,9 @@
     </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js" integrity="sha512-nnzkI2u2Dy6HMnzMIkh7CPd1KX445z38XIu4jG1jGw7x5tSL3VBjE44dY4ihMU1ijAQV930SPM12cCFrB18sVw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js" integrity="sha512-OvBgP9A2JBgiRad/mM36mkzXSXaJE9BEIENnVEmeZdITvwT09xnxLtT4twkCa8m/loMbPHsvPl0T8lRGVBwjlQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js" integrity="sha512-pax4MlgXjHEPfCwcJLQhigY7+N8rt6bVvWLFyUMuxShv170X53TRzGPmPkZmGBhk+jikR8WBM4yl7A9WMHHqvg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="../../js/main.js"></script>
+    <script src="../../js/wizard-steps.js"></script>
+
 </body>
 </html>

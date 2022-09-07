@@ -12,8 +12,14 @@ body {
 p, label, a , select, input, span{
     font-family: var(--font-upch);
     font-weight: 400;
-
+    
 }
+
+::selection {
+    background: var(--upch-primary-dark)!important;
+    color: white;
+  }
+
 p, label, a {
     font-size: 15px;
 }

@@ -1,5 +1,40 @@
+/*form styles*/
+.steps-form {
+    margin-top: 0;
+}
+.steps-form fieldset .form-body {
+    background: white;
+    border: 0 none;
+    border-radius: 0px;
+    padding-bottom: 20px;
+    position: relative;
+    text-align: left;
+    width: 100%;
+}
+.steps-form fieldset .form-footer {
+    text-align: right;
+}
+
+.steps-form fieldset {
+    background: white;
+    border: 0 none;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;    
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+/*Hide all except first fieldset*/
+.steps-form fieldset:not(:first-of-type) {
+    display: none;
+}
+
+
 .steps-icon {
-    padding: 25px;
+    padding: 0.9rem 0;
     overflow: hidden;
     color: var(--bs-gray-500);    
     background: #fbb9000f;

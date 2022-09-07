@@ -2,8 +2,16 @@
     width: fit-content;
     margin-bottom: 1.6rem;
     .separator {
-        width: 85%;
+        width: 75%;
         height: 3px;
         background-color: var(--upch-secondary);                
     }
+}
+
+.control-label {
+    margin-bottom: 10px;
+}
+
+fieldset .form-body {
+    min-height: 45vh;
 }

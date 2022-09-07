@@ -16,6 +16,14 @@
         box-shadow: none;
         border: 1px solid #d3d3d3;
     }
+    &:disabled {
+        border: 1px solid var(--bs-gray-200);
+        color: #788084;s
+        &::placeholder {
+            color: #788084;
+        }
+    }
+    
 }
 
 .btn {
@@ -23,4 +31,18 @@
         outline: 0;
         box-shadow: none;
     }
+}
+
+.btn.next{
+    border-radius: 10px;
+    width: 200px;
+}
+
+.btn.previous {
+    border-radius: 10px;
+    width: 200px;
+    margin-right: 2rem;
+    color: #fff;
+    background-color: #828282;
+    border-color: #828282;
 }
