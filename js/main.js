@@ -1,3 +1,18 @@
+jQuery(document).ready(function($){
+  var deviceAgent = navigator.userAgent.toLowerCase();
+  var agentID = deviceAgent.match(/(iPad|iPhone|iPod)/i);
+  if (agentID) {     
+      window.addEventListener('DOMContentLoaded',function() {
+          $("html").addClass('iphone');
+     });     
+  }
+  else
+  {
+      $(document).ready(function () {
+        $("html").addClass('default');
+      });
+  }
+});
 
 jQuery(function($) {
   var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
@@ -38,6 +53,3 @@ setInterval(function() {
         );
 }, 500);
 
-if(navigator.userAgent.match(/iPhone/)) {
-  $('html').addClass('iphone');
-}
