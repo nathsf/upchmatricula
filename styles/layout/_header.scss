@@ -14,7 +14,7 @@
            color: white
         }
         .nav-link.active {
-            background: #A50924;
+            background: var(--upch-dark);
         }
         .navbar-nav{ 
             border-left: 1px solid var(--upch-red-dark);
@@ -42,8 +42,8 @@
         height: 35px;
         border-radius: 100%;
         margin-top: 0;
-        background: #FFD500;
-        border: 1px solid #FFD500!important;
+        background: var(--upch-secondary);
+        border: 1px solid var(--upch-secondary)!important;
         span {
             color: white;
     position: relative;

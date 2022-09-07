@@ -128,17 +128,17 @@
 	font-family: var(--font-upch);
 }
 .icon-obli{
-	background: #FF5B1F;
-    border: 1px solid #FF5B1F;
+	background: var(--upch-web-required);
+    border: 1px solid var(--upch-web-required);
 	
 }
 .icon-ele{
-	background: #85754D;
-    border: 1px solid #85754D;
+	background: var(--upch-web-elective);
+    border: 1px solid var(--upch-web-elective);
 }
 .icon-com {
-	border: 1px solid #F6CE00;
-	background: #F6CE00;
+	border: 1px solid var(--upch-web-complementary);
+	background: var(--upch-web-complementary);
 }
 
 
@@ -173,6 +173,10 @@
 	align-items: center;
 	height: 16px;
 	color: rgb(0, 0, 0);
+	@media(max-width:767px) {
+		line-height: 1;
+		font-size: 14px;
+	}
 }
 
 .css-checkbox + label::before {

@@ -1,3 +1,15 @@
+
+jQuery(function($) {
+  var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+  var tooltipList = tooltipTriggerList.map(function(tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl);
+  });
+
+  $("button").hover(function() {
+    $(".tooltip").attr('data-color', $(this).data("color"));
+  });
+});
+
 //reloj tiempo real
 setInterval(function() {
 
@@ -25,3 +37,5 @@ setInterval(function() {
     $('#clock-wrapper').html(svg + ' ' + ((''+day).length<2 ? '0' : '') + day + '/'  + ((''+month).length<2 ? '0' : '') + month + '/' + date.getFullYear() + ' &nbsp; ' + currentHours + ":" + currentMinutes + ":" + currentSeconds + " " + timeOfDay
         );
 }, 500);
+
+

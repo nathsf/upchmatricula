@@ -29,20 +29,34 @@
                         </defs>
                         </svg>
                     </a>
+                    
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsingNavbar3">
                         <span class="navbar-toggler-icon"></span>
                     </button>
+                    
                     <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
                        
                         <ul class="nav navbar-nav ms-auto w-100 justify-content-end">
                             <li class="nav-item d-block d-sm-block d-md-none">
-                                <a class="nav-link" href="#">Right</a>
+                                <a class="nav-link" href="#">Inicio</a>
                             </li>
                             <li class="nav-item d-block d-sm-block d-md-none">
-                                <a class="nav-link" href="#">Right</a>
+                                <a class="nav-link" href="#">Horario</a>
                             </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Menu </a>
+                            <li class="nav-item me-3">
+                                <a class=" nav-link dropdown-toggle icon-noti   waves-effect waves-dark position-relative
+                           " href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bell"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
+                        <span class="badge rounded-pill bg-warning noti">3</span>
+                        </a>
+                            </li>
+                            <li class="nav-item dropdown d-flex">
+                                <div class="border border-2 border-bs-gray-200  crop crop-round-40">
+                                    <!-- <img src="../../assets/profile.png" alt="user" class="profile-pic"> -->
+                                <span >ST</span>
+                                </div>
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Santiago Tavares Castro
+                                </a>
                                 <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarScrollingDropdown">
                                     <li><a class="dropdown-item" href="#">Item</a></li>
                                     <li><a class="dropdown-item" href="#">Item</a></li>
@@ -87,8 +101,8 @@
             </div>
         </div>
         <div class="container" >    
-            <div class="row">
-                <div class="col-12">
+            <div class="row order-wrapper">
+                <div class="col-12 mb-4 two">
                     <div class="card mt-3 shadow-sm ">
                         <div class="card-body">
                             <div class="home-title">
@@ -100,55 +114,73 @@
                             <ul class="steps-icon bg-transparent ">
                                <li class="">
                                   <span class="step-round"><i class="far fa-edit"></i></span>
-                                  <div class="text-center step-title">1. Actualización de datos</div>
+                                  <div class="text-center step-title">1. <span>Actualización de datos</span> </div>
                                </li>
                                <li  class="">
                                   <span class="step-round"><i class="far fa-file-certificate"></i></span>
-                                  <div class="text-center  step-title">2. Reglamento de estudios</div>
+                                  <div class="text-center  step-title">2. <span>Reglamento de estudios</span></div>
                                </li>
                                <li>
                                   <span class="step-round"><i class="far fa-first-aid"></i></span>
-                                  <div class="text-center step-title">3. Seguro contra accidentes</div>
+                                  <div class="text-center step-title">3. <span>contra accidentes</span> </div>
                                </li>
                                <li>
                                   <span class="step-round"><i class="far fa-edit"></i></span>
-                                  <div class="text-center step-title">4. Horario</div>
+                                  <div class="text-center step-title">4. <span>Horario</span></div>
                                </li>
                                <li>
                                   <span class="step-round"><i class="far fa-credit-card"></i></span>
-                                  <div class="text-center step-title">5. Pago</div>
+                                  <div class="text-center step-title">5. <span>Pago</span></div>
                                </li>
                                <li>
                                   <span class="step-round"><i class="far fa-check"></i></span>
-                                  <div class="text-center step-title">6. Confirmación</div>
+                                  <div class="text-center step-title">6. <span>Confirmación</span></div>
                                </li>
+                            </ul>
+
+                            <ul class="steps-list-text">
+                                <li><p class="mb-0">1. Actualización de datos</p></li>
+                                <li><p class="mb-0">2. Reglamento de estudios</p></li>
+                                <li><p class="mb-0">3. Seguro contra accidentes</p></li>
+                                <li><p class="mb-0">4. Horario</p></li>
+                                <li><p class="mb-0">5. Pago</p></li>
+                                <li><p class="mb-0">6. Confirmación</p></li>
+
                             </ul>
                          </div>
                     </div>
                 </div>
-            </div>
-            <div class="row mt-4">
-                <div class="col-sm-12 col-md-12 col-lg-4">
-                    <label class="fw-regular mb-2">Seleccionar facultad:</label>
+                <div class="col-sm-12 col-md-12 col-lg-4 one ">
+                    <div>
+                        <label class="fw-medium mb-2">Seleccionar programa:</label>
                     <select class="form-select form-select-sm" aria-label="Default select example">
                         <option selected>Psicología</option>
                         <option value="1">Medicina Humana</option>
                         <option value="2">Two</option>
                         <option value="3">Three</option>
                     </select>
-                    <div class="card shadow-sm  mt-3">
+                    </div>
+                    <div class="card card-profile shadow-sm  mt-3">
+                        <div class="card-header">
+                            
+                        </div>
                         <div class="card-body">
                             <div class="profile-info text-center">
                                 <img src="../../assets/profile.png" class="rounded-circle shadow-sm my-3" style="width: 100px;
                                 height: 100px;">
                                 <p class="fw-bolder mb-2">Santiago Fernando Tavares Castro</p>
                                 <span class="text-uppercase badge-secondary">Pregrado</span>
-                                <p class="mb-0 mt-3"> <span class="fw-medium">DNI</span>  79463350</p>
+                                <div class="student-info-1 text-center mt-3">
+                                    <p class="mb-0 "> <span class="fw-medium">DNI</span>  79463350</p>
                                 <p class="mb-0"> <span class="fw-medium">COD </span> 20190047 </p>
-                                <p class=""><span class="fw-medium">CICLO</span>  II</p>
-                                <p class="mb-0"><span class="fw-medium">Facultad: </span> Psicología</p>
-                                <p class="mb-0"><span class="fw-medium">Plan de estudios:</span>  2021-1</p>
-                                <p class=""><span class="fw-medium">Tutor:</span> Jorge Luis Navarro Llacza</p>
+                                <p class="mb-0"><span class="fw-medium">CICLO</span>  II</p>
+                                </div>
+                                <div class="student-info-2 text-center mt-3">
+                                    <p class="mb-0"><span class="fw-medium">Programa: </span> Psicología</p>
+                                    <p class="mb-0"><span class="fw-medium">Plan de estudios:</span>  2021-1</p>
+                                    <p class=""><span class="fw-medium">Tutor:</span> Jorge Luis Navarro Llacza</p>
+                                </div>
+                                
 
                             </div>
                         </div>
@@ -159,28 +191,30 @@
                     <p class="my-3 text-center"><span class="fw-medium ">Fecha de Matricula:</span>   30 / 08 / 2022  - 02 / 09 / 2022</p>
 
                 </div>
-                <div class="col-md-12 col-lg-8 col-sm-12">
+                
+                <div class="col-md-12 col-lg-8 col-sm-12 three">
                     <div class="card-wrapper ">
                     
                             <div class="card shadow-sm w-50">
                                 <div class="card-body">
                                     <h6 class="text-uppercase mb-4">Requisitos de Matrícula
                                     </h6>
+                                    
                                     <ul class=" requirements-list list-group mb-0" data-role="tasklist">
                                         <li class="list-group-item border-0 mb-0 py-1 pe-3 ps-0" data-role="task">
-                                          <div class="form-check form-check-inline w-100">
-                                            <input type="checkbox" id="inputRecieve" class="form-check-input success check-light-success" name="inputCheckboxesRecieve" checked >
-                                            <label for="inputRecieve" class="form-check-label text-black">
-                                              <span>No presenta deudas en el periodo anterior</span>
-                                            </label>
+                                          <div class="form-check-inline w-100">
+                                            <input name="cssCheckbox" id="demo_opt_2" type="checkbox" class="css-checkbox" checked="" disabled>
+                                            <label for="demo_opt_2"></label>
+                                            <span>No presenta deudas en el periodo anterior</span>
+                                            
                                           </div>
                                         </li>
                                         <li class="list-group-item border-0 mb-0 py-1 pe-3 ps-0" data-role="task">
-                                          <div class="form-check form-check-inline w-100">
-                                            <input type="checkbox" id="inputRecieve" class="form-check-input success check-light-success" name="inputCheckboxesRecieve" disabled>
-                                            <label for="inputRecieve" class="form-check-label">
-                                              <span>Habilitación de cursos en el periodo 2023-1</span>
-                                            </label>
+                                          <div class=" form-check-inline w-100">
+                                            <input name="cssCheckbox" id="demo_opt_3" type="checkbox" class="css-checkbox" disabled>
+                                            <label for="demo_opt_3"></label>
+                                            <span>Habilitación de cursos en el periodo 2023-1</span>
+
                                           </div>
                                         </li>
                                       </ul>
@@ -190,19 +224,19 @@
                         
                             <div class="card shadow-sm w-50 ms-4">
                                 <div class="card-body">
-                                    <h6 class="text-uppercase mb-4">INFORMACIÓN PARA LA MATRICULA</h6>
+                                    <h6 class="text-uppercase fs-reg mb-4">INFORMACIÓN PARA LA MATRICULA</h6>
                                     <ul>
-                                        <li>
+                                        <li class="mb-2">
                                             <span class="text-secondary"><i class="fal fa-file-pdf"></i></span>
-                                            <a href="javascript:void(0);" class="text-black">Reglamento de Estudios</a>
+                                            <a href="javascript:void(0);" class="text-black ms-2">Reglamento de Estudios</a>
                                         </li>
-                                        <li>
+                                        <li class="mb-2">
                                             <span class="text-secondary"><i class="fal fa-file-pdf"></i></span>
-                                            <a href="javascript:void(0);" class="text-black">Reglamento de Estudios</a>
+                                            <a href="javascript:void(0);" class="text-black ms-2">Reglamento de la actividad académica</a>
                                         </li>
-                                        <li>
+                                        <li class="mb-2">
                                             <span class="text-secondary"><i class="fal fa-file-pdf"></i></span>
-                                            <a href="javascript:void(0);" class="text-black" >Reglamento de Estudios</a>
+                                            <a href="javascript:void(0);" class="text-black ms-2" >Reglamento de Estudios</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -223,7 +257,7 @@
                                     <div class="row">
                                         <div class="my-4">
                                             <div class="input-group flex-nowrap">
-                                              <input type="email" class="search-input form-control form-control-sm" id="exampleFormControlInput1" placeholder="Buscar por asignatura">
+                                              <input type="email" class="search-input form-control form-control-sm" id="exampleFormControlInput1" placeholder="Buscar por nombre de asignatura">
                                               <span class="input-group-text login-control bg-white" id="addon-wrapping">
                                                 <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M6.5 0C8.22391 0 9.87721 0.684819 11.0962 1.90381C12.3152 3.12279 13 4.77609 13 6.5C13 8.11 12.41 9.59 11.44 10.73L11.71 11H12.5L17.5 16L16 17.5L11 12.5V11.71L10.73 11.44C9.59 12.41 8.11 13 6.5 13C4.77609 13 3.12279 12.3152 1.90381 11.0962C0.684819 9.87721 0 8.22391 0 6.5C0 4.77609 0.684819 3.12279 1.90381 1.90381C3.12279 0.684819 4.77609 0 6.5 0ZM6.5 2C4 2 2 4 2 6.5C2 9 4 11 6.5 11C9 11 11 9 11 6.5C11 4 9 2 6.5 2Z" fill="#B80A28"/>
@@ -232,192 +266,203 @@
                                             </div>
                                             
                                         </div>
-                                        <div class="d-flex va-middle mb-4">
-                                            <p class="fw-medium w-25 mb-0">Facultad de Psicología</p>
-                                            <p class="fw-medium w-25 mb-0">Límite de Asignaturas:</p>
+                                        <div class="d-flex justify-content-between va-middle course-info-1 mb-4">
+                                            <p class=" fw-medium  mb-0 title-program">Programa de Psicología</p>
+                                            <p class="  mb-0">Límite de Asignaturas: <span  class="fw-medium">10</span></p>
 
-                                            <p class="fw-medium w-25 mb-0">Límite de créditos:</p>
+                                            <p class=" mb-0">Límite de créditos: <span  class="fw-medium">20</span></p>
 
-                                            <button class="btn btn-sm btn-outline-secondary w-25">
+                                            <button class="btn btn-sm btn-outline-secondary w-25" data-bs-toggle="modal" data-bs-target="#grupos">
                                                 <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M9.99992 7.125C10.663 7.125 11.2988 7.37522 11.7677 7.82062C12.2365 8.26602 12.4999 8.87011 12.4999 9.5C12.4999 10.1299 12.2365 10.734 11.7677 11.1794C11.2988 11.6248 10.663 11.875 9.99992 11.875C9.33688 11.875 8.70099 11.6248 8.23215 11.1794C7.76331 10.734 7.49992 10.1299 7.49992 9.5C7.49992 8.87011 7.76331 8.26602 8.23215 7.82062C8.70099 7.37522 9.33688 7.125 9.99992 7.125M9.99992 3.5625C14.1666 3.5625 17.7249 6.02458 19.1666 9.5C17.7249 12.9754 14.1666 15.4375 9.99992 15.4375C5.83325 15.4375 2.27492 12.9754 0.833252 9.5C2.27492 6.02458 5.83325 3.5625 9.99992 3.5625ZM2.64992 9.5C4.02492 12.16 6.86659 13.8542 9.99992 13.8542C13.1333 13.8542 15.9749 12.16 17.3499 9.5C15.9749 6.84 13.1333 5.14583 9.99992 5.14583C6.86659 5.14583 4.02492 6.84 2.64992 9.5Z" fill="#FFD500"/>
                                                     </svg>
                                                     
                                                 &nbsp; Ver grupos habilitados</button>
+                                                
+  
+                                        <!-- Modal grupos habilitados -->
+                                        <div class="modal fade" id="grupos" tabindex="-1" aria-labelledby="gruposLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-xl">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                <h5 class="modal-title text-uppercase" id="gruposLabel">LISTA DE GRUPOS HABILITADOS</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                   <p class=" fw-medium w-25 mb-0">programa de Psicología</p>
+                                                </div>
+                                                <div class="modal-footer text-center">
+                                                <button type="button" class="btn btn-primary text-center" data-bs-dismiss="modal">Aceptar</button>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
 
                                         </div>
                                         <div class="asignaturas">
-                                                <div class="d-flex asig-list mb-3">
+                                                <div class="d-flex asig-list mb-3 course-info-2">
                                                     <p class="text-uppercase fw-bolder w-50 fs-sm mb-0">EP001  - ESTADÍSTICA APLICADA A LA PSICOLOGÍA I
                                                     </p>
                                                     <div class="w-50 d-flex justify-content-end">
-                                                        <span class="icon-obli ms-3 fs-sm"> O </span>
+                                                        <button type="button" class="icon-obli ms-3 fs-sm" data-bs-toggle="tooltip" data-bs-placement="right" title="Obligatorio" data-color="required"><span style="position: relative;
+                                                            left: -1px;">O</span>  </button>
                                                         <p class="w-25  mb-0 fs-sm fw-medium text-end">Ciclo:  II</p>
 
                                                         <p class="w-25 mb-0 fs-sm fw-medium text-center">Vez:  2</p>
                                                         <div class="w-25  d-flex">
                                                             <p class="mb-0 fs-sm fw-medium">Sumilla:</p>
-                                                            <span style="    position: relative;
-                                                            bottom: 3px;
-                                                            margin-left: 4px;">
+                                                            <button class="btn btn-sumilla" data-bs-toggle="modal" data-bs-target="#sumilla">
                                                                 <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                     <path d="M6.01675 4.71675H7.31675V3.41675H6.01675M6.66675 11.8667C3.80025 11.8667 1.46675 9.53325 1.46675 6.66675C1.46675 3.80025 3.80025 1.46675 6.66675 1.46675C9.53325 1.46675 11.8667 3.80025 11.8667 6.66675C11.8667 9.53325 9.53325 11.8667 6.66675 11.8667ZM6.66675 0.166748C5.81316 0.166748 4.96792 0.334876 4.17931 0.661531C3.39069 0.988187 2.67413 1.46697 2.07055 2.07055C0.851567 3.28954 0.166748 4.94284 0.166748 6.66675C0.166748 8.39065 0.851567 10.044 2.07055 11.2629C2.67413 11.8665 3.39069 12.3453 4.17931 12.672C4.96792 12.9986 5.81316 13.1667 6.66675 13.1667C8.39065 13.1667 10.044 12.4819 11.2629 11.2629C12.4819 10.044 13.1667 8.39065 13.1667 6.66675C13.1667 5.81316 12.9986 4.96792 12.672 4.17931C12.3453 3.39069 11.8665 2.67413 11.2629 2.07055C10.6594 1.46697 9.94281 0.988187 9.15419 0.661531C8.36557 0.334876 7.52034 0.166748 6.66675 0.166748M6.01675 9.91675H7.31675V6.01675H6.01675V9.91675Z" fill="#FFC702"/>
-                                                                    </svg>
-                                                            </span>
+                                                                </svg>
+                                                            </button>
+                                                            
+                                                        </div>
+                                                        <p class="w-25 mb-0 fs-sm fw-medium text-center">Créditos:  2 </p>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex asig-list mb-3 course-info-2">
+                                                    <p class="text-uppercase fw-bolder w-50 fs-sm mb-0">EP001  - ESTADÍSTICA APLICADA A LA PSICOLOGÍA I
+                                                    </p>
+                                                    <div class="w-50 d-flex justify-content-end">
+                                                        <button type="button" class="icon-obli ms-3 fs-sm" data-bs-toggle="tooltip" data-bs-placement="right" title="Obligatorio" data-color="required"><span style="position: relative;
+                                                            left: -1px;">O</span>  </button>
+                                                        <p class="w-25  mb-0 fs-sm fw-medium text-end">Ciclo:  II</p>
+
+                                                        <p class="w-25 mb-0 fs-sm fw-medium text-center">Vez:  2</p>
+                                                        <div class="w-25  d-flex">
+                                                            <p class="mb-0 fs-sm fw-medium">Sumilla:</p>
+                                                            <button class="btn btn-sumilla" data-bs-toggle="modal" data-bs-target="#sumilla">
+                                                                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M6.01675 4.71675H7.31675V3.41675H6.01675M6.66675 11.8667C3.80025 11.8667 1.46675 9.53325 1.46675 6.66675C1.46675 3.80025 3.80025 1.46675 6.66675 1.46675C9.53325 1.46675 11.8667 3.80025 11.8667 6.66675C11.8667 9.53325 9.53325 11.8667 6.66675 11.8667ZM6.66675 0.166748C5.81316 0.166748 4.96792 0.334876 4.17931 0.661531C3.39069 0.988187 2.67413 1.46697 2.07055 2.07055C0.851567 3.28954 0.166748 4.94284 0.166748 6.66675C0.166748 8.39065 0.851567 10.044 2.07055 11.2629C2.67413 11.8665 3.39069 12.3453 4.17931 12.672C4.96792 12.9986 5.81316 13.1667 6.66675 13.1667C8.39065 13.1667 10.044 12.4819 11.2629 11.2629C12.4819 10.044 13.1667 8.39065 13.1667 6.66675C13.1667 5.81316 12.9986 4.96792 12.672 4.17931C12.3453 3.39069 11.8665 2.67413 11.2629 2.07055C10.6594 1.46697 9.94281 0.988187 9.15419 0.661531C8.36557 0.334876 7.52034 0.166748 6.66675 0.166748M6.01675 9.91675H7.31675V6.01675H6.01675V9.91675Z" fill="#FFC702"/>
+                                                                </svg>
+                                                            </button>
                                                                 
                                                         </div>
                                                         <p class="w-25 mb-0 fs-sm fw-medium text-center">Créditos:  2 </p>
                                                     </div>
                                                 </div>
-                                                <div class="d-flex asig-list mb-3">
+                                                <div class="d-flex asig-list mb-3 course-info-2">
                                                     <p class="text-uppercase fw-bolder w-50 fs-sm mb-0">EP001  - ESTADÍSTICA APLICADA A LA PSICOLOGÍA I
                                                     </p>
                                                     <div class="w-50 d-flex justify-content-end">
-                                                        <span class="icon-obli ms-3 fs-sm"> O </span>
+                                                        <button type="button" class="icon-obli ms-3 fs-sm" data-bs-toggle="tooltip" data-bs-placement="right" title="Obligatorio" data-color="required"><span style="position: relative;
+                                                            left: -1px;">O</span>  </button>
                                                         <p class="w-25  mb-0 fs-sm fw-medium text-end">Ciclo:  II</p>
 
                                                         <p class="w-25 mb-0 fs-sm fw-medium text-center">Vez:  2</p>
                                                         <div class="w-25  d-flex">
                                                             <p class="mb-0 fs-sm fw-medium">Sumilla:</p>
-                                                            <span style="    position: relative;
-                                                            bottom: 3px;
-                                                            margin-left: 4px;">
+                                                            <button class="btn btn-sumilla" data-bs-toggle="modal" data-bs-target="#sumilla">
                                                                 <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                     <path d="M6.01675 4.71675H7.31675V3.41675H6.01675M6.66675 11.8667C3.80025 11.8667 1.46675 9.53325 1.46675 6.66675C1.46675 3.80025 3.80025 1.46675 6.66675 1.46675C9.53325 1.46675 11.8667 3.80025 11.8667 6.66675C11.8667 9.53325 9.53325 11.8667 6.66675 11.8667ZM6.66675 0.166748C5.81316 0.166748 4.96792 0.334876 4.17931 0.661531C3.39069 0.988187 2.67413 1.46697 2.07055 2.07055C0.851567 3.28954 0.166748 4.94284 0.166748 6.66675C0.166748 8.39065 0.851567 10.044 2.07055 11.2629C2.67413 11.8665 3.39069 12.3453 4.17931 12.672C4.96792 12.9986 5.81316 13.1667 6.66675 13.1667C8.39065 13.1667 10.044 12.4819 11.2629 11.2629C12.4819 10.044 13.1667 8.39065 13.1667 6.66675C13.1667 5.81316 12.9986 4.96792 12.672 4.17931C12.3453 3.39069 11.8665 2.67413 11.2629 2.07055C10.6594 1.46697 9.94281 0.988187 9.15419 0.661531C8.36557 0.334876 7.52034 0.166748 6.66675 0.166748M6.01675 9.91675H7.31675V6.01675H6.01675V9.91675Z" fill="#FFC702"/>
-                                                                    </svg>
-                                                            </span>
+                                                                </svg>
+                                                            </button>
                                                                 
                                                         </div>
                                                         <p class="w-25 mb-0 fs-sm fw-medium text-center">Créditos:  2 </p>
                                                     </div>
                                                 </div>
-                                                <div class="d-flex asig-list mb-3">
+                                                <div class="d-flex asig-list mb-3 course-info-2">
                                                     <p class="text-uppercase fw-bolder w-50 fs-sm mb-0">EP001  - ESTADÍSTICA APLICADA A LA PSICOLOGÍA I
                                                     </p>
                                                     <div class="w-50 d-flex justify-content-end">
-                                                        <span class="icon-obli ms-3 fs-sm"> O </span>
+                                                        <button type="button" class="icon-obli ms-3 fs-sm" data-bs-toggle="tooltip" data-bs-placement="right" title="Obligatorio" data-color="required"><span style="position: relative;
+                                                            left: -1px;">O</span>  </button>
                                                         <p class="w-25  mb-0 fs-sm fw-medium text-end">Ciclo:  II</p>
 
                                                         <p class="w-25 mb-0 fs-sm fw-medium text-center">Vez:  2</p>
                                                         <div class="w-25  d-flex">
                                                             <p class="mb-0 fs-sm fw-medium">Sumilla:</p>
-                                                            <span style="    position: relative;
-                                                            bottom: 3px;
-                                                            margin-left: 4px;">
+                                                            <button class="btn btn-sumilla" data-bs-toggle="modal" data-bs-target="#sumilla">
                                                                 <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                     <path d="M6.01675 4.71675H7.31675V3.41675H6.01675M6.66675 11.8667C3.80025 11.8667 1.46675 9.53325 1.46675 6.66675C1.46675 3.80025 3.80025 1.46675 6.66675 1.46675C9.53325 1.46675 11.8667 3.80025 11.8667 6.66675C11.8667 9.53325 9.53325 11.8667 6.66675 11.8667ZM6.66675 0.166748C5.81316 0.166748 4.96792 0.334876 4.17931 0.661531C3.39069 0.988187 2.67413 1.46697 2.07055 2.07055C0.851567 3.28954 0.166748 4.94284 0.166748 6.66675C0.166748 8.39065 0.851567 10.044 2.07055 11.2629C2.67413 11.8665 3.39069 12.3453 4.17931 12.672C4.96792 12.9986 5.81316 13.1667 6.66675 13.1667C8.39065 13.1667 10.044 12.4819 11.2629 11.2629C12.4819 10.044 13.1667 8.39065 13.1667 6.66675C13.1667 5.81316 12.9986 4.96792 12.672 4.17931C12.3453 3.39069 11.8665 2.67413 11.2629 2.07055C10.6594 1.46697 9.94281 0.988187 9.15419 0.661531C8.36557 0.334876 7.52034 0.166748 6.66675 0.166748M6.01675 9.91675H7.31675V6.01675H6.01675V9.91675Z" fill="#FFC702"/>
-                                                                    </svg>
-                                                            </span>
+                                                                </svg>
+                                                            </button>
                                                                 
                                                         </div>
                                                         <p class="w-25 mb-0 fs-sm fw-medium text-center">Créditos:  2 </p>
                                                     </div>
                                                 </div>
-                                                <div class="d-flex asig-list mb-3">
+                                                <div class="d-flex asig-list mb-3 course-info-2">
                                                     <p class="text-uppercase fw-bolder w-50 fs-sm mb-0">EP001  - ESTADÍSTICA APLICADA A LA PSICOLOGÍA I
                                                     </p>
                                                     <div class="w-50 d-flex justify-content-end">
-                                                        <span class="icon-obli ms-3 fs-sm"> O </span>
+                                                        <button type="button" class="icon-obli ms-3 fs-sm" data-bs-toggle="tooltip" data-bs-placement="right" title="Obligatorio" data-color="required"><span style="position: relative;
+                                                            left: -1px;">O</span>  </button>
                                                         <p class="w-25  mb-0 fs-sm fw-medium text-end">Ciclo:  II</p>
 
                                                         <p class="w-25 mb-0 fs-sm fw-medium text-center">Vez:  2</p>
                                                         <div class="w-25  d-flex">
                                                             <p class="mb-0 fs-sm fw-medium">Sumilla:</p>
-                                                            <span style="    position: relative;
-                                                            bottom: 3px;
-                                                            margin-left: 4px;">
+                                                            <button class="btn btn-sumilla" data-bs-toggle="modal" data-bs-target="#sumilla">
                                                                 <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                     <path d="M6.01675 4.71675H7.31675V3.41675H6.01675M6.66675 11.8667C3.80025 11.8667 1.46675 9.53325 1.46675 6.66675C1.46675 3.80025 3.80025 1.46675 6.66675 1.46675C9.53325 1.46675 11.8667 3.80025 11.8667 6.66675C11.8667 9.53325 9.53325 11.8667 6.66675 11.8667ZM6.66675 0.166748C5.81316 0.166748 4.96792 0.334876 4.17931 0.661531C3.39069 0.988187 2.67413 1.46697 2.07055 2.07055C0.851567 3.28954 0.166748 4.94284 0.166748 6.66675C0.166748 8.39065 0.851567 10.044 2.07055 11.2629C2.67413 11.8665 3.39069 12.3453 4.17931 12.672C4.96792 12.9986 5.81316 13.1667 6.66675 13.1667C8.39065 13.1667 10.044 12.4819 11.2629 11.2629C12.4819 10.044 13.1667 8.39065 13.1667 6.66675C13.1667 5.81316 12.9986 4.96792 12.672 4.17931C12.3453 3.39069 11.8665 2.67413 11.2629 2.07055C10.6594 1.46697 9.94281 0.988187 9.15419 0.661531C8.36557 0.334876 7.52034 0.166748 6.66675 0.166748M6.01675 9.91675H7.31675V6.01675H6.01675V9.91675Z" fill="#FFC702"/>
-                                                                    </svg>
-                                                            </span>
+                                                                </svg>
+                                                            </button>
                                                                 
                                                         </div>
                                                         <p class="w-25 mb-0 fs-sm fw-medium text-center">Créditos:  2 </p>
                                                     </div>
                                                 </div>
-                                                <div class="d-flex asig-list mb-3">
+                                                <div class="d-flex asig-list mb-3 course-info-2">
                                                     <p class="text-uppercase fw-bolder w-50 fs-sm mb-0">EP001  - ESTADÍSTICA APLICADA A LA PSICOLOGÍA I
                                                     </p>
                                                     <div class="w-50 d-flex justify-content-end">
-                                                        <span class="icon-obli ms-3 fs-sm"> O </span>
+                                                        <button type="button" class="icon-obli ms-3 fs-sm" data-bs-toggle="tooltip" data-bs-placement="right" title="Obligatorio" data-color="required"><span style="position: relative;
+                                                            left: -1px;">O</span>  </button>
                                                         <p class="w-25  mb-0 fs-sm fw-medium text-end">Ciclo:  II</p>
 
                                                         <p class="w-25 mb-0 fs-sm fw-medium text-center">Vez:  2</p>
                                                         <div class="w-25  d-flex">
                                                             <p class="mb-0 fs-sm fw-medium">Sumilla:</p>
-                                                            <span style="    position: relative;
-                                                            bottom: 3px;
-                                                            margin-left: 4px;">
+                                                            <button class="btn btn-sumilla" data-bs-toggle="modal" data-bs-target="#sumilla">
                                                                 <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                     <path d="M6.01675 4.71675H7.31675V3.41675H6.01675M6.66675 11.8667C3.80025 11.8667 1.46675 9.53325 1.46675 6.66675C1.46675 3.80025 3.80025 1.46675 6.66675 1.46675C9.53325 1.46675 11.8667 3.80025 11.8667 6.66675C11.8667 9.53325 9.53325 11.8667 6.66675 11.8667ZM6.66675 0.166748C5.81316 0.166748 4.96792 0.334876 4.17931 0.661531C3.39069 0.988187 2.67413 1.46697 2.07055 2.07055C0.851567 3.28954 0.166748 4.94284 0.166748 6.66675C0.166748 8.39065 0.851567 10.044 2.07055 11.2629C2.67413 11.8665 3.39069 12.3453 4.17931 12.672C4.96792 12.9986 5.81316 13.1667 6.66675 13.1667C8.39065 13.1667 10.044 12.4819 11.2629 11.2629C12.4819 10.044 13.1667 8.39065 13.1667 6.66675C13.1667 5.81316 12.9986 4.96792 12.672 4.17931C12.3453 3.39069 11.8665 2.67413 11.2629 2.07055C10.6594 1.46697 9.94281 0.988187 9.15419 0.661531C8.36557 0.334876 7.52034 0.166748 6.66675 0.166748M6.01675 9.91675H7.31675V6.01675H6.01675V9.91675Z" fill="#FFC702"/>
-                                                                    </svg>
-                                                            </span>
+                                                                </svg>
+                                                            </button>
                                                                 
                                                         </div>
                                                         <p class="w-25 mb-0 fs-sm fw-medium text-center">Créditos:  2 </p>
                                                     </div>
                                                 </div>
-                                                <div class="d-flex asig-list mb-3">
+                                                <div class="d-flex asig-list mb-3 course-info-2">
                                                     <p class="text-uppercase fw-bolder w-50 fs-sm mb-0">EP001  - ESTADÍSTICA APLICADA A LA PSICOLOGÍA I
                                                     </p>
                                                     <div class="w-50 d-flex justify-content-end">
-                                                        <span class="icon-obli ms-3 fs-sm"> O </span>
+                                                        <button type="button" class="icon-ele ms-3 fs-sm" data-bs-toggle="tooltip" data-bs-placement="right" title="Electivo" data-color="elective"><span style="position: relative;
+                                                            left: -1px;">E</span>  </button>
                                                         <p class="w-25  mb-0 fs-sm fw-medium text-end">Ciclo:  II</p>
 
                                                         <p class="w-25 mb-0 fs-sm fw-medium text-center">Vez:  2</p>
                                                         <div class="w-25  d-flex">
                                                             <p class="mb-0 fs-sm fw-medium">Sumilla:</p>
-                                                            <span style="    position: relative;
-                                                            bottom: 3px;
-                                                            margin-left: 4px;">
+                                                            <button class="btn btn-sumilla" data-bs-toggle="modal" data-bs-target="#sumilla">
                                                                 <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                     <path d="M6.01675 4.71675H7.31675V3.41675H6.01675M6.66675 11.8667C3.80025 11.8667 1.46675 9.53325 1.46675 6.66675C1.46675 3.80025 3.80025 1.46675 6.66675 1.46675C9.53325 1.46675 11.8667 3.80025 11.8667 6.66675C11.8667 9.53325 9.53325 11.8667 6.66675 11.8667ZM6.66675 0.166748C5.81316 0.166748 4.96792 0.334876 4.17931 0.661531C3.39069 0.988187 2.67413 1.46697 2.07055 2.07055C0.851567 3.28954 0.166748 4.94284 0.166748 6.66675C0.166748 8.39065 0.851567 10.044 2.07055 11.2629C2.67413 11.8665 3.39069 12.3453 4.17931 12.672C4.96792 12.9986 5.81316 13.1667 6.66675 13.1667C8.39065 13.1667 10.044 12.4819 11.2629 11.2629C12.4819 10.044 13.1667 8.39065 13.1667 6.66675C13.1667 5.81316 12.9986 4.96792 12.672 4.17931C12.3453 3.39069 11.8665 2.67413 11.2629 2.07055C10.6594 1.46697 9.94281 0.988187 9.15419 0.661531C8.36557 0.334876 7.52034 0.166748 6.66675 0.166748M6.01675 9.91675H7.31675V6.01675H6.01675V9.91675Z" fill="#FFC702"/>
-                                                                    </svg>
-                                                            </span>
+                                                                </svg>
+                                                            </button>
                                                                 
                                                         </div>
                                                         <p class="w-25 mb-0 fs-sm fw-medium text-center">Créditos:  2 </p>
                                                     </div>
                                                 </div>
-                                                <div class="d-flex asig-list mb-3">
+                                                <div class="d-flex asig-list mb-3 course-info-2">
                                                     <p class="text-uppercase fw-bolder w-50 fs-sm mb-0">EP001  - ESTADÍSTICA APLICADA A LA PSICOLOGÍA I
                                                     </p>
                                                     <div class="w-50 d-flex justify-content-end">
-                                                        <span class="icon-obli ms-3 fs-sm"> O </span>
+                                                        <button type="button" class="icon-com ms-3 fs-sm" data-bs-toggle="tooltip" data-bs-placement="right" title="Complementario" data-color="complementary"><span style="position: relative;
+                                                            left: -1px;">C</span>  </button>
                                                         <p class="w-25  mb-0 fs-sm fw-medium text-end">Ciclo:  II</p>
 
                                                         <p class="w-25 mb-0 fs-sm fw-medium text-center">Vez:  2</p>
                                                         <div class="w-25  d-flex">
                                                             <p class="mb-0 fs-sm fw-medium">Sumilla:</p>
-                                                            <span style="    position: relative;
-                                                            bottom: 3px;
-                                                            margin-left: 4px;">
+                                                            <button class="btn btn-sumilla" data-bs-toggle="modal" data-bs-target="#sumilla">
                                                                 <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                     <path d="M6.01675 4.71675H7.31675V3.41675H6.01675M6.66675 11.8667C3.80025 11.8667 1.46675 9.53325 1.46675 6.66675C1.46675 3.80025 3.80025 1.46675 6.66675 1.46675C9.53325 1.46675 11.8667 3.80025 11.8667 6.66675C11.8667 9.53325 9.53325 11.8667 6.66675 11.8667ZM6.66675 0.166748C5.81316 0.166748 4.96792 0.334876 4.17931 0.661531C3.39069 0.988187 2.67413 1.46697 2.07055 2.07055C0.851567 3.28954 0.166748 4.94284 0.166748 6.66675C0.166748 8.39065 0.851567 10.044 2.07055 11.2629C2.67413 11.8665 3.39069 12.3453 4.17931 12.672C4.96792 12.9986 5.81316 13.1667 6.66675 13.1667C8.39065 13.1667 10.044 12.4819 11.2629 11.2629C12.4819 10.044 13.1667 8.39065 13.1667 6.66675C13.1667 5.81316 12.9986 4.96792 12.672 4.17931C12.3453 3.39069 11.8665 2.67413 11.2629 2.07055C10.6594 1.46697 9.94281 0.988187 9.15419 0.661531C8.36557 0.334876 7.52034 0.166748 6.66675 0.166748M6.01675 9.91675H7.31675V6.01675H6.01675V9.91675Z" fill="#FFC702"/>
-                                                                    </svg>
-                                                            </span>
-                                                                
-                                                        </div>
-                                                        <p class="w-25 mb-0 fs-sm fw-medium text-center">Créditos:  2 </p>
-                                                    </div>
-                                                </div>
-                                                <div class="d-flex asig-list mb-3">
-                                                    <p class="text-uppercase fw-bolder w-50 fs-sm mb-0">EP001  - ESTADÍSTICA APLICADA A LA PSICOLOGÍA I
-                                                    </p>
-                                                    <div class="w-50 d-flex justify-content-end">
-                                                        <span class="icon-obli ms-3 fs-sm"> O </span>
-                                                        <p class="w-25  mb-0 fs-sm fw-medium text-end">Ciclo:  II</p>
-
-                                                        <p class="w-25 mb-0 fs-sm fw-medium text-center">Vez:  2</p>
-                                                        <div class="w-25  d-flex">
-                                                            <p class="mb-0 fs-sm fw-medium">Sumilla:</p>
-                                                            <span style="    position: relative;
-                                                            bottom: 3px;
-                                                            margin-left: 4px;">
-                                                                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <path d="M6.01675 4.71675H7.31675V3.41675H6.01675M6.66675 11.8667C3.80025 11.8667 1.46675 9.53325 1.46675 6.66675C1.46675 3.80025 3.80025 1.46675 6.66675 1.46675C9.53325 1.46675 11.8667 3.80025 11.8667 6.66675C11.8667 9.53325 9.53325 11.8667 6.66675 11.8667ZM6.66675 0.166748C5.81316 0.166748 4.96792 0.334876 4.17931 0.661531C3.39069 0.988187 2.67413 1.46697 2.07055 2.07055C0.851567 3.28954 0.166748 4.94284 0.166748 6.66675C0.166748 8.39065 0.851567 10.044 2.07055 11.2629C2.67413 11.8665 3.39069 12.3453 4.17931 12.672C4.96792 12.9986 5.81316 13.1667 6.66675 13.1667C8.39065 13.1667 10.044 12.4819 11.2629 11.2629C12.4819 10.044 13.1667 8.39065 13.1667 6.66675C13.1667 5.81316 12.9986 4.96792 12.672 4.17931C12.3453 3.39069 11.8665 2.67413 11.2629 2.07055C10.6594 1.46697 9.94281 0.988187 9.15419 0.661531C8.36557 0.334876 7.52034 0.166748 6.66675 0.166748M6.01675 9.91675H7.31675V6.01675H6.01675V9.91675Z" fill="#FFC702"/>
-                                                                    </svg>
-                                                            </span>
+                                                                </svg>
+                                                            </button>
                                                                 
                                                         </div>
                                                         <p class="w-25 mb-0 fs-sm fw-medium text-center">Créditos:  2 </p>
@@ -431,6 +476,24 @@
                     </div>
                 </div>
             </div>
+            
+        </div>
+    </div>
+    <!-- Modal sumilla -->
+    <div class="modal fade" id="sumilla" tabindex="-1" aria-labelledby="sumillaLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title text-uppercase" id="sumillaLabel">Sumilla</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+               <p class=" fw-medium w-25 mb-0">programa de Psicología</p>
+            </div>
+            <div class="modal-footer text-center">
+            <button type="button" class="btn btn-primary text-center" data-bs-dismiss="modal">Aceptar</button>
+            </div>
+        </div>
         </div>
     </div>
     <div class="footer mt-4">
@@ -440,6 +503,7 @@
     </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js" integrity="sha512-nnzkI2u2Dy6HMnzMIkh7CPd1KX445z38XIu4jG1jGw7x5tSL3VBjE44dY4ihMU1ijAQV930SPM12cCFrB18sVw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js" integrity="sha512-OvBgP9A2JBgiRad/mM36mkzXSXaJE9BEIENnVEmeZdITvwT09xnxLtT4twkCa8m/loMbPHsvPl0T8lRGVBwjlQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="../../js/main.js"></script>
 </body>
