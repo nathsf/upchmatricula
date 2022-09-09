@@ -16,6 +16,7 @@
     color: #2f2f2f;
     @media(max-width:767px){ 
         font-size: 13px;
+        margin-bottom:0.5rem;
         svg {
             height: 14px;
             width: 14px;
@@ -149,7 +150,42 @@
     
 }
 
+.modal-groups {
+    .table {
+        margin-bottom: 0;
+        font-size: 14px;
+    }
+    .table>:not(:first-child) {
+        border-top: 1px solid #D9D9D9;
+    }
+    .table-light{
+        background: #F6F6F6;
+        border-top: 1px solid #D9D9D9;
+    }
+     .table>:not(caption)>*>* {
+        background-color: var(--bs-table-bg);
+        border-bottom-width: 0;
+     }
+}
+.group-list {
+    margin-top: 1rem;
+    border: 1px solid #D9D9D9;
+    border-radius: 10px;
+}
 
+.asign-group-title {
+    p {
+        margin-bottom: 0;
+        padding: 0.5rem 1rem;
+        border-bottom: 1px solid #D9D9D9;
+        background: #f8f9fa;
+        border-start-start-radius: 10px;
+        border-start-end-radius: 10px;
+    }
+}
+.asign-group-content{
+    padding: 0.5rem 1rem;
+}
 @media (max-width: 767px) {
     .site-home{
         .order-wrapper { display: flex; flex-flow: column; }

@@ -23,6 +23,58 @@ jQuery(function($) {
   $("button").hover(function() {
     $(".tooltip").attr('data-color', $(this).data("color"));
   });
+  $("button.change-btn").on('click', function(){
+      $('#myPopover').hide();
+  });
+  $('#datepicker').datepicker();
+
+  $('.switch-input').on('click', function () {
+    $('.seguro').toggleClass('switch_off');
+    if($('.seguro').hasClass('switch_off')) {
+        $('.seguro').hide();
+        $('.no_seguro').show();
+    }        
+    else {
+        $('.no_seguro').hide();
+        $('.seguro').show();
+        if( $('.upch-seguro').is(':checked') ){
+          $('div.form-seguro').hide();
+      }
+    }
+});
+$('.custom-radio.form-seguro').on('click', function() {
+  $('div.form-seguro').show();
+})
+$('.custom-radio.upch-seguro').on('click', function() {
+  $('div.form-seguro').hide();
+})
+
+
+$("[type=file]").on("change", function () {
+  var file = this.files[0];
+  var formdata = new FormData();
+  formdata.append("file", file);
+  
+  if (file.type != "") {
+    $("#type span").empty().append(file.type);
+  } else {
+    $("#type span").empty().append("Unknown");
+  }
+  if (file.name.length >= 30) {
+    $("label.file").text("Archivo : " + file.name.substr(0, 30) + "..");
+  } else {
+    $("label.file").text("Archivo : " + file.name);
+  }
+
+  var ext = $("#file").val().split(".").pop().toLowerCase();
+  if ($.inArray(ext, ["php", "html"]) !== -1) {
+    $("#info").hide();
+    $("label.file").text("Seleccionar Archivo");
+    $("#file").val("");
+    alert("This file extension is not allowed!");
+  }
+});
+
 
 });
 
@@ -53,4 +105,5 @@ setInterval(function() {
     $('#clock-wrapper').html(svg + ' ' + ((''+day).length<2 ? '0' : '') + day + '/'  + ((''+month).length<2 ? '0' : '') + month + '/' + date.getFullYear() + ' &nbsp; ' + currentHours + ":" + currentMinutes + ":" + currentSeconds + " " + timeOfDay
         );
 }, 500);
+
 

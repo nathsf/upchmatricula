@@ -38,17 +38,17 @@
     height: 21px;
     }
     .crop.crop-round-40 {
-        width: 35px;
-        height: 35px;
+        width: 30px;
+        height: 30px;
         border-radius: 100%;
-        margin-top: 0;
+        margin-top: 5px;
         background: var(--upch-secondary);
         border: 1px solid var(--upch-secondary)!important;
         span {
             color: white;
     position: relative;
-    left: 9px;
-    top: 4px;
+    left: 7px;
+    top: 2px;
     font-weight: 500;
     font-size: 14px;
         }
@@ -59,11 +59,82 @@
     
     .noti {
         position: absolute;
-        top: 0px;
-        left: 26px;
-        font-size: 9px;
-        padding: 0.25em 0.45em;
+        top: 3px;
+        left: 23px;
+        font-size: 8px;
+        padding: 0.15em 0.45em;
         line-height: 9px;
         font-weight: 400;
+    }
+}
+
+.btn-choosen {
+    padding: 0;
+    i {
+        font-size: 22px;
+        vertical-align: middle;
+        position: relative;
+        top: 6px;
+        left: -4px;
+        color: var(--upch-secondary);
+    }
+    span {
+        line-height: 0.4;
+        font-size: 12.5px;
+        p {
+            font-size: 13px;
+            margin-left: 22px;
+        }
+    }
+}
+
+a.stay-btn {
+    font-size: 13px;
+    margin-right: 1.5rem;
+
+}
+button.change-btn {
+    background-color: var(--upch-dark);
+    color: white;
+    font-size: 13px;
+    border-radius: 5px;
+    padding: 0.25rem 0.9rem;
+    text-decoration: none;
+
+}
+#myPopover{
+    display: none;
+}
+.popover {
+    .modal-dialog{
+        padding: 11px;
+    }
+}
+
+.popover-default .popover-title {
+    margin-top: 0.5rem;
+    color: #000!important;
+    background-color: #ffffff!important;
+    font-size: 14px;
+    font-weight: 500;
+}
+.popover-content {
+    p{
+        line-height: 1.4;
+    }
+}
+
+.popover-footer {
+    padding: 0.5rem 4px!important;
+    background-color: #ffffff!important;
+}
+
+.navbar-light .navbar-toggler {
+    border-color: white;
+}
+
+@media(max-width:767px){
+    .programm-display, .noti-display, .user-display {
+        display: none!important;
     }
 }

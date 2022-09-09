@@ -8,6 +8,57 @@
     }
 }
 
+.no_seguro {
+    display:none;
+   
+  }
+  
+    div.mx-auto.no_seguro {
+        button {
+            @media(max-width:767px){
+                font-size: 14px;
+            }
+        }
+        
+    }
+
+  div.form-seguro {
+    display: none;
+    margin-bottom: 5rem;
+    .d-flex{
+        @media(max-width:767px){
+            display: block!important;
+            label.file {
+                width: auto;
+                max-width: 270px;
+            }
+            
+        }
+    }
+  }
+
+  .accordion-schedule {
+    .accordion-item {
+        background-color: #fff;
+        border: 1px solid rgba(0,0,0,.125)!important;
+        margin-bottom: 12px;
+        border-radius: 6px!important;
+
+        .accordion-button {
+            border-radius: 6px;
+            padding: 0.5rem 1.25rem;
+
+        }
+    }
+    .accordion-item:first-of-type .accordion-button {
+        border-top-left-radius: 6px!important;
+        border-top-right-radius: 6px!important;
+    }    
+    .accordion-item:last-of-type .accordion-button {
+        border-top-left-radius: 6px!important;
+        border-top-right-radius: 6px!important;
+    }
+  }
 @media(max-width:767px) {
     .steps-container {
         .card {
@@ -39,6 +90,15 @@
                         margin-bottom: 1.5rem;
                         margin-top: 0.5rem;
                     }
+                    .form-check-inline {
+                        .form-check-input {
+                            position: absolute;
+                        }
+                        .form-check-label {
+                            margin-left: 1.5rem;
+                        }
+                    }
+                    
                 }
             }
         }

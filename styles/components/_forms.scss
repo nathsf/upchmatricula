@@ -166,3 +166,60 @@
     background: #174AE3;
 
   }
+
+  label.file {
+    display:block;
+    margin: 0;
+    padding: 5px 1.5rem;
+    width: auto;
+    max-width: 400px;
+    height: 31px;
+    background-color: white;
+    border: 1px solid #828282;
+    color: black;
+    font-size: 13px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-border-radius: 5px;
+    -webkit-transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -ms-transition: 0.2s ease all;
+    -o-transition: 0.2s ease all;
+    transition: 0.2s ease all;
+    svg {
+      height: 12px;
+    width: 12px;
+    position: relative;
+    top: -2px;
+    }
+  }
+  
+  label.file:hover {
+    background:#ADADAD;
+  }
+  
+  [type=file]{
+    display:none;
+  }
+  
+  .date {
+    &:focus {   
+      box-shadow: none;
+      outline: none;
+    }
+    .input-group-append {
+      height: 30px;
+    }
+    .input-group-text{
+      border-bottom-left-radius: 0;
+      padding: 0 0.5rem;
+      border-top-left-radius: 0;
+      padding-top: 2px;
+      height: 31px;
+    }
+  }
+ 

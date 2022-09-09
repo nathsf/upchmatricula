@@ -21,4 +21,23 @@
 .tooltip[data-color=complementary] .tooltip-arrow:before {
 	border-right-color: #F6CE00;
 }
+
+.tooltip[data-color=white] .tooltip-inner {
+	background-color: white;
+	color: black;
+	box-shadow: 0px 0px 4px 1px rgb(205 205 205);
+	opacity: 1!important;
+	max-width:200px;
+	height: 120px;
+	top: 50px;
+}
   
+.tooltip[data-color=white] .tooltip-arrow:before {
+	border-bottom-color: white;
+	
+}
+  
+
+.tooltip.show {
+	opacity: 1;
+  }
