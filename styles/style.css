@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap");
 @import url(../assets/icons/font-awesome/css/font-awesome.min.css);
 @import url(../assets/icons/font-awesome/css/all.css);
@@ -948,6 +949,81 @@ label.file:hover {
   height: 31px;
 }
 
+.cal-wrapper {
+  background: #fff;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.fc-timegrid-slot-label {
+  font-weight: 800;
+}
+
+.fc-timegrid-slots table tr {
+  transition: all 0.15s ease;
+}
+
+.fc-timegrid-slots table tr :hover {
+  background: #fffae2 !important;
+  transition: all 0.15s ease;
+}
+
+.fc-timegrid-slot-label[data-time*=":15"],
+.fc-timegrid-slot-label[data-time*=":30"],
+.fc-timegrid-slot-label[data-time*=":45"] {
+  font-size: 80%;
+  opacity: 0.5;
+  font-weight: 400;
+}
+
+.fc .fc-highlight {
+  background: #f16621 !important;
+}
+
+.fc-day-today {
+  background-color: #fffae2;
+}
+
+.fc-day-past {
+  background-color: #f7edee;
+}
+
+th.fc-day-today:before {
+  content: "Today";
+  font-size: 80%;
+  line-height: 1;
+  text-transform: uppercase;
+  opacity: 0.6;
+}
+
+th.fc-day-past:before {
+  content: "Past";
+  font-size: 80%;
+  line-height: 1;
+  text-transform: uppercase;
+  opacity: 0.6;
+}
+
+th.fc-day-future:before {
+  content: " ";
+  font-size: 80%;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.fc-timegrid-axis-frame:after {
+  content: "V";
+  font-family: "Times";
+  line-height: 36px;
+  text-align: center;
+  display: block;
+  width: 100%;
+  font-size: 24px;
+  color: #f16621;
+}
+
 .vh-95 {
   height: 95vh;
 }
@@ -1454,6 +1530,9 @@ div.form-seguro {
   }
 }
 
+.accordion-schedule .accordion-body {
+  padding: 0;
+}
 .accordion-schedule .accordion-item {
   background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.125) !important;
@@ -1461,8 +1540,31 @@ div.form-seguro {
   border-radius: 6px !important;
 }
 .accordion-schedule .accordion-item .accordion-button {
+  font-family: var(--font-upch) !important;
+  font-weight: 500;
   border-radius: 6px;
-  padding: 0.5rem 1.25rem;
+  padding: 0.5rem 1rem;
+  font-size: 13px;
+}
+.accordion-schedule .accordion-item .accordion-button:focus {
+  z-index: 3;
+  border-color: #fe8686;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.1098039216);
+}
+.accordion-schedule .accordion-item .title-group {
+  padding: 0.38rem 1rem 0.38rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125) !important;
+  background: rgba(239, 239, 239, 0.6196078431);
+}
+.accordion-schedule .accordion-item .title-group p, .accordion-schedule .accordion-item .title-group span {
+  font-size: 13.5px;
+}
+.accordion-schedule .accordion-item .item-group {
+  padding: 1rem;
+}
+.accordion-schedule .accordion-item .item-group p, .accordion-schedule .accordion-item .item-group span {
+  font-size: 13.5px;
 }
 .accordion-schedule .accordion-item:first-of-type .accordion-button {
   border-top-left-radius: 6px !important;
@@ -1471,6 +1573,18 @@ div.form-seguro {
 .accordion-schedule .accordion-item:last-of-type .accordion-button {
   border-top-left-radius: 6px !important;
   border-top-right-radius: 6px !important;
+}
+.accordion-schedule .accordion-button:not(.collapsed) {
+  color: #000000;
+  background-color: rgba(176, 19, 51, 0.05) !important;
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.13) !important;
+  border: 1px solid #B01333 !important;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.accordion-schedule .accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%230c63e4' style='&%2310; fill: %23B01333;&%2310;'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E") !important;
+  transform: rotate(-180deg);
 }
 
 @media (max-width: 767px) {
