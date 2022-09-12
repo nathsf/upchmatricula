@@ -1,5 +1,13 @@
 .cal-wrapper{
-  background:#fff;max-width:1200px;width:100%;margin:0 auto;padding:20px;border-radius:10px;
+  background:#fff;max-width:1200px;width:100%;margin:0 auto;padding:0 0 20px;border-radius:10px;
+}
+#calendar {
+  font-family: var(--font-upch)!important;
+
+}
+
+.fc-scrollgrid {
+  border-radius: 8px;
 }
 .fc-timegrid-slot-label {
       font-weight: 800;
@@ -11,7 +19,7 @@
     
     .fc-timegrid-slots table tr{
         & :hover {
-            background: #fffae2 !important;
+            background: rgba(176, 19, 51, 0.05)  !important;
             transition: all .15s ease;
           }
     }
@@ -34,7 +42,7 @@
     }
     
     .fc-day-today {
-      background-color: #fffae2;
+      background-color: rgba(176, 19, 51, 0.05) ;
     }
     
     .fc-day-past {
@@ -93,4 +101,41 @@
   text-transform: uppercase;
   font-weight: 600;
   text-decoration: none;
+}
+
+.fc .fc-button-primary:disabled {
+  color: var(--upch-primary);
+  background-color: var(--upch-red-light);
+  border-color: var(--upch-primary);
+}
+
+.fc .fc-button-primary{
+  color: var(--upch-primary);
+
+  background-color: var(--upch-red-light);
+  border-color: var(--upch-primary);
+  &:hover {
+    color: var(--upch-primary);
+    background-color: var(--upch-red-light);
+    border-color: var(--upch-primary);
+  }
+}
+
+.fc .fc-button-primary:not(:disabled).fc-button-active, .fc .fc-button-primary:not(:disabled):active {
+  color: #fff;
+  background-color: var(--upch-primary);
+  border-color: var(--upch-primary);
+}
+
+.fc .fc-button {
+  padding: 0em 0.55em 0.2em;
+    border-radius: 0.45em;
+}
+
+.fc .fc-button .fc-icon {
+  font-size: 1.3em;
+}
+
+.fc-col-header-cell, .fc-timegrid-axis {
+  border: 1px solid var(--upch-primary);
 }

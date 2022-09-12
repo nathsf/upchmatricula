@@ -37,7 +37,7 @@
     }
   }
 
-  .accordion-schedule {
+  .accordion-schedule, .accordion-payment {
     .accordion-body {
         padding: 0;
     }
@@ -48,16 +48,29 @@
         border-radius: 6px!important;
 
         .accordion-button {
-            font-family: var(--font-upch)!important;
-            font-weight: 500;
+           
+           
             border-radius: 6px;
             padding: 0.5rem 1rem;
-            font-size: 13px;
+            i {
+                color: #7e7e7e;
+            }
             &:focus {
                 z-index: 3;
                 border-color: #fe8686;
                 outline: 0;
                 box-shadow: 0 0 0 0.25rem #dc35451c;
+            }
+            p {
+                font-size: 13px;
+                font-weight: 500;
+                font-family: var(--font-upch)!important;
+                width: 86%;
+            }
+            &:after {
+                width: 1.1rem;
+                height: 1rem;
+                background-size: 1.1rem;
             }
 
         }
@@ -87,15 +100,26 @@
     }
     .accordion-button:not(.collapsed) {
         color: #000000;
-        background-color: rgb(176 19 51 / 5%)!important;
+        font-weight: 500;
+        background-color: rgb(176 19 51 / 1%)!important;
         box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%)!important;
-        border: 1px solid #B01333!important;
+        border: 1px solid var(--upch-primary)!important;
         border-bottom-right-radius: 0;
         border-bottom-left-radius: 0;
+        i {
+            color: var(--upch-primary);
+        }
     }
     .accordion-button:not(.collapsed)::after {
         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%230c63e4' style='&%2310; fill: %23B01333;&%2310;'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E")!important;
         transform: rotate(-180deg);
+    }
+  }
+
+  .accordion-payment {
+    .accordion-button {
+        line-height: 0;
+        padding: 1rem 1.2rem!important;
     }
   }
 @media(max-width:767px) {
@@ -115,11 +139,11 @@
                     padding: 0;
                     .form-body {
                         width: 100%;
-                        padding: 2rem;
+                        padding: 1.2rem;
                         border-radius: 0.45rem;
                         margin-bottom: 2rem;
                     }
-                    .btn.next {
+                    .btn.next, .btn.siguiente {
                         width: 100%;
                         margin-bottom: 1rem;
                     }

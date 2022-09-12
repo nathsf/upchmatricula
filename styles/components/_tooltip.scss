@@ -1,3 +1,36 @@
+.icon-obli, .icon-ele, .icon-com{
+	position: relative;
+    top: 5px;
+    height: 16px;
+    font-size: 12px !important;
+    width: 17px;
+    line-height: 0;
+    text-align: center;
+    border-radius: 100%;
+    color: white;
+    padding: 0 !important;
+	font-family: var(--font-upch);
+	span {		
+		position: relative;
+		left: 0px;
+		top: -1px;
+		vertical-align: initial;
+	}
+}
+.icon-obli{
+	background: var(--upch-web-required);
+    border: 1px solid var(--upch-web-required);
+	
+}
+.icon-ele{
+	background: var(--upch-web-elective);
+    border: 1px solid var(--upch-web-elective);
+}
+.icon-com {
+	border: 1px solid var(--upch-web-complementary);
+	background: var(--upch-web-complementary);
+}
+
 .tooltip[data-color=required] .tooltip-inner {
 	background-color: #FF5B1F;
   }

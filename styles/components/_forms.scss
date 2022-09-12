@@ -33,7 +33,7 @@
     }
 }
 
-.btn.next{
+.btn.next, .btn.siguiente{
     border-radius: 10px;
     width: 200px;
 }
@@ -223,3 +223,9 @@
     }
   }
  
+  .pago-body {
+    .container-checkbox {
+      margin-bottom: 18px;
+      left: 50%;
+    }
+  }
