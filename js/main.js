@@ -23,9 +23,15 @@ jQuery(function($) {
   $("button").hover(function() {
     $(".tooltip").attr('data-color', $(this).data("color"));
   });
+
+  $("span").hover(function() {
+    $(".tooltip").attr('data-color', $(this).data("color"));
+  });
+
   $("button.change-btn").on('click', function(){
       $('#myPopover').hide();
   });
+  
   $('#datepicker').datepicker();
 
   $('.switch-input').on('click', function () {

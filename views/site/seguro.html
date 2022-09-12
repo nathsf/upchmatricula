@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Matricula - Inicio</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css" integrity="sha512-rRQtF4V2wtAvXsou4iUAs2kXHi3Lj9NE7xJR77DE7GHsxgY9RTWy93dzMXgDIG8ToiRTD45VsDNdTiUagOFeZA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" integrity="sha512-GQGU0fMMi238uA+a/bdWJfpUGKUkBdgfFdgBm72SUQ6BeyWjoY/ton0tEjH+OSH9iP4Dfh+7HM0I9f5eR0L/4w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.9.0/main.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../../styles/plugins/bootstrap-popover-x.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../../styles/style.css"/>
+    
+  </head>
+<body>
+    <div id="main-wrapper">
+    
+        <div class="header">
+            <nav class="navbar navbar-light navbar-expand-md bg-white justify-content-center">
+                <div class="container">
+                    <a href="/" class="navbar-brand d-flex w-50 me-auto">
+                        <svg width="153" height="45" viewBox="0 0 153 45" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <path d="M50.258 20.168C49.18 20.168 48.242 20 47.444 19.664C46.66 19.328 46.051 18.852 45.617 18.236C45.197 17.62 44.987 16.899 44.987 16.073V15.464C44.987 15.324 45.057 15.254 45.197 15.254H46.73C46.87 15.254 46.94 15.324 46.94 15.464V15.968C46.94 16.682 47.248 17.27 47.864 17.732C48.48 18.194 49.327 18.425 50.405 18.425C51.371 18.425 52.099 18.222 52.589 17.816C53.079 17.41 53.324 16.878 53.324 16.22C53.324 15.786 53.198 15.415 52.946 15.107C52.694 14.799 52.323 14.519 51.833 14.267C51.357 14.001 50.657 13.686 49.733 13.322C48.711 12.93 47.899 12.573 47.297 12.251C46.709 11.929 46.219 11.509 45.827 10.991C45.435 10.459 45.239 9.794 45.239 8.996C45.239 7.792 45.666 6.847 46.52 6.161C47.388 5.475 48.557 5.132 50.027 5.132C51.063 5.132 51.973 5.307 52.757 5.657C53.541 6.007 54.143 6.497 54.563 7.127C54.997 7.757 55.214 8.485 55.214 9.311V9.731C55.214 9.871 55.144 9.941 55.004 9.941H53.429C53.289 9.941 53.219 9.871 53.219 9.731V9.416C53.219 8.688 52.925 8.086 52.337 7.61C51.763 7.12 50.965 6.875 49.943 6.875C49.075 6.875 48.403 7.057 47.927 7.421C47.451 7.771 47.213 8.282 47.213 8.954C47.213 9.416 47.332 9.794 47.57 10.088C47.808 10.382 48.158 10.648 48.62 10.886C49.096 11.11 49.817 11.404 50.783 11.768C51.777 12.16 52.582 12.524 53.198 12.86C53.814 13.182 54.325 13.616 54.731 14.162C55.137 14.694 55.34 15.359 55.34 16.157C55.34 17.389 54.885 18.369 53.975 19.097C53.079 19.811 51.84 20.168 50.258 20.168ZM58.2777 20C58.1377 20 58.0677 19.93 58.0677 19.79V5.51C58.0677 5.37 58.1377 5.3 58.2777 5.3H59.8737C60.0137 5.3 60.0837 5.37 60.0837 5.51V19.79C60.0837 19.93 60.0137 20 59.8737 20H58.2777ZM72.8678 5.3C73.0078 5.3 73.0778 5.37 73.0778 5.51V6.854C73.0778 6.994 73.0078 7.064 72.8678 7.064H68.8358C68.7798 7.064 68.7518 7.092 68.7518 7.148V19.79C68.7518 19.93 68.6818 20 68.5418 20H66.9458C66.8058 20 66.7358 19.93 66.7358 19.79V7.148C66.7358 7.092 66.7078 7.064 66.6518 7.064H62.8088C62.6688 7.064 62.5988 6.994 62.5988 6.854V5.51C62.5988 5.37 62.6688 5.3 62.8088 5.3H72.8678ZM85.3464 6.833C85.3464 6.973 85.2764 7.043 85.1364 7.043H77.6814C77.6254 7.043 77.5974 7.071 77.5974 7.127V11.642C77.5974 11.698 77.6254 11.726 77.6814 11.726H82.8054C82.9454 11.726 83.0154 11.796 83.0154 11.936V13.259C83.0154 13.399 82.9454 13.469 82.8054 13.469H77.6814C77.6254 13.469 77.5974 13.497 77.5974 13.553V18.173C77.5974 18.229 77.6254 18.257 77.6814 18.257H85.1364C85.2764 18.257 85.3464 18.327 85.3464 18.467V19.79C85.3464 19.93 85.2764 20 85.1364 20H75.7914C75.6514 20 75.5814 19.93 75.5814 19.79V5.51C75.5814 5.37 75.6514 5.3 75.7914 5.3H85.1364C85.2764 5.3 85.3464 5.37 85.3464 5.51V6.833ZM92.5463 20C92.4063 20 92.3363 19.93 92.3363 19.79V5.51C92.3363 5.37 92.4063 5.3 92.5463 5.3H97.6283C99.0843 5.3 100.246 5.685 101.114 6.455C101.982 7.211 102.416 8.226 102.416 9.5V15.8C102.416 17.074 101.982 18.096 101.114 18.866C100.246 19.622 99.0843 20 97.6283 20H92.5463ZM94.3523 18.173C94.3523 18.229 94.3803 18.257 94.4363 18.257H97.7123C98.5243 18.257 99.1683 18.012 99.6443 17.522C100.134 17.018 100.386 16.346 100.4 15.506V9.794C100.4 8.954 100.155 8.289 99.6653 7.799C99.1893 7.295 98.5383 7.043 97.7123 7.043H94.4363C94.3803 7.043 94.3523 7.071 94.3523 7.127V18.173ZM115.083 6.833C115.083 6.973 115.013 7.043 114.873 7.043H107.418C107.362 7.043 107.334 7.071 107.334 7.127V11.642C107.334 11.698 107.362 11.726 107.418 11.726H112.542C112.682 11.726 112.752 11.796 112.752 11.936V13.259C112.752 13.399 112.682 13.469 112.542 13.469H107.418C107.362 13.469 107.334 13.497 107.334 13.553V18.173C107.334 18.229 107.362 18.257 107.418 18.257H114.873C115.013 18.257 115.083 18.327 115.083 18.467V19.79C115.083 19.93 115.013 20 114.873 20H105.528C105.388 20 105.318 19.93 105.318 19.79V5.51C105.318 5.37 105.388 5.3 105.528 5.3H114.873C115.013 5.3 115.083 5.37 115.083 5.51V6.833ZM55.235 25.426C55.305 25.342 55.389 25.3 55.487 25.3H57.083C57.223 25.3 57.293 25.37 57.293 25.51V39.79C57.293 39.93 57.223 40 57.083 40H55.487C55.347 40 55.277 39.93 55.277 39.79V29.038C55.277 28.996 55.263 28.968 55.235 28.954C55.207 28.94 55.186 28.954 55.172 28.996L52.169 33.574C52.113 33.658 52.029 33.7 51.917 33.7H51.119C51.021 33.7 50.937 33.658 50.867 33.574L47.843 29.038C47.829 28.996 47.808 28.982 47.78 28.996C47.752 29.01 47.738 29.038 47.738 29.08V39.79C47.738 39.93 47.668 40 47.528 40H45.932C45.792 40 45.722 39.93 45.722 39.79V25.51C45.722 25.37 45.792 25.3 45.932 25.3H47.528C47.64 25.3 47.724 25.342 47.78 25.426L51.455 30.928C51.469 30.942 51.49 30.949 51.518 30.949C51.546 30.949 51.567 30.942 51.581 30.928L55.235 25.426ZM69.6587 40C69.5327 40 69.4487 39.944 69.4067 39.832L68.6507 37.375C68.6367 37.333 68.6087 37.312 68.5667 37.312H62.6657C62.6237 37.312 62.5957 37.333 62.5817 37.375L61.8257 39.832C61.7837 39.944 61.6997 40 61.5737 40H59.8727C59.7187 40 59.6627 39.923 59.7047 39.769L64.3037 25.468C64.3457 25.356 64.4297 25.3 64.5557 25.3H66.6557C66.7817 25.3 66.8657 25.356 66.9077 25.468L71.5487 39.769L71.5697 39.853C71.5697 39.951 71.5067 40 71.3807 40H69.6587ZM63.1067 35.611C63.0927 35.639 63.0927 35.667 63.1067 35.695C63.1347 35.709 63.1627 35.716 63.1907 35.716H68.0207C68.0487 35.716 68.0697 35.709 68.0837 35.695C68.1117 35.667 68.1187 35.639 68.1047 35.611L65.6687 27.82C65.6547 27.792 65.6337 27.778 65.6057 27.778C65.5777 27.778 65.5567 27.792 65.5427 27.82L63.1067 35.611ZM81.7887 25.3C81.9287 25.3 81.9987 25.37 81.9987 25.51V26.854C81.9987 26.994 81.9287 27.064 81.7887 27.064H77.7567C77.7007 27.064 77.6727 27.092 77.6727 27.148V39.79C77.6727 39.93 77.6027 40 77.4627 40H75.8667C75.7267 40 75.6567 39.93 75.6567 39.79V27.148C75.6567 27.092 75.6287 27.064 75.5727 27.064H71.7297C71.5897 27.064 71.5197 26.994 71.5197 26.854V25.51C71.5197 25.37 71.5897 25.3 71.7297 25.3H81.7887ZM92.8813 40C92.7693 40 92.6923 39.951 92.6503 39.853L89.7103 33.574C89.6963 33.532 89.6683 33.511 89.6263 33.511H86.6023C86.5463 33.511 86.5183 33.539 86.5183 33.595V39.79C86.5183 39.93 86.4483 40 86.3083 40H84.7123C84.5723 40 84.5023 39.93 84.5023 39.79V25.51C84.5023 25.37 84.5723 25.3 84.7123 25.3H90.3613C91.2013 25.3 91.9363 25.475 92.5663 25.825C93.2103 26.175 93.7073 26.665 94.0573 27.295C94.4073 27.925 94.5823 28.653 94.5823 29.479C94.5823 30.459 94.3233 31.292 93.8053 31.978C93.3013 32.65 92.5943 33.105 91.6843 33.343C91.6283 33.371 91.6143 33.406 91.6423 33.448L94.6873 39.748C94.7013 39.776 94.7083 39.811 94.7083 39.853C94.7083 39.951 94.6523 40 94.5403 40H92.8813ZM86.6023 27.043C86.5463 27.043 86.5183 27.071 86.5183 27.127V31.831C86.5183 31.887 86.5463 31.915 86.6023 31.915H90.1093C90.8513 31.915 91.4463 31.698 91.8943 31.264C92.3423 30.816 92.5663 30.228 92.5663 29.5C92.5663 28.758 92.3423 28.163 91.8943 27.715C91.4463 27.267 90.8513 27.043 90.1093 27.043H86.6023ZM97.5912 40C97.4512 40 97.3812 39.93 97.3812 39.79V25.51C97.3812 25.37 97.4512 25.3 97.5912 25.3H99.1872C99.3272 25.3 99.3972 25.37 99.3972 25.51V39.79C99.3972 39.93 99.3272 40 99.1872 40H97.5912ZM107.561 40.189C106.553 40.189 105.657 39.993 104.873 39.601C104.103 39.195 103.501 38.628 103.067 37.9C102.647 37.158 102.437 36.311 102.437 35.359V29.92C102.437 28.968 102.647 28.135 103.067 27.421C103.501 26.693 104.103 26.133 104.873 25.741C105.657 25.335 106.553 25.132 107.561 25.132C108.569 25.132 109.458 25.328 110.228 25.72C110.998 26.098 111.593 26.637 112.013 27.337C112.447 28.037 112.664 28.849 112.664 29.773V29.794C112.664 29.864 112.643 29.92 112.601 29.962C112.559 30.004 112.51 30.025 112.454 30.025L110.858 30.109C110.718 30.109 110.648 30.046 110.648 29.92V29.857C110.648 28.961 110.368 28.24 109.808 27.694C109.248 27.148 108.499 26.875 107.561 26.875C106.623 26.875 105.867 27.148 105.293 27.694C104.733 28.24 104.453 28.961 104.453 29.857V35.443C104.453 36.339 104.733 37.06 105.293 37.606C105.867 38.152 106.623 38.425 107.561 38.425C108.499 38.425 109.248 38.152 109.808 37.606C110.368 37.06 110.648 36.339 110.648 35.443V35.401C110.648 35.275 110.718 35.212 110.858 35.212L112.454 35.296C112.594 35.296 112.664 35.366 112.664 35.506C112.664 36.43 112.447 37.249 112.013 37.963C111.593 38.663 110.998 39.209 110.228 39.601C109.458 39.993 108.569 40.189 107.561 40.189ZM120.611 40.168C119.589 40.168 118.686 39.972 117.902 39.58C117.132 39.174 116.53 38.607 116.096 37.879C115.662 37.137 115.445 36.29 115.445 35.338V25.51C115.445 25.37 115.515 25.3 115.655 25.3H117.251C117.391 25.3 117.461 25.37 117.461 25.51V35.38C117.461 36.29 117.748 37.025 118.322 37.585C118.91 38.145 119.673 38.425 120.611 38.425C121.549 38.425 122.305 38.145 122.879 37.585C123.453 37.025 123.74 36.29 123.74 35.38V25.51C123.74 25.37 123.81 25.3 123.95 25.3H125.546C125.686 25.3 125.756 25.37 125.756 25.51V35.338C125.756 36.29 125.539 37.137 125.105 37.879C124.685 38.607 124.083 39.174 123.299 39.58C122.529 39.972 121.633 40.168 120.611 40.168ZM129.255 40C129.115 40 129.045 39.93 129.045 39.79V25.51C129.045 25.37 129.115 25.3 129.255 25.3H130.851C130.991 25.3 131.061 25.37 131.061 25.51V38.173C131.061 38.229 131.089 38.257 131.145 38.257H138.39C138.53 38.257 138.6 38.327 138.6 38.467V39.79C138.6 39.93 138.53 40 138.39 40H129.255ZM150.644 40C150.518 40 150.434 39.944 150.392 39.832L149.636 37.375C149.622 37.333 149.594 37.312 149.552 37.312H143.651C143.609 37.312 143.581 37.333 143.567 37.375L142.811 39.832C142.769 39.944 142.685 40 142.559 40H140.858C140.704 40 140.648 39.923 140.69 39.769L145.289 25.468C145.331 25.356 145.415 25.3 145.541 25.3H147.641C147.767 25.3 147.851 25.356 147.893 25.468L152.534 39.769L152.555 39.853C152.555 39.951 152.492 40 152.366 40H150.644ZM144.092 35.611C144.078 35.639 144.078 35.667 144.092 35.695C144.12 35.709 144.148 35.716 144.176 35.716H149.006C149.034 35.716 149.055 35.709 149.069 35.695C149.097 35.667 149.104 35.639 149.09 35.611L146.654 27.82C146.64 27.792 146.619 27.778 146.591 27.778C146.563 27.778 146.542 27.792 146.528 27.82L144.092 35.611Z" fill="black"/>
+                        <rect width="32" height="45" fill="url(#pattern0)"/>
+                        <defs>
+                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                        <use xlink:href="#image0_144_132" transform="scale(0.03125 0.0222222)"/>
+                        </pattern>
+                        <image id="image0_144_132" width="32" height="45" xlink:href="data:image/png;base64,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"/>
+                        </defs>
+                        </svg>
+                    </a>
+                    
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsingNavbar3">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+                    <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
+                       
+                        <ul class="nav navbar-nav ms-auto w-100 justify-content-end">
+                            <li class="nav-item d-block d-sm-block d-md-none">
+                                <a class="nav-link" href="#">Inicio</a>
+                            </li>
+                            <li class="nav-item d-block d-sm-block d-md-none">
+                                <a class="nav-link" href="#">Horario</a>
+                            </li>
+                            <li class="nav-item me-3">
+                                <a class=" nav-link dropdown-toggle icon-noti   waves-effect waves-dark position-relative
+                           " href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bell"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
+                        <span class="badge rounded-pill bg-warning noti">3</span>
+                        </a>
+                            </li>
+                            <li class="nav-item dropdown d-flex">
+                                <div class="border border-2 border-bs-gray-200  crop crop-round-40">
+                                    <!-- <img src="../../assets/profile.png" alt="user" class="profile-pic"> -->
+                                <span >ST</span>
+                                </div>
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Santiago Tavares Castro
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarScrollingDropdown">
+                                    <li><a class="dropdown-item" href="#">Item 1</a></li>
+                                    <li><a class="dropdown-item" href="#">Item 2</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="../login/index.html">Cerrar sesión</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <nav class="navbar navbar-dark d-sm-none d-md-block bg-primary-upch p-0">
+                <div class="container">
+                    <ul class="nav navbar-nav ms-auto w-100 justify-content-start d-inline-block" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item d-inline-block">
+                          <a class="nav-link active" aria-current="page" href="#"><i class="zmdi zmdi-home"></i
+                            > Inicio</a>
+                        </li>
+                        <li class="nav-item d-inline-block">
+                          <a class="nav-link" href="#"><svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.25 9.20837H10.375V11.2059L12.205 12.2046L11.6425 13.1255L9.25 11.8221V9.20837ZM12.25 5.66671H1.75V13.4584H5.2525C4.93 12.8138 4.75 12.0913 4.75 11.3334C4.75 10.0183 5.30312 8.75717 6.28769 7.8273C7.27226 6.89744 8.60761 6.37504 10 6.37504C10.8025 6.37504 11.5675 6.54504 12.25 6.84962V5.66671ZM1.75 14.875C0.9175 14.875 0.25 14.2375 0.25 13.4584V3.54171C0.25 2.75546 0.9175 2.12504 1.75 2.12504H2.5V0.708374H4V2.12504H10V0.708374H11.5V2.12504H12.25C12.6478 2.12504 13.0294 2.2743 13.3107 2.53997C13.592 2.80565 13.75 3.16598 13.75 3.54171V7.86254C14.68 8.75504 15.25 9.98046 15.25 11.3334C15.25 12.6484 14.6969 13.9096 13.7123 14.8394C12.7277 15.7693 11.3924 16.2917 10 16.2917C8.5675 16.2917 7.27 15.7534 6.325 14.875H1.75ZM10 7.89796C9.03528 7.89796 8.11006 8.2599 7.4279 8.90417C6.74574 9.54843 6.3625 10.4222 6.3625 11.3334C6.3625 13.2317 7.99 14.7688 10 14.7688C10.4777 14.7688 10.9507 14.6799 11.392 14.5073C11.8333 14.3346 12.2343 14.0816 12.5721 13.7626C12.9099 13.4436 13.1778 13.0649 13.3606 12.6481C13.5434 12.2312 13.6375 11.7845 13.6375 11.3334C13.6375 9.43504 12.01 7.89796 10 7.89796Z" fill="white"/>
+                            </svg>
+                             Horario</a>
+                        </li>
+                    </ul>
+                </div>
+              </nav>
+
+        </div>
+
+        
+        
+    <div class="page-wrapper ">
+        <div class="container mt-3"> 
+
+            
+                
+            <div id="clock-wrapper">
+
+            </div>
+        </div>
+        <div class="container" >    
+            <div class="row ">
+                <form class="steps-form">
+                    <div class="col-12 mb-4 ">
+                        <div class="card mt-3 shadow-sm ">
+                            <div class="card-body">
+                                <ul class="steps-icon bg-transparent ">
+                                   <li class="completed">
+                                      <span class="step-round"><i class="far fa-edit"></i></span>
+                                      <div class="text-center step-title">1. <span>Actualización de datos</span> </div>
+                                   </li>
+                                   <li  class="completed">
+                                      <span class="step-round"><i class="far fa-file"></i></span>
+                                      <div class="text-center  step-title">2. <span>Reglamento de estudios</span></div>
+                                   </li>
+                                   <li class="active">
+                                      <span class="step-round"><i class="far fa-heart"></i></span>
+                                      <div class="text-center step-title">3. <span>Seguro contra accidentes</span> </div>
+                                   </li>
+                                   <li>
+                                      <span class="step-round"><i class="far fa-calendar"></i></span>
+                                      <div class="text-center step-title">4. <span>Horario</span></div>
+                                   </li>
+                                   <li>
+                                      <span class="step-round"><i class="far fa-credit-card"></i></span>
+                                      <div class="text-center step-title">5. <span>Pago</span></div>
+                                   </li>
+                                   <li>
+                                      <span class="step-round"><i class="far fa-check"></i></span>
+                                      <div class="text-center step-title">6. <span>Confirmación</span></div>
+                                   </li>
+                                </ul>
+    
+                                
+                             </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-12 steps-container ">
+                        <div class="card shadow-sm">
+                            <div class="card-body">
+                                
+                                 <fieldset>
+                                    <div class="form-body">
+                                        <div class="matricula-title">
+                                            <h5 class="text-uppercase">Seguro contra accidentes</h5>
+                                            <div class="separator"></div>
+
+                                        </div>
+
+                                       
+                                       <div class="switch-assurance mb-4">
+                                        <label class="form-check-label fw-bolder" for="flexSwitchCheckChecked"> ¿Cuenta con seguro contra Accidentes?</label>
+
+                                        <label class="switch switch-blue">
+                                          <input type="checkbox" class="switch-input" checked>
+                                          <span class="switch-label" data-on="SI" data-off="NO"></span>
+                                          <span class="switch-handle"></span>
+                                        </label>
+                                      </div> 
+                                      <ul class="seguro">
+                                        <li class="mb-2">
+                                            <div class="form-check-inline">
+                                                <input type="radio" name="styles" id="box-shadow" class="custom-radio upch-seguro form-check-input">
+                                              <label  class="text-black form-check-label">Cuento con un seguro comprado en UPCH</label>
+                                            </div>
+                                            
+                                        </li>
+                                        <li class="mb-2">
+                                            <div class="form-check-inline">
+                                                <input type="radio" name="styles" id="box-shadow" class="custom-radio form-seguro form-check-input">
+                                              <label  class="text-black form-check-label">Tengo Seguro Integral de Salud (SIS)  -  (SOLO BECARIOS)</label>
+                                            </div>
+                                            </li>
+                                        <li class="mb-2">
+                                                <div class="form-check-inline">
+                                                    <input type="radio" name="styles" id="box-shadow" class="custom-radio form-seguro form-check-input">
+                                                    <label  class="text-black form-check-label ">Tengo un seguro de Accidentes Personal</label>
+                                                </div>
+                                               
+                                        </li>          
+                                      </ul>
+                                      <div class="form-seguro seguro">
+                                          <form>
+                                              <div class="d-flex">
+                                                <div class="form-group me-3">
+                                                    <label class="control-label">Seleccione  empresa del seguro</label>
+                                                    <select class="form-select form-select-sm form-select">
+                                                      <option value="0">MAPFRE</option>
+                                                      <option value="">Carnet de extranjería</option>
+                                                      <option value="">Pasaporte</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group me-3">
+                                                  <label class="control-label">Nro de Poliza</label>
+                                                  <input type="text" id="poliza"  class="form-control form-control-sm" placeholder="2223345678">
+                                                </div>
+                                                <div class="form-group me-3">
+                                                  <label for="date" class="control-label">Fecha de vencimiento</label>
+                                        
+                                              <div class="input-group input-group-sm date" id="datepicker">
+                                                <input type="text" class="form-control" id="date"/>
+                                                <span class="input-group-append">
+                                                  <span class="input-group-text bg-light d-block">
+                                                    <i class="fa fa-calendar"></i>
+                                                  </span>
+                                                </span>
+                                              </div>
+                                                </div>
+                                                <div class="form-group">
+                                                  <label class="control-label">Seleccionar archivo</label>
+                                                  <label for="file" class="file"><svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M3.08789 5.70625C3.4541 6.09656 4.04766 6.09687 4.41357 5.70628L6.5625 3.41563V11C6.5625 11.5522 6.98232 12 7.5 12C8.01768 12 8.4375 11.5522 8.4375 11V3.41563L10.5873 5.70875C10.9532 6.09906 11.5468 6.09906 11.913 5.70872C12.2789 5.31841 12.2789 4.68528 11.913 4.29466L8.16299 0.294656C7.98047 0.0976562 7.74023 0 7.5 0C7.25977 0 7.01953 0.0976562 6.83789 0.292969L3.08789 4.29375C2.72109 4.68437 2.72109 5.31563 3.08789 5.70625ZM14.0625 11H9.375C9.375 12.1047 8.53564 13 7.5 13C6.46436 13 5.625 12.1047 5.625 11H0.9375C0.419824 11 0 11.4478 0 12V15C0 15.5522 0.419824 16 0.9375 16H14.0625C14.5802 16 15 15.5522 15 15V12C15 11.4469 14.5811 11 14.0625 11ZM12.6562 14.25C12.2695 14.25 11.9531 13.9125 11.9531 13.5C11.9531 13.0875 12.2695 12.75 12.6562 12.75C13.043 12.75 13.3594 13.0875 13.3594 13.5C13.3594 13.9125 13.043 14.25 12.6562 14.25Z" fill="#B80A28"/>
+                                                    </svg>
+                                                     &nbsp; Seleccionar Archivo</label>
+                                                    <input type="file" name="file" id="file" />
+                                                </div>
+                                              </div>
+                                              
+                                          </form>
+                                      </div>
+                                      <div class="no_seguro">
+                                        <p>Para continuar con el proceso de matricula,  debe contar con un seguro contra accidentes vigente.</p>
+                                        
+                                      </div>
+                                    </div>
+                                    <button type="button" class="seguro btn waves-effect waves-light btn-light-secondary previous" onclick="window.location.assign('reglamento.html')">Volver</button>
+                                    <button type="button" class="seguro btn waves-effect waves-light btn-primary next" onclick="window.location.assign('horario.html')">Continuar</button>
+                                    <div class="w-100 text-center mx-auto no_seguro" >
+                                      <button class="btn btn-primary px-4 py-2" style="line-height: 1;"><svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13.6833 8.52351L11.6071 12.4102C11.3567 12.879 10.6316 12.8641 10.4021 12.3858L8.02915 7.44929L6.77707 10.252L2.68957 10.2501L10.0396 17.3673C10.5671 17.8778 11.4296 17.8778 11.9575 17.3673L19.3075 10.2501L14.6367 10.2503L13.6833 8.52351ZM19.6333 1.45554C17.3683 -0.379613 13.9042 -0.0483627 11.8208 1.9657L11 2.75984L10.1791 1.9657C8.09582 -0.0483627 4.63332 -0.379613 2.36707 1.45554C-0.0262645 3.39461 -0.298348 6.71882 1.50749 9.00008H5.88248L7.37957 5.63093C7.60907 5.12781 8.3654 5.11843 8.6104 5.61629L11.0358 10.671L13.0804 6.84285C13.3256 6.38386 14.0296 6.38386 14.275 6.84285L15.4279 9.00105H20.4904C22.3 6.71882 22.025 3.39461 19.6333 1.45554Z" fill="white"/>
+                                        </svg>  &nbsp;
+                                         Agregar Seguro contra Accidentes UPCH</button>
+                                    </div>
+                                 </fieldset>
+                                 
+                                
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                
+                
+            </div>
+            
+        </div>
+    </div>
+     <!-- cambio programa -->
+     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">¿En qué programa vas a matricularte?</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="form-group">
+                        <label class="fw-medium mb-2">Seleccionar programa:</label>
+                    <select class="form-select form-select-sm" aria-label="Default select example">
+                        <option selected>Psicología</option>
+                        <option value="1">Medicina Humana</option>
+                        
+                    </select>
+                    </div>
+                    <div class="form-group mt-3">
+                        <label class="fw-medium mb-2">Seleccionar periodo:</label>
+                    <select class="form-select form-select-sm" aria-label="Default select example">
+                        <option selected>2022-II</option>
+                        <option value="1">2023-I</option>
+                        
+                    </select>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="modal-footer">
+              
+              <button type="button" class="btn btn-primary">Cambiar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div class="footer mt-4">
+        <div>
+            <p>©2022 Universidad Peruana Cayetano Heredia</p>
+        </div>
+    </div>
+    
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js" integrity="sha512-pax4MlgXjHEPfCwcJLQhigY7+N8rt6bVvWLFyUMuxShv170X53TRzGPmPkZmGBhk+jikR8WBM4yl7A9WMHHqvg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js" integrity="sha512-T/tUfKSV1bihCnd+MxKD0Hm1uBBroVYBOYSk1knyvQ9VyZJpc/ALb4P0r6ubwVPSGB2GvjeoMAJJImBG12TiaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../../js/wizard-steps.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
+    <script src="../../js/bootstrap-popover-x.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.9.0/main.min.js" ></script>
+
+    
+    <script src="../../js/main.js"></script>
+    <script src="../../js/customcalendar.js"></script>
+
+</body>
+</html>

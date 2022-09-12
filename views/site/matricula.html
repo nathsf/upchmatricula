@@ -8,9 +8,11 @@
     <link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon.png" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css" integrity="sha512-rRQtF4V2wtAvXsou4iUAs2kXHi3Lj9NE7xJR77DE7GHsxgY9RTWy93dzMXgDIG8ToiRTD45VsDNdTiUagOFeZA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" integrity="sha512-GQGU0fMMi238uA+a/bdWJfpUGKUkBdgfFdgBm72SUQ6BeyWjoY/ton0tEjH+OSH9iP4Dfh+7HM0I9f5eR0L/4w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.9.0/main.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../../styles/plugins/bootstrap-popover-x.min.css"/>
     <link rel="stylesheet" type="text/css" href="../../styles/style.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.min.css" integrity="sha512-liDnOrsa/NzR+4VyWQ3fBzsDBzal338A1VfUpQvAcdt+eL88ePCOd3n9VQpdA0Yxi4yglmLy/AmH+Lrzmn0eMQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+    
+  </head>
 <body>
     <div id="main-wrapper">
     
@@ -369,7 +371,21 @@
                                             <div class="separator"></div>
                                         </div>
                                        <div class="row">
-                                          <div class="col-4">
+                                          <div class="col-sm-12 col-md-5 col-lg-4">
+                                            <p class="text-uppercase fw-bolder">Mis asignaturas habilitadas</p>
+                                            <div class="input-group flex-nowrap">
+                                              <input type="email" class="search-input form-control form-control-sm" id="exampleFormControlInput1" placeholder="Buscar por nombre de asignatura">
+                                              <span class="input-group-text login-control bg-white" id="addon-wrapping">
+                                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M6.5 0C8.22391 0 9.87721 0.684819 11.0962 1.90381C12.3152 3.12279 13 4.77609 13 6.5C13 8.11 12.41 9.59 11.44 10.73L11.71 11H12.5L17.5 16L16 17.5L11 12.5V11.71L10.73 11.44C9.59 12.41 8.11 13 6.5 13C4.77609 13 3.12279 12.3152 1.90381 11.0962C0.684819 9.87721 0 8.22391 0 6.5C0 4.77609 0.684819 3.12279 1.90381 1.90381C3.12279 0.684819 4.77609 0 6.5 0ZM6.5 2C4 2 2 4 2 6.5C2 9 4 11 6.5 11C9 11 11 9 11 6.5C11 4 9 2 6.5 2Z" fill="#B80A28"/>
+                                                    </svg>
+                                              </span>
+                                            </div>
+                                            <div class="d-flex mt-3 justify-content-between">
+                                              <p>Límite de asignaturas: 10</p>
+                                              <p>Límite de créditos: 10</p>
+
+                                            </div>
                                             <div class="accordion accordion-schedule" id="accordionExample">
                                               <div class="accordion-item">
                                                 <h2 class="accordion-header" id="headingOne">
@@ -379,7 +395,90 @@
                                                 </h2>
                                                 <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" >
                                                   <div class="accordion-body">
-                                                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                                    <div class="">
+                                                      <div class="title-group d-flex justify-content-between">
+                                                        <p class="fw-medium mb-0">Grupo PC1</p>
+                                                        <p class=" mb-0">Docente: <span class="fw-medium">Mariano Alcazar V.</span> </p>
+                                                        <p class=" mb-0">Cupos: <span class="fw-medium">39</span></p>
+                                                      </div>
+                                                      <div class="item-group">
+                                                       
+                                                        <div class="d-flex">
+                                                          <p class="mb-0">Horario: <span class="fw-medium">Lun 8:30 -  9:45, Jue 11:00 - 12:00 </span>
+                                                           </p>
+                                                        </div>
+                                                        <div class="d-flex justify-content-between">
+                                                          <p class="mb-0 me-2">Inicio: <span class="fw-medium">22/08/2022 </span> </p>
+                                                          <p class="mb-0">Fin: <span class="fw-medium"> 19/10/2022 </span></p>
+                                                         
+                                                        </div>
+                                                        <div class="d-flex justify-content-between">
+                                                          <p class="mb-0 me-2">Créd:  <span class="fw-medium">2</span>  </p>
+                                                          <p class="mb-0 me-2">Vez: <span class="fw-medium">1</span> </p>
+                                                          <p class="mb-0 me-2">Unidades: <span class="fw-medium"> 5</span></p>
+                                                          <p class="mb-0 me-2">Ciclo: <span class="fw-medium">1</span></p>
+                                                        </div>
+                                                        <div class="d-flex justify-content-start">
+                                                          
+                                                          <p class="mb-0">Tutor: <span class="fw-medium">Jorge L. Navarro L.</span></p>
+                                                         
+                                                        </div>
+                                                        <div class="d-flex justify-content-between">
+                                                          <p class="mb-0 me-2">Equiv:<span class="fw-medium"> Psicología Cognitiva I</span> </p>
+                                                          <div class="d-flex">
+                                                            <p class="mb-0">Sumilla: </p>
+                                                          <button class="btn btn-sumilla" data-bs-toggle="modal" data-bs-target="#sumilla">
+                                                            <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M6.01675 4.71675H7.31675V3.41675H6.01675M6.66675 11.8667C3.80025 11.8667 1.46675 9.53325 1.46675 6.66675C1.46675 3.80025 3.80025 1.46675 6.66675 1.46675C9.53325 1.46675 11.8667 3.80025 11.8667 6.66675C11.8667 9.53325 9.53325 11.8667 6.66675 11.8667ZM6.66675 0.166748C5.81316 0.166748 4.96792 0.334876 4.17931 0.661531C3.39069 0.988187 2.67413 1.46697 2.07055 2.07055C0.851567 3.28954 0.166748 4.94284 0.166748 6.66675C0.166748 8.39065 0.851567 10.044 2.07055 11.2629C2.67413 11.8665 3.39069 12.3453 4.17931 12.672C4.96792 12.9986 5.81316 13.1667 6.66675 13.1667C8.39065 13.1667 10.044 12.4819 11.2629 11.2629C12.4819 10.044 13.1667 8.39065 13.1667 6.66675C13.1667 5.81316 12.9986 4.96792 12.672 4.17931C12.3453 3.39069 11.8665 2.67413 11.2629 2.07055C10.6594 1.46697 9.94281 0.988187 9.15419 0.661531C8.36557 0.334876 7.52034 0.166748 6.66675 0.166748M6.01675 9.91675H7.31675V6.01675H6.01675V9.91675Z" fill="#FFC702"/>
+                                                            </svg>
+                                                        </button>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+
+                                                    </div>
+                                                    <div class="borde-top">
+                                                      <div class="title-group d-flex justify-content-between">
+                                                        <p class="fw-medium mb-0">Grupo PC1</p>
+                                                        <p class=" mb-0">Docente: <span class="fw-medium">Mariano Alcazar V.</span> </p>
+                                                        <p class=" mb-0">Cupos: <span class="fw-medium">39</span></p>
+                                                      </div>
+                                                      <div class="item-group">
+                                                       
+                                                        <div class="d-flex">
+                                                          <p class="mb-0">Horario: <span class="fw-medium">Lun 8:30 -  9:45, Jue 11:00 - 12:00 </span>
+                                                           </p>
+                                                        </div>
+                                                        <div class="d-flex justify-content-between">
+                                                          <p class="mb-0 me-2">Inicio: <span class="fw-medium">22/08/2022 </span> </p>
+                                                          <p class="mb-0">Fin: <span class="fw-medium"> 19/10/2022 </span></p>
+                                                         
+                                                        </div>
+                                                        <div class="d-flex justify-content-between">
+                                                          <p class="mb-0 me-2">Créd:  <span class="fw-medium">2</span>  </p>
+                                                          <p class="mb-0 me-2">Vez: <span class="fw-medium">1</span> </p>
+                                                          <p class="mb-0 me-2">Unidades: <span class="fw-medium"> 5</span></p>
+                                                          <p class="mb-0 me-2">Ciclo: <span class="fw-medium">1</span></p>
+                                                        </div>
+                                                        <div class="d-flex justify-content-start">
+                                                          
+                                                          <p class="mb-0">Tutor: <span class="fw-medium">Jorge L. Navarro L.</span></p>
+                                                         
+                                                        </div>
+                                                        <div class="d-flex justify-content-between">
+                                                          <p class="mb-0 me-2">Equiv:<span class="fw-medium"> Psicología Cognitiva I</span> </p>
+                                                          <div class="d-flex">
+                                                            <p class="mb-0">Sumilla: </p>
+                                                          <button class="btn btn-sumilla" data-bs-toggle="modal" data-bs-target="#sumilla">
+                                                            <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M6.01675 4.71675H7.31675V3.41675H6.01675M6.66675 11.8667C3.80025 11.8667 1.46675 9.53325 1.46675 6.66675C1.46675 3.80025 3.80025 1.46675 6.66675 1.46675C9.53325 1.46675 11.8667 3.80025 11.8667 6.66675C11.8667 9.53325 9.53325 11.8667 6.66675 11.8667ZM6.66675 0.166748C5.81316 0.166748 4.96792 0.334876 4.17931 0.661531C3.39069 0.988187 2.67413 1.46697 2.07055 2.07055C0.851567 3.28954 0.166748 4.94284 0.166748 6.66675C0.166748 8.39065 0.851567 10.044 2.07055 11.2629C2.67413 11.8665 3.39069 12.3453 4.17931 12.672C4.96792 12.9986 5.81316 13.1667 6.66675 13.1667C8.39065 13.1667 10.044 12.4819 11.2629 11.2629C12.4819 10.044 13.1667 8.39065 13.1667 6.66675C13.1667 5.81316 12.9986 4.96792 12.672 4.17931C12.3453 3.39069 11.8665 2.67413 11.2629 2.07055C10.6594 1.46697 9.94281 0.988187 9.15419 0.661531C8.36557 0.334876 7.52034 0.166748 6.66675 0.166748M6.01675 9.91675H7.31675V6.01675H6.01675V9.91675Z" fill="#FFC702"/>
+                                                            </svg>
+                                                        </button>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+
+                                                    </div>
                                                   </div>
                                                 </div>
                                               </div>
@@ -391,7 +490,45 @@
                                                 </h2>
                                                 <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" >
                                                   <div class="accordion-body">
-                                                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                                    <div class="title-group d-flex justify-content-between">
+                                                      <p class="fw-medium mb-0">Grupo PC1</p>
+                                                      <p class=" mb-0">Docente: <span class="fw-medium">Mariano Alcazar V.</span> </p>
+                                                      <p class=" mb-0">Cupos: <span class="fw-medium">39</span></p>
+                                                    </div>
+                                                    <div class="item-group">
+                                                     
+                                                      <div class="d-flex">
+                                                        <p class="mb-0">Horario: <span class="fw-medium">Lun 8:30 -  9:45, Jue 11:00 - 12:00 </span>
+                                                         </p>
+                                                      </div>
+                                                      <div class="d-flex justify-content-between">
+                                                        <p class="mb-0 me-2">Inicio: <span class="fw-medium">22/08/2022 </span> </p>
+                                                        <p class="mb-0">Fin: <span class="fw-medium"> 19/10/2022 </span></p>
+                                                       
+                                                      </div>
+                                                      <div class="d-flex justify-content-between">
+                                                        <p class="mb-0 me-2">Créd:  <span class="fw-medium">2</span>  </p>
+                                                        <p class="mb-0 me-2">Vez: <span class="fw-medium">1</span> </p>
+                                                        <p class="mb-0 me-2">Unidades: <span class="fw-medium"> 5</span></p>
+                                                        <p class="mb-0 me-2">Ciclo: <span class="fw-medium">1</span></p>
+                                                      </div>
+                                                      <div class="d-flex justify-content-start">
+                                                        
+                                                        <p class="mb-0">Tutor: <span class="fw-medium">Jorge L. Navarro L.</span></p>
+                                                       
+                                                      </div>
+                                                      <div class="d-flex justify-content-between">
+                                                        <p class="mb-0 me-2">Equiv:<span class="fw-medium"> Psicología Cognitiva I</span> </p>
+                                                        <div class="d-flex">
+                                                          <p class="mb-0">Sumilla: </p>
+                                                        <button class="btn btn-sumilla" data-bs-toggle="modal" data-bs-target="#sumilla">
+                                                          <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                              <path d="M6.01675 4.71675H7.31675V3.41675H6.01675M6.66675 11.8667C3.80025 11.8667 1.46675 9.53325 1.46675 6.66675C1.46675 3.80025 3.80025 1.46675 6.66675 1.46675C9.53325 1.46675 11.8667 3.80025 11.8667 6.66675C11.8667 9.53325 9.53325 11.8667 6.66675 11.8667ZM6.66675 0.166748C5.81316 0.166748 4.96792 0.334876 4.17931 0.661531C3.39069 0.988187 2.67413 1.46697 2.07055 2.07055C0.851567 3.28954 0.166748 4.94284 0.166748 6.66675C0.166748 8.39065 0.851567 10.044 2.07055 11.2629C2.67413 11.8665 3.39069 12.3453 4.17931 12.672C4.96792 12.9986 5.81316 13.1667 6.66675 13.1667C8.39065 13.1667 10.044 12.4819 11.2629 11.2629C12.4819 10.044 13.1667 8.39065 13.1667 6.66675C13.1667 5.81316 12.9986 4.96792 12.672 4.17931C12.3453 3.39069 11.8665 2.67413 11.2629 2.07055C10.6594 1.46697 9.94281 0.988187 9.15419 0.661531C8.36557 0.334876 7.52034 0.166748 6.66675 0.166748M6.01675 9.91675H7.31675V6.01675H6.01675V9.91675Z" fill="#FFC702"/>
+                                                          </svg>
+                                                      </button>
+                                                        </div>
+                                                      </div>
+                                                    </div>
                                                   </div>
                                                 </div>
                                               </div>
@@ -403,20 +540,86 @@
                                                 </h2>
                                                 <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" >
                                                   <div class="accordion-body">
-                                                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                                    <div class="title-group d-flex justify-content-between">
+                                                      <p class="fw-medium mb-0">Grupo PC1</p>
+                                                      <p class=" mb-0">Docente: <span class="fw-medium">Mariano Alcazar V.</span> </p>
+                                                      <p class=" mb-0">Cupos: <span class="fw-medium">39</span></p>
+                                                    </div>
+                                                    <div class="item-group">
+                                                     
+                                                      <div class="d-flex">
+                                                        <p class="mb-0">Horario: <span class="fw-medium">Lun 8:30 -  9:45, Jue 11:00 - 12:00 </span>
+                                                         </p>
+                                                      </div>
+                                                      <div class="d-flex justify-content-between">
+                                                        <p class="mb-0 me-2">Inicio: <span class="fw-medium">22/08/2022 </span> </p>
+                                                        <p class="mb-0">Fin: <span class="fw-medium"> 19/10/2022 </span></p>
+                                                       
+                                                      </div>
+                                                      <div class="d-flex justify-content-between">
+                                                        <p class="mb-0 me-2">Créd:  <span class="fw-medium">2</span>  </p>
+                                                        <p class="mb-0 me-2">Vez: <span class="fw-medium">1</span> </p>
+                                                        <p class="mb-0 me-2">Unidades: <span class="fw-medium"> 5</span></p>
+                                                        <p class="mb-0 me-2">Ciclo: <span class="fw-medium">1</span></p>
+                                                      </div>
+                                                      <div class="d-flex justify-content-start">
+                                                        
+                                                        <p class="mb-0">Tutor: <span class="fw-medium">Jorge L. Navarro L.</span></p>
+                                                       
+                                                      </div>
+                                                      <div class="d-flex justify-content-between">
+                                                        <p class="mb-0 me-2">Equiv:<span class="fw-medium"> Psicología Cognitiva I</span> </p>
+                                                        <div class="d-flex">
+                                                          <p class="mb-0">Sumilla: </p>
+                                                        <button class="btn btn-sumilla" data-bs-toggle="modal" data-bs-target="#sumilla">
+                                                          <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                              <path d="M6.01675 4.71675H7.31675V3.41675H6.01675M6.66675 11.8667C3.80025 11.8667 1.46675 9.53325 1.46675 6.66675C1.46675 3.80025 3.80025 1.46675 6.66675 1.46675C9.53325 1.46675 11.8667 3.80025 11.8667 6.66675C11.8667 9.53325 9.53325 11.8667 6.66675 11.8667ZM6.66675 0.166748C5.81316 0.166748 4.96792 0.334876 4.17931 0.661531C3.39069 0.988187 2.67413 1.46697 2.07055 2.07055C0.851567 3.28954 0.166748 4.94284 0.166748 6.66675C0.166748 8.39065 0.851567 10.044 2.07055 11.2629C2.67413 11.8665 3.39069 12.3453 4.17931 12.672C4.96792 12.9986 5.81316 13.1667 6.66675 13.1667C8.39065 13.1667 10.044 12.4819 11.2629 11.2629C12.4819 10.044 13.1667 8.39065 13.1667 6.66675C13.1667 5.81316 12.9986 4.96792 12.672 4.17931C12.3453 3.39069 11.8665 2.67413 11.2629 2.07055C10.6594 1.46697 9.94281 0.988187 9.15419 0.661531C8.36557 0.334876 7.52034 0.166748 6.66675 0.166748M6.01675 9.91675H7.31675V6.01675H6.01675V9.91675Z" fill="#FFC702"/>
+                                                          </svg>
+                                                      </button>
+                                                        </div>
+                                                      </div>
+                                                    </div>
                                                   </div>
                                                 </div>
                                               </div>
                                             </div>
                                           </div>
-                                          <div class="col-8">
-                                              <p>Calendario</p>
+                                          <div class="col-sm-12 col-md-7 col-lg-8">
+                                            <div class="cal-wrapper"><div id="calendar"></div></div>
                                           </div>
                                        </div>
                                     </div>
                                     <button type="button" class="btn waves-effect waves-light btn-light-secondary previous">Volver</button>
                                     <button type="button" class="btn waves-effect waves-light btn-primary next">Continuar</button>
-                                 </fieldset>
+                                     <!-- Modal sumilla -->
+                                          <div class="modal fade" id="sumilla" tabindex="-1" aria-labelledby="sumillaLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-md modal-dialog-centered">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                <h5 class="modal-title text-uppercase" id="sumillaLabel">Sumilla</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                  <p class=" fw-medium mb-0">Programa de Psicología</p>
+                                                  <div class="group-list">
+                                                    <div class="asign-group-title">
+                                                        <p class="text-uppercase fw-bolder">EP001  - ESTADÍSTICA APLICADA A LA PSICOLOGÍA I</p>
+                                                    </div>
+                                                    <div class="asign-group-content">
+                                                        <p class="fw-medium mb-0">Sumilla</p>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nunc eros, gravida ac nulla eu, tempor tincidunt libero. Vestibulum aliquam convallis ligula nec ullamcorper. Nam consectetur ex nec ligula vestibulum, sed rhoncus ipsum sodales. Vestibulum massa nulla, commodo eu augue quis, consectetur pretium lorem.</p>
+                                                        <p class="fw-medium mb-0">Equivalente</p>
+                                                        <p class="">Psicología Cognitiva I</p>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                                <div class="modal-footer text-center">
+                                                <button type="button" class="btn btn-primary text-center" data-bs-dismiss="modal">Aceptar</button>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                  </fieldset>
                                  <fieldset>
                                     <div class="form-body">
                                         <div class="matricula-title">
@@ -455,13 +658,20 @@
             <p>©2022 Universidad Peruana Cayetano Heredia</p>
         </div>
     </div>
+    
     </div>
+    
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js" integrity="sha512-pax4MlgXjHEPfCwcJLQhigY7+N8rt6bVvWLFyUMuxShv170X53TRzGPmPkZmGBhk+jikR8WBM4yl7A9WMHHqvg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js" integrity="sha512-T/tUfKSV1bihCnd+MxKD0Hm1uBBroVYBOYSk1knyvQ9VyZJpc/ALb4P0r6ubwVPSGB2GvjeoMAJJImBG12TiaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.min.js" integrity="sha512-iusSCweltSRVrjOz+4nxOL9OXh2UA0m8KdjsX8/KUUiJz+TCNzalwE0WE6dYTfHDkXuGuHq3W9YIhDLN7UNB0w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="../../js/main.js"></script>
     <script src="../../js/wizard-steps.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
+    <script src="../../js/bootstrap-popover-x.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.9.0/main.min.js" ></script>
+
+    
+    <script src="../../js/main.js"></script>
+    <script src="../../js/customcalendar.js"></script>
 
 </body>
 </html>
