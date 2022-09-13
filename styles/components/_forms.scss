@@ -113,7 +113,6 @@
     opacity: 0;
   }
   .switch-input:checked ~ .switch-label {
-    background: #47a8d8;
     box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15), inset 0 0 3px rgba(0, 0, 0, 0.2);
   }
   .switch-input:checked ~ .switch-label:before {
@@ -163,7 +162,7 @@
   }
   
   .switch-blue > .switch-input:checked ~ .switch-label {
-    background: #174AE3;
+    background: var(--upch-blue);
 
   }
 
@@ -229,3 +228,31 @@
       left: 50%;
     }
   }
+
+.btn-outline-danger {
+    color: var(--upch-primary);
+    border-color: var(--upch-primary);
+    border:1.5px solid;
+    border-radius: .45rem;
+    span {
+      font-weight: 500;
+    }
+    &:hover {   
+      background:var(--upch-red-lighter);
+      color: var(--upch-primary);
+      border-color: var(--upch-primary);
+      
+    }
+}
+
+.btn-outline-info {
+    color: var(--upch-blue);
+    border-color: var(--upch-blue);
+    font-weight: 500;
+    &:hover {   
+      background:var(--upch-blue);
+      color: white;
+      border-color: var(--upch-blue);
+      
+    }
+}

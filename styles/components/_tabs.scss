@@ -1,0 +1,18 @@
+.nav-tabs.bancos .nav-item.show .nav-link, .nav-tabs.bancos .nav-link.active {
+    color: #000000;
+    background-color: #fff;
+    border-color: transparent;
+    border-bottom: 2px solid var(--upch-primary)!important;
+    font-weight: 500;
+}
+
+.nav-tabs.bancos  .nav-link {
+    color: #000000;
+    padding: .5rem 1.25rem;
+    width: 25%;
+}
+.nav-tabs.bancos .nav-link:focus, .nav-tabs.bancos .nav-link:hover {
+    border-color: transparent;
+    border-bottom: 1px solid #dee2e6;
+    font-weight: 500;
+}

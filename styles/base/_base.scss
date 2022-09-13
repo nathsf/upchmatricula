@@ -34,6 +34,9 @@ p, label, a {
 
 a {
     color: var(--upch-primary-dark);
+    &:hover { 
+        color: var(--upch-primary-dark);
+    }
 }
 .card {
     border-radius: 0.45rem;

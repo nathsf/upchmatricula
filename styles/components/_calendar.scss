@@ -51,17 +51,27 @@
     
     th.fc-day-today{
         &:before {
-            content: 'HOY';
+          content:none;
+            // content: 'HOY';
             font-size: 80%;
             line-height: 1;
             text-transform: uppercase;
             opacity: 0.6;
           }
     }
-    
+    th.fc-day-future{
+      &:before {
+        content:none!important;
+          // content: 'HOY';
+          font-size: 80%;
+          line-height: 1;
+          text-transform: uppercase;
+          opacity: 0.6;
+        }
+  }
     th.fc-day-past{
         &:before {
-            content: 'Ayer';
+          content:none;
             font-size: 80%;
             line-height: 1;
             text-transform: uppercase;
@@ -87,8 +97,8 @@
       display: inline-block;
       width: 20px;
       height: 20px;
-      top: 14px;
-      left: 18px;  
+      top: 7px;
+      left: 11px;  
       position: absolute;
       color: #ffffff00;
     }
@@ -96,7 +106,7 @@
 
 .fc .fc-col-header-cell-cushion {
   display: inline-block;
-  padding: 2px 4px;
+  padding: 5px 4px;
   color: black;
   text-transform: uppercase;
   font-weight: 600;
@@ -139,3 +149,11 @@
 .fc-col-header-cell, .fc-timegrid-axis {
   border: 1px solid var(--upch-primary);
 }
+.fc-scrollgrid-section.fc-scrollgrid-section-header {
+  .fc-scroller-harness {
+    .fc-scroller {
+      overflow: hidden!important;
+    }
+  }
+}
+
