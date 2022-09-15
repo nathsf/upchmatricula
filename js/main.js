@@ -43,16 +43,26 @@ jQuery(function($) {
     else {
         $('.no_seguro').hide();
         $('.seguro').show();
-        if( $('.upch-seguro').is(':checked') ){
-          $('div.form-seguro').hide();
+        if( $('.upch-seguro').is(':checked') ){  
+          $('div.form-seguro').show();
+          $("div.form-seguro input").prop('disabled', true);
+          $("div.form-seguro select").prop('disabled', true);
+          $("label.file").addClass("disabled");
+          
       }
     }
 });
 $('.custom-radio.form-seguro').on('click', function() {
   $('div.form-seguro').show();
+  $("div.form-seguro input").prop('disabled', false);
+  $("div.form-seguro select").prop('disabled', false);
+  $("label.file").removeClass("disabled");
 })
 $('.custom-radio.upch-seguro').on('click', function() {
-  $('div.form-seguro').hide();
+  $('div.form-seguro').show();
+  $("div.form-seguro input").prop('disabled', true);
+  $("div.form-seguro select").prop('disabled', true);
+  $("label.file").addClass("disabled");
 })
 
 

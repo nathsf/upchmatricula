@@ -46,3 +46,88 @@
     tbody tr:last-child th:first-child { border-bottom-left-radius: 10px; }
     tbody tr:last-child td:last-child { border-bottom-right-radius: 10px; }
 }
+
+
+@media(max-width:767px) {
+  
+  #no-more-tables table,
+  #no-more-tables thead,
+  #no-more-tables tbody,
+  #no-more-tables tfoot,
+  #no-more-tables th,
+  #no-more-tables td,
+  #no-more-tables tr {
+  display: block;
+  }
+   
+  /* Hide table headers (but not display: none;, for accessibility) */
+  #no-more-tables thead tr {
+      position: absolute;
+      left: 20px;
+      border: 0!important;
+      z-index: 99;
+      background: transparent;
+  }
+
+  #no-more-tables .table-light {
+      border-top: 0!important;
+  }
+  #no-more-tables  .table > :not(:first-child) {
+      border-top: 0!important;
+  }
+  #no-more-tables .table > :not(:first-child) {
+      border-top: 1px solid var(--upch-primary);
+  }
+  #no-more-tables thead th {
+      border:0!important;
+      font-weight: 500!important;
+  }
+   #no-more-tables  thead tr:first-child th:first-child {
+      border: 0!important;
+   }
+   #no-more-tables tfoot tr:last-child th:first-child {
+      border-bottom-left-radius: 0;
+      border-left: 0!important;
+  }
+  #no-more-tables tr { border: 1px solid #ccc; }
+  #no-more-tables  .table > :not(caption) > * > * {
+      background-color: transparent;
+  }
+
+  #no-more-tables .table>:not(caption)>*>* {
+        padding: 0.35rem 0.5rem !important;
+        min-height: 35px !important;
+  }
+  #no-more-tables td {
+  /* Behave like a "row" */
+  border: none;
+  border-bottom: 1px solid #eee;
+  position: relative;
+  padding-left: 50%;
+  white-space: normal;
+  text-align:left;
+  }
+   
+  #no-more-tables td:before {
+  /* Now like a table header */
+  position: absolute;
+  /* Top/left values mimic padding */
+  top: 6px;
+  left: 6px;
+  width: 45%;
+  padding-right: 10px;
+  white-space: nowrap;
+  text-align:left;
+  font-weight: bold;
+  }
+   
+  /*
+  Label the data
+  */
+  #no-more-tables td:before { content: attr(data-title); }
+
+  #no-more-tables tbody th:before { content: attr(data-title); }
+  .table-pensiones {
+    display: none;
+  }
+}

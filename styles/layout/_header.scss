@@ -70,14 +70,14 @@
 
 .btn-choosen {
     padding: 0;
-    &:hover {
-        i { 
-            transform: scale(1.1);
-            box-shadow: 0 0 15px 0px #b80a289e;
-            border-radius: 62%;
-            background: rgb(184 10 40 / 21%);
-        }
-    }
+    // &:hover {
+    //     i { 
+    //         transform: scale(1.1);
+    //         box-shadow: 0 0 15px 0px #b80a289e;
+    //         border-radius: 62%;
+    //         background: rgb(184 10 40 / 21%);
+    //     }
+    // }
     i {
         font-size: 22px;
         vertical-align: middle;

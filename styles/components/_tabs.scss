@@ -10,6 +10,12 @@
     color: #000000;
     padding: .5rem 1.25rem;
     width: 25%;
+    span {
+        font-size: 13px;
+        @media(max-width:1199px){
+            display: none;
+        }
+    }
 }
 .nav-tabs.bancos .nav-link:focus, .nav-tabs.bancos .nav-link:hover {
     border-color: transparent;

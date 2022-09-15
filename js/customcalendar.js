@@ -9,10 +9,12 @@ document.addEventListener('DOMContentLoaded', function() {
   var today = moment().day();
   
   var calendar = new FullCalendar.Calendar(calendarEl, {
-    // locale: 'es',
+    
+
+    locale: 'es',
     
       headerToolbar: {
-            left: 'timeGridWeek,listWeek',
+            left: 'cmonth',
             center: '',
             right: 'prev,next'
       },
@@ -24,12 +26,24 @@ document.addEventListener('DOMContentLoaded', function() {
       day:      'Día',
       list:     'Lista'
     },
-      navLinks: true,
-          firstDay: today,
+    
+    
+          navLinks: true,
+          firstDay: 1,
           hiddenDays: [ 0 ],
           initialView: initialViews,
+
+          visibleRange: {
+            start: '2022-09-26',
+            end: '2022-12-31'
+          },
+          validRange: {
+            start: '2022-09-26',
+            end: '2022-12-31'
+          },
+          
             editable: true,
-            selectable: true, 
+            selectable: false, 
             unselectAuto:true,
             eventOverlap: false,
             eventColor: '#f16621', 
@@ -45,18 +59,73 @@ document.addEventListener('DOMContentLoaded', function() {
             eventContent: function( arg ) {
           return { html: arg.event.title };
       },
- 
-      validRange: function(today) {
-          return {
-            start: today,
-          };
+      eventDidMount: function(info) {
+        $(info.el).tooltip({ 
+          title: info.event.extendedProps.description,
+          placement: "top",
+          trigger: "hover",
+          container: "body"
+        });
+      },
+      events: [
+        {
+          id: '1',
+          title: '<span>PSICOLOGÍA DE LA PERSON.</span><br><strong>PP1</strong>',
+          start: '2022-09-26 08:30:00',
+          end: '2022-09-26 09:45:00',
+          description: 'Inicio: 22/08/2022 ',
+
         },
-          events: 'https://fullcalendar.io/demo-events.json'
+        {
+          id: '2',
+          title: '<span>PSICOLOGÍA DESARROLLO HUMANO I.</span><br><strong>PD1</strong>',
+          start: '2022-09-30 09:00:00',
+          end: '2022-09-30 10:30:00',
+          description: 'description for All Day Event',
+
+ 
+        },
+
+        {
+          id: '3',
+          title: '<span>PSICOLOGÍA DE LA PERSON.</span><br><strong>PP1</strong>',
+          start: '2022-09-29 11:00:00',
+          end: '2022-09-29 12:00:00',
+          description: 'description for All Day Event',
+
+ 
+        }
+        // more events ...
+      ],
+
+
+          // events: 'https://fullcalendar.io/demo-events.json'
     });
 
+   
     calendar.render();
+
+    var cdate = calendar.getDate();
+    var cmonth = cdate.toLocaleString('default', { month: 'long' });
+    var cyear = + cdate.getFullYear();
+
+    $( ".fc-cmonth-button " ).html( `<p class="mb-0 text-uppercase pt-1">${cmonth} ${cyear} </p>` );
+
+    $(".fc-next-button , .fc-prev-button").on('click', function() {
+      var cdate = calendar.getDate();
+      var cmonth = cdate.toLocaleString('default', { month: 'long' });
+      var cyear = + cdate.getFullYear();
+      console.log(cmonth + cyear);
+
+      $( ".fc-cmonth-button" ).html( `<p class="mb-0 text-uppercase pt-1">${cmonth} ${cyear}</p>` );
+    });
+   
+    
 
     if ($(window).width() < 800) {
       calendar.changeView('listWeek');
     }
+
+   
+   
 });

@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.9.0/main.min.css"/>
     <link rel="stylesheet" type="text/css" href="../../styles/plugins/bootstrap-popover-x.min.css"/>
     <link rel="stylesheet" type="text/css" href="../../styles/style.css"/>
-    
   </head>
 <body>
     <div id="main-wrapper">
@@ -189,35 +188,46 @@
                                                     <input type="checkbox">
                                                     <span class="checkmark"></span>
                                                   </label>
-                                                <a href="javascript:void(0);" class="text-black ">Reglamento de Estudios</a>
+                                                  <btn class="btn p-0" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                                    <p class="text-black text-underline mb-0 text-decoration-underline">Reglamento de Estudios</p>
+                                                  </btn>
+                                                
                                             </li>
                                             <li class="mb-2">
                                                 <label class="container-checkbox d-inline-block">
                                                     <input type="checkbox">
                                                     <span class="checkmark"></span>
                                                   </label>
-                                                <a href="javascript:void(0);" class="text-black ">Reglamento de la actividad académica</a>
+                                                  <btn class="btn p-0" type="button">
+                                                    <p class="text-black text-underline mb-0 text-decoration-underline">Reglamento de Estudios</p>
+                                                  </btn>
                                             </li>
                                             <li class="mb-2">
                                                 <label class="container-checkbox d-inline-block">
                                                     <input type="checkbox">
                                                     <span class="checkmark"></span>
                                                   </label>
-                                                <a href="javascript:void(0);" class="text-black " >Reglamento de Estudios</a>
+                                                  <btn class="btn p-0" type="button">
+                                                    <p class="text-black text-underline mb-0 text-decoration-underline">Reglamento de Estudios</p>
+                                                  </btn>
                                             </li>
                                             <li class="mb-2">
                                                 <label class="container-checkbox d-inline-block">
                                                     <input type="checkbox">
                                                     <span class="checkmark"></span>
                                                   </label>
-                                                <a href="javascript:void(0);" class="text-black ">Reglamento de la actividad académica</a>
+                                                  <btn class="btn p-0" type="button">
+                                                    <p class="text-black text-underline mb-0 text-decoration-underline">Reglamento de Estudios</p>
+                                                  </btn>
                                             </li>
                                             <li class="mb-2">
                                                 <label class="container-checkbox d-inline-block">
                                                     <input type="checkbox">
                                                     <span class="checkmark"></span>
                                                   </label>
-                                                <a href="javascript:void(0);" class="text-black " >Reglamento de Estudios</a>
+                                                  <btn class="btn p-0" type="button">
+                                                    <p class="text-black text-underline mb-0 text-decoration-underline">Reglamento de Estudios</p>
+                                                  </btn>
                                             </li>
                                         </ul>
 
@@ -244,9 +254,29 @@
     </div>
     
     </div>
+    <!--lector PDF-->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-uppercase" id="staticBackdropLabel">REGLAMENTO DE LA ACTIVIDAD ACÁDEMICA</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <embed type="application/pdf" src="https://upch-segen-documentos.s3.amazonaws.com/NORMATIVA/REGLAMENTO+DEL+PROCESO+DE+ADMISION+AL+PREGRADO+A+LA+UPCH/RE-102-UPCH_V.02.00_2022.04.06.pdf#zoom=100" type="application/pdf" frameborder="0" width="100%" height="600px">
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Aceptar</button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
      <!-- cambio programa -->
      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-dialog modal-dialog-centered ">
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title" id="exampleModalLabel">¿En qué programa vas a matricularte?</h5>
@@ -287,7 +317,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
     <script src="../../js/bootstrap-popover-x.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.9.0/main.min.js" ></script>
-
     
     <script src="../../js/main.js"></script>
     <script src="../../js/customcalendar.js"></script>

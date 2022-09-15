@@ -360,12 +360,6 @@ ul li {
 .btn-choosen {
   padding: 0;
 }
-.btn-choosen:hover i {
-  transform: scale(1.1);
-  box-shadow: 0 0 15px 0px rgba(184, 10, 40, 0.6196078431);
-  border-radius: 62%;
-  background: rgba(184, 10, 40, 0.21);
-}
 .btn-choosen i {
   font-size: 22px;
   vertical-align: middle;
@@ -923,7 +917,7 @@ label.file {
   max-width: 400px;
   height: 31px;
   background-color: white;
-  border: 1px solid #828282;
+  border: 1px solid #ced4da;
   color: black;
   font-size: 13px;
   cursor: pointer;
@@ -1059,6 +1053,88 @@ label.file:hover {
   border-bottom-right-radius: 10px;
 }
 
+@media (max-width: 767px) {
+  #no-more-tables table,
+#no-more-tables thead,
+#no-more-tables tbody,
+#no-more-tables tfoot,
+#no-more-tables th,
+#no-more-tables td,
+#no-more-tables tr {
+    display: block;
+  }
+  /* Hide table headers (but not display: none;, for accessibility) */
+  #no-more-tables thead tr {
+    position: absolute;
+    left: 20px;
+    border: 0 !important;
+    z-index: 99;
+    background: transparent;
+  }
+  #no-more-tables .table-light {
+    border-top: 0 !important;
+  }
+  #no-more-tables .table > :not(:first-child) {
+    border-top: 0 !important;
+  }
+  #no-more-tables .table > :not(:first-child) {
+    border-top: 1px solid var(--upch-primary);
+  }
+  #no-more-tables thead th {
+    border: 0 !important;
+    font-weight: 500 !important;
+  }
+  #no-more-tables thead tr:first-child th:first-child {
+    border: 0 !important;
+  }
+  #no-more-tables tfoot tr:last-child th:first-child {
+    border-bottom-left-radius: 0;
+    border-left: 0 !important;
+  }
+  #no-more-tables tr {
+    border: 1px solid #ccc;
+  }
+  #no-more-tables .table > :not(caption) > * > * {
+    background-color: transparent;
+  }
+  #no-more-tables .table > :not(caption) > * > * {
+    padding: 0.35rem 0.5rem !important;
+    min-height: 35px !important;
+  }
+  #no-more-tables td {
+    /* Behave like a "row" */
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+    white-space: normal;
+    text-align: left;
+  }
+  #no-more-tables td:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    text-align: left;
+    font-weight: bold;
+  }
+  /*
+  Label the data
+  */
+  #no-more-tables td:before {
+    content: attr(data-title);
+  }
+  #no-more-tables tbody th:before {
+    content: attr(data-title);
+  }
+  .table-pensiones {
+    display: none;
+  }
+}
 .cal-wrapper {
   background: #fff;
   max-width: 1200px;
@@ -1085,7 +1161,7 @@ label.file:hover {
 }
 
 .fc-timegrid-slots table tr :hover {
-  background: rgba(176, 19, 51, 0.05) !important;
+  background: #ECECEC !important;
   transition: all 0.15s ease;
 }
 
@@ -1098,11 +1174,11 @@ label.file:hover {
 }
 
 .fc .fc-highlight {
-  background: #f16621 !important;
+  background: rgba(236, 236, 236, 0.5) !important;
 }
 
 .fc-day-today {
-  background-color: rgba(176, 19, 51, 0.05);
+  background-color: rgba(236, 236, 236, 0.5);
 }
 
 .fc-day-past {
@@ -1202,6 +1278,14 @@ th.fc-day-future:before {
   overflow: hidden !important;
 }
 
+.fc-timegrid-event {
+  border-color: #174AE3 !important;
+  background-color: #ECECEC !important;
+}
+.fc-timegrid-event div {
+  color: #174AE3 !important;
+}
+
 .nav-tabs.bancos .nav-item.show .nav-link, .nav-tabs.bancos .nav-link.active {
   color: #000000;
   background-color: #fff;
@@ -1214,6 +1298,14 @@ th.fc-day-future:before {
   color: #000000;
   padding: 0.5rem 1.25rem;
   width: 25%;
+}
+.nav-tabs.bancos .nav-link span {
+  font-size: 13px;
+}
+@media (max-width: 1199px) {
+  .nav-tabs.bancos .nav-link span {
+    display: none;
+  }
 }
 
 .nav-tabs.bancos .nav-link:focus, .nav-tabs.bancos .nav-link:hover {
@@ -1722,68 +1814,75 @@ div.form-seguro {
   div.form-seguro .d-flex {
     display: block !important;
   }
+  div.form-seguro .d-flex .form-group {
+    margin-right: 1rem;
+  }
   div.form-seguro .d-flex label.file {
     width: auto;
-    max-width: 270px;
+    max-width: 100%;
   }
 }
+div.form-seguro label.file.disabled {
+  background-color: #e9ecef;
+  border: 1px solid #ced4da;
+}
 
-.accordion-schedule .accordion-body, .accordion-payment .accordion-body {
+.accordion-schedule .accordion-body, .accordion-payment .accordion-body, .accordion-pensiones .accordion-body {
   padding: 0;
 }
-.accordion-schedule .accordion-item, .accordion-payment .accordion-item {
+.accordion-schedule .accordion-item, .accordion-payment .accordion-item, .accordion-pensiones .accordion-item {
   background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.125) !important;
   margin-bottom: 12px;
   border-radius: 6px !important;
 }
-.accordion-schedule .accordion-item .accordion-button, .accordion-payment .accordion-item .accordion-button {
+.accordion-schedule .accordion-item .accordion-button, .accordion-payment .accordion-item .accordion-button, .accordion-pensiones .accordion-item .accordion-button {
   border-radius: 6px;
   padding: 0.5rem 1rem;
 }
-.accordion-schedule .accordion-item .accordion-button i, .accordion-payment .accordion-item .accordion-button i {
+.accordion-schedule .accordion-item .accordion-button i, .accordion-payment .accordion-item .accordion-button i, .accordion-pensiones .accordion-item .accordion-button i {
   color: #7e7e7e;
 }
-.accordion-schedule .accordion-item .accordion-button:focus, .accordion-payment .accordion-item .accordion-button:focus {
+.accordion-schedule .accordion-item .accordion-button:focus, .accordion-payment .accordion-item .accordion-button:focus, .accordion-pensiones .accordion-item .accordion-button:focus {
   z-index: 3;
   border-color: #fe8686;
   outline: 0;
   box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.1098039216);
 }
-.accordion-schedule .accordion-item .accordion-button p, .accordion-payment .accordion-item .accordion-button p {
+.accordion-schedule .accordion-item .accordion-button p, .accordion-payment .accordion-item .accordion-button p, .accordion-pensiones .accordion-item .accordion-button p {
   font-size: 13px;
   font-weight: 500;
   font-family: var(--font-upch) !important;
   width: 86%;
 }
-.accordion-schedule .accordion-item .accordion-button:after, .accordion-payment .accordion-item .accordion-button:after {
+.accordion-schedule .accordion-item .accordion-button:after, .accordion-payment .accordion-item .accordion-button:after, .accordion-pensiones .accordion-item .accordion-button:after {
   width: 1.1rem;
   height: 1rem;
   background-size: 1.1rem;
 }
-.accordion-schedule .accordion-item .title-group, .accordion-payment .accordion-item .title-group {
+.accordion-schedule .accordion-item .title-group, .accordion-payment .accordion-item .title-group, .accordion-pensiones .accordion-item .title-group {
   padding: 0.38rem 1rem 0.38rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.125) !important;
   background: rgba(239, 239, 239, 0.6196078431);
 }
-.accordion-schedule .accordion-item .title-group p, .accordion-schedule .accordion-item .title-group span, .accordion-payment .accordion-item .title-group p, .accordion-payment .accordion-item .title-group span {
+.accordion-schedule .accordion-item .title-group p, .accordion-schedule .accordion-item .title-group span, .accordion-payment .accordion-item .title-group p, .accordion-payment .accordion-item .title-group span, .accordion-pensiones .accordion-item .title-group p, .accordion-pensiones .accordion-item .title-group span {
   font-size: 13.5px;
 }
-.accordion-schedule .accordion-item .item-group, .accordion-payment .accordion-item .item-group {
+.accordion-schedule .accordion-item .item-group, .accordion-payment .accordion-item .item-group, .accordion-pensiones .accordion-item .item-group {
   padding: 1rem;
 }
-.accordion-schedule .accordion-item .item-group p, .accordion-schedule .accordion-item .item-group span, .accordion-payment .accordion-item .item-group p, .accordion-payment .accordion-item .item-group span {
+.accordion-schedule .accordion-item .item-group p, .accordion-schedule .accordion-item .item-group span, .accordion-payment .accordion-item .item-group p, .accordion-payment .accordion-item .item-group span, .accordion-pensiones .accordion-item .item-group p, .accordion-pensiones .accordion-item .item-group span {
   font-size: 13.5px;
 }
-.accordion-schedule .accordion-item:first-of-type .accordion-button, .accordion-payment .accordion-item:first-of-type .accordion-button {
+.accordion-schedule .accordion-item:first-of-type .accordion-button, .accordion-payment .accordion-item:first-of-type .accordion-button, .accordion-pensiones .accordion-item:first-of-type .accordion-button {
   border-top-left-radius: 6px !important;
   border-top-right-radius: 6px !important;
 }
-.accordion-schedule .accordion-item:last-of-type .accordion-button, .accordion-payment .accordion-item:last-of-type .accordion-button {
+.accordion-schedule .accordion-item:last-of-type .accordion-button, .accordion-payment .accordion-item:last-of-type .accordion-button, .accordion-pensiones .accordion-item:last-of-type .accordion-button {
   border-top-left-radius: 6px !important;
   border-top-right-radius: 6px !important;
 }
-.accordion-schedule .accordion-button:not(.collapsed), .accordion-payment .accordion-button:not(.collapsed) {
+.accordion-schedule .accordion-button:not(.collapsed), .accordion-payment .accordion-button:not(.collapsed), .accordion-pensiones .accordion-button:not(.collapsed) {
   color: #000000;
   font-weight: 500;
   background-color: rgba(176, 19, 51, 0.01) !important;
@@ -1792,10 +1891,10 @@ div.form-seguro {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
-.accordion-schedule .accordion-button:not(.collapsed) i, .accordion-payment .accordion-button:not(.collapsed) i {
+.accordion-schedule .accordion-button:not(.collapsed) i, .accordion-payment .accordion-button:not(.collapsed) i, .accordion-pensiones .accordion-button:not(.collapsed) i {
   color: var(--upch-primary);
 }
-.accordion-schedule .accordion-button:not(.collapsed)::after, .accordion-payment .accordion-button:not(.collapsed)::after {
+.accordion-schedule .accordion-button:not(.collapsed)::after, .accordion-payment .accordion-button:not(.collapsed)::after, .accordion-pensiones .accordion-button:not(.collapsed)::after {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%230c63e4' style='&%2310; fill: %23B01333;&%2310;'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E") !important;
   transform: rotate(-180deg);
 }
@@ -1824,6 +1923,18 @@ div.form-seguro {
   content: none !important;
 }
 
+@media (max-width: 991px) {
+  .buttons-download {
+    display: block !important;
+  }
+  .buttons-download .btn {
+    margin-bottom: 1rem !important;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    margin-right: auto !important;
+  }
+}
 @media (max-width: 767px) {
   .steps-container .card {
     background: #f4f4f4;
@@ -1862,6 +1973,57 @@ div.form-seguro {
   }
   .steps-container .card .card-body fieldset .form-check-inline .form-check-label {
     margin-left: 1.5rem;
+  }
+  .accordion-payment .accordion-body .d-flex {
+    display: block !important;
+  }
+  .bancos .nav-link {
+    padding: 0.5rem 0.25rem !important;
+  }
+  .bancos .nav-link img {
+    margin: 0 !important;
+  }
+  .bancos .nav-link span {
+    display: none;
+  }
+  .accordion-flush .accordion-item .accordion-button {
+    padding: 0.9rem 0 0.9rem 0 !important;
+    background: white !important;
+    border: 0 !important;
+    max-height: 42px;
+  }
+  .accordion-flush .accordion-item .accordion-button .d-flex {
+    padding: 0 !important;
+  }
+  .accordion-flush .accordion-item .accordion-button small, .accordion-flush .accordion-item .accordion-button img {
+    display: none;
+  }
+  .accordion-flush .accordion-item .accordion-button .form-check-input {
+    position: inherit !important;
+  }
+  .accordion-flush .accordion-item .accordion-body div.text-center {
+    padding: 0 1.5rem;
+  }
+  .accordion-flush .accordion-item .accordion-body .img-responsive {
+    width: 100%;
+  }
+  .accordion-flush .accordion-item .accordion-body .img-safetypay {
+    display: block !important;
+    margin: 1rem 0;
+  }
+  .accordion-pensiones {
+    display: inherit !important;
+  }
+  .accordion-pensiones .container-checkbox {
+    margin-bottom: 18px;
+    left: 0% !important;
+    top: 3px;
+  }
+  .pago .modality-selector {
+    width: 100% !important;
+  }
+  .success-animation {
+    margin-top: 3rem;
   }
 }
 .control-label {

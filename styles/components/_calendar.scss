@@ -19,7 +19,7 @@
     
     .fc-timegrid-slots table tr{
         & :hover {
-            background: rgba(176, 19, 51, 0.05)  !important;
+            background: #ECECEC  !important;
             transition: all .15s ease;
           }
     }
@@ -38,11 +38,11 @@
     
     
     .fc .fc-highlight {
-      background: #f16621 !important;
+      background: rgb(236 236 236 / 50%) !important;
     }
     
     .fc-day-today {
-      background-color: rgba(176, 19, 51, 0.05) ;
+      background-color: rgb(236 236 236 / 50%) ;
     }
     
     .fc-day-past {
@@ -157,3 +157,11 @@
   }
 }
 
+
+.fc-timegrid-event {
+  border-color: #174AE3!important; 
+  background-color: #ECECEC!important;
+  div {
+    color: #174AE3!important;
+  }
+}

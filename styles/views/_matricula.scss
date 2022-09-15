@@ -28,16 +28,25 @@
     .d-flex{
         @media(max-width:767px){
             display: block!important;
+            .form-group {
+                margin-right: 1rem;
+            }
             label.file {
                 width: auto;
-                max-width: 270px;
+                max-width: 100%;
             }
             
         }
     }
+
+
+    label.file.disabled {
+        background-color: #e9ecef;
+        border: 1px solid #ced4da;
+    }
   }
 
-  .accordion-schedule, .accordion-payment {
+  .accordion-schedule, .accordion-payment, .accordion-pensiones {
     .accordion-body {
         padding: 0;
     }
@@ -146,6 +155,21 @@
     }
 
   }
+
+  @media(max-width:991px) {
+            .buttons-download {
+                
+                display: block!important;
+                .btn {
+                    margin-bottom: 1rem !important;
+                    display: block;
+                    text-align: center;
+                    margin: 0 auto;
+                    margin-right: auto!important;
+                }
+
+        }
+  }
 @media(max-width:767px) {
     .steps-container {
         .card {
@@ -189,6 +213,77 @@
                 }
             }
         }
+    }
+    .accordion-payment { 
+        
+        .accordion-body { 
+            .d-flex {
+                display: block!important;
+            }
+            
+        }
+    }
+    .bancos { 
+        .nav-link {
+            padding: 0.5rem 0.25rem!important;
+            img {
+                margin:0!important;
+            }
+            span {
+                display: none;
+            }
+        }
+    }
+    .accordion-flush {
+        .accordion-item {
+            .accordion-button {
+                padding: 0.9rem 0 0.9rem 0 !important;
+                background: white !important;
+                border: 0 !important;
+                max-height: 42px;
+                .d-flex {
+                    padding: 0!important
+                }
+                small, img {
+                    display: none;
+                }
+                .form-check-input {
+                    position: inherit!important;
+                }
+            }
+            .accordion-body {
+                div.text-center {
+                    padding: 0 1.5rem;
+                }
+                .img-responsive {
+                    width: 100%;
+                }
+                .img-safetypay {
+                    display:block!important;
+                    margin: 1rem 0;
+                }
+            }
+            
+        }
+    }
+    .accordion-pensiones {
+        .container-checkbox {
+            margin-bottom: 18px;
+            left: 0%!important;
+            top: 3px;
+        }
+        display: inherit!important;
+    }
+    .pago {
+        .modality-selector {
+                width: 100%!important;
+        }
+    }
+
+   
+
+    .success-animation {
+        margin-top: 3rem;
     }
 }
 .control-label {
