@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site Matricula - Inicio</title>
     <link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css" integrity="sha512-rRQtF4V2wtAvXsou4iUAs2kXHi3Lj9NE7xJR77DE7GHsxgY9RTWy93dzMXgDIG8ToiRTD45VsDNdTiUagOFeZA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" integrity="sha512-GQGU0fMMi238uA+a/bdWJfpUGKUkBdgfFdgBm72SUQ6BeyWjoY/ton0tEjH+OSH9iP4Dfh+7HM0I9f5eR0L/4w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.9.0/main.min.css"/>
@@ -94,7 +95,7 @@
         
         
     <div class="page-wrapper ">
-        <div class="container mt-3"> 
+        <div class="container  mt-3"> 
 
             
                 
@@ -102,12 +103,23 @@
 
             </div>
         </div>
-        <div class="container" >    
+        <div class="container site-matricula" >    
             <div class="row ">
                 <form class="steps-form">
                     <div class="col-12 mb-4 ">
                         <div class="card mt-3 shadow-sm ">
                             <div class="card-body">
+                                <div class="step-mobile d-block  d-md-none d-lg-none">
+                                    <div class=" va-middle ">
+                                        <div class="icon-pendiente warning animate__animated animate__wobble animate-warning "> 
+                                            <span class="body "></span> 
+                                            <span class="dot "></span> 
+                                          </div> 
+                                            
+       
+                                    </div>
+                                    <h5 class="text-uppercase fw-medium">6. Confirmación</h5>
+                                  </div>
                                 <ul class="steps-icon bg-transparent ">
                                    <li class="completed">
                                       <span class="step-round"><i class="far fa-edit"></i></span>
@@ -144,12 +156,12 @@
                             <div class="card-body">
                                  <fieldset>
                                   <div class="form-body va-middle" style="min-height: 49vh;">
-                                    <div class="text-center" >
-                                        <div class="icon-pendiente warning  "> 
-                                            <span class="body "></span> 
+                                    <div class="text-center " >
+                                        <div class="d-none d-md-block d-lg-block icon-pendiente warning  animate__animated animate__wobble animate-warning "> 
+                                            <span class="body animate__animated animate__wobble animate-warning"></span> 
                                             <span class="dot "></span> 
-                                          </div> 
-                                            <div class="text-center mb-2">
+                                        </div> 
+                                        <div class="text-center mb-2 confirmation-title">
                                             <h3 class="text-uppercase">PAGO DE MATRICULA PENDIENTE </h3>
                                           
                                             <p class="mb-0">Tiene pendiente el proceso de pago, cuando realize el pago se confirmará su matricula en 24 horas.

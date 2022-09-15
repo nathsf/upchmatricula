@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site Matricula - Inicio</title>
     <link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css" integrity="sha512-rRQtF4V2wtAvXsou4iUAs2kXHi3Lj9NE7xJR77DE7GHsxgY9RTWy93dzMXgDIG8ToiRTD45VsDNdTiUagOFeZA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" integrity="sha512-GQGU0fMMi238uA+a/bdWJfpUGKUkBdgfFdgBm72SUQ6BeyWjoY/ton0tEjH+OSH9iP4Dfh+7HM0I9f5eR0L/4w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.9.0/main.min.css"/>
@@ -102,12 +103,25 @@
 
             </div>
         </div>
-        <div class="container" >    
+        <div class="container site-matricula" >    
             <div class="row ">
                 <form class="steps-form">
                     <div class="col-12 mb-4 ">
                         <div class="card mt-3 shadow-sm ">
                             <div class="card-body">
+                                <div class="step-mobile d-block  d-md-none d-lg-none">
+                                    <div class=" va-middle">
+                                        <div class="success-animation">
+                                            <svg class="checkmark-animation" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                                                <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none" />
+                                                <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+                                            </svg>
+                                        </div>
+                                            
+       
+                                    </div>
+                                    <h5 class="text-uppercase fw-medium">6. Confirmación</h5>
+                                  </div>
                                 <ul class="steps-icon bg-transparent ">
                                    <li class="completed">
                                       <span class="step-round"><i class="far fa-edit"></i></span>
@@ -144,12 +158,12 @@
                             <div class="card-body">
                                  <fieldset>
                                   <div class="form-body va-middle" style="min-height: 49vh;">
-                                    <div class="text-center" >
-                                        <div class="success-animation">
+                                    <div class="text-center " >
+                                        <div class="success-animation d-none d-md-block d-lg-block">
                                             <svg class="checkmark-animation" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52"><circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none" /><path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" /></svg>
-                                            </div>
-                                            <div class="text-center mb-2">
-                                            <h3 class="text-uppercase">SE HA MATRICULADO EXITOSAMENTE </h3>
+                                        </div>
+                                        <div class="text-center confirmation-title mb-2">
+                                            <h3 class="text-uppercase ">SE HA MATRICULADO EXITOSAMENTE </h3>
                                           
                                             <p class="mb-0">Hemos confirmado su proceso de matrícula.  Por favor descargue los siguientes comprobantes y documentos.</p>
                                           </div>
