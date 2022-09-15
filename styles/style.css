@@ -1004,50 +1004,43 @@ label.file:hover {
   z-index: 1000;
   position: absolute;
   left: 0;
-  top: 0.8em;
+  top: 1.5em;
   float: left;
   min-width: 100%;
   background: #fff;
   margin: 1em 0;
   border-radius: 5px;
   padding: 0.4em;
-  border: 1px solid #aaa;
+  border: 1px solid #ced4da;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   display: none;
 }
 
 .multi-select-menu input {
   margin-right: 0.3em;
-  vertical-align: 0.1em;
+  vertical-align: -0.12em;
 }
 
 .multi-select-button {
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 16px 12px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='%23b01333' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3E%3C/svg%3E");
   width: 100%;
   max-width: 100%;
   display: inline-block;
   font-size: 0.875em;
-  padding: 0.2em 0.6em;
+  padding: 0.25rem 0.5rem;
+  padding-right: 2rem;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   vertical-align: -0.5em;
   background-color: #fff;
-  border: 1px solid #aaa;
-  border-radius: 4px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  border: 1px solid #ced4da;
+  border-radius: 6px;
   cursor: default;
-}
-
-.multi-select-button:after {
-  content: "";
-  display: inline-block;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 0.4em 0.4em 0 0.4em;
-  border-color: #999 transparent transparent transparent;
-  margin-left: 0.4em;
-  vertical-align: 0.1em;
+  min-height: 32px;
 }
 
 .multi-select-container--open .multi-select-menu {
@@ -1061,6 +1054,11 @@ label.file:hover {
 
 label.multi-select-menuitem {
   display: block;
+  border-bottom: 1px solid rgba(204, 204, 204, 0.35);
+  padding: 0.18em 0;
+}
+label.multi-select-menuitem:last-child {
+  border-bottom: 0;
 }
 
 .table-schedule .table {
