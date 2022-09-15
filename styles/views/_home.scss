@@ -6,6 +6,10 @@
         height: 3px;
         background-color: var(--upch-secondary);                
     }
+
+@media(max-width:767px) {
+    margin-bottom: 2rem;
+}
 }
 
 #clock-wrapper {
@@ -14,9 +18,10 @@
     font-weight: 500;
     font-size: 16px;
     color: #2f2f2f;
+    min-height:25px;
     @media(max-width:767px){ 
         font-size: 13px;
-        margin-bottom:0.5rem;
+        padding-top: 0.5rem;
         svg {
             height: 14px;
             width: 14px;
@@ -191,7 +196,7 @@
         .order-wrapper { display: flex; flex-flow: column; }
         .three { order: 3; }
         .two { order: 2; }
-        .one { order: 1; }
+        .one { order: 1; margin-top: 1rem; }
 
         .course-info-1 {
             display: block!important;
