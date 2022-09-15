@@ -33,7 +33,9 @@ jQuery(function($) {
   });
   
   $('#datepicker').datepicker();
-  $('.SlectBox').SumoSelect();
+  $('#languages').multiSelect({
+    'noneText':'-- Seleccionar asignaturas --',
+  });
   $('.switch-input').on('click', function () {
     $('.seguro').toggleClass('switch_off');
     if($('.seguro').hasClass('switch_off')) {
