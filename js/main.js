@@ -19,7 +19,7 @@ jQuery(function($) {
   var tooltipList = tooltipTriggerList.map(function(tooltipTriggerEl) {
     return new bootstrap.Tooltip(tooltipTriggerEl);
   });
-
+  $('.datepicker').datepicker();
   $("button").hover(function() {
     $(".tooltip").attr('data-color', $(this).data("color"));
   });
@@ -33,7 +33,7 @@ jQuery(function($) {
   });
   
   $('#datepicker').datepicker();
-
+  $('.SlectBox').SumoSelect();
   $('.switch-input').on('click', function () {
     $('.seguro').toggleClass('switch_off');
     if($('.seguro').hasClass('switch_off')) {
