@@ -129,3 +129,8 @@ document.addEventListener('DOMContentLoaded', function() {
    
    
 });
+jQuery(function($) {
+  $('#languages').multiSelect({
+    'noneText':'-- Seleccionar asignaturas --',
+  });
+})
