@@ -11,6 +11,17 @@
         display: none;
     }
 }
+.form-body { 
+    animation: fadeIn; 
+    animation-duration: 1s; /* don't forget to set a duration! */
+    --animate-delay: 2s;
+}
+
+.animate-fade {
+    animation: fadeIn; 
+    animation-duration: 1s; /* don't forget to set a duration! */
+    --animate-delay: 2s;
+}
 
 .no_seguro {
     display:none;
@@ -183,7 +194,7 @@ fieldset .form-body {
 }
 
 .icon-pendiente.warning {
-    border-color: var(--upch-secondary)
+    border-color: var(--upch-primary)
 }
 .icon-pendiente.warning .body {
     position: absolute;
@@ -193,7 +204,7 @@ fieldset .form-body {
     top: 13px;
     border-radius: 2px;
     margin-left: -2px;
-    background-color: var(--upch-secondary)
+    background-color: var(--upch-primary)
 }
 .icon-pendiente.warning .dot {
     position: absolute;
@@ -203,7 +214,7 @@ fieldset .form-body {
     margin-left: -3px;
     left: 50%;
     bottom: 16px;
-    background-color: var(--upch-secondary)
+    background-color: var(--upch-primary)
 }
 
 
@@ -241,6 +252,7 @@ fieldset .form-body {
                 padding: 1.2rem;
                 border-radius: 0.45rem;
                 margin-bottom: 2rem;
+                
                 .success-animation {
                     margin: 1rem 0 1.6rem 0;
                 }
@@ -451,6 +463,11 @@ display: inherit!important;
     border-radius: 50%;
     margin: 10px auto;
 }
+
+.icon-pendiente.warning {
+    border-color: var(--upch-secondary)
+}
+
 .icon-pendiente.warning .body {
     position: absolute;
     width: 5px;
@@ -459,6 +476,8 @@ display: inherit!important;
     top: 8px;
     border-radius: 2px;
     margin-left: -2px;
+    background-color: var(--upch-secondary)
+
 }
 .icon-pendiente.warning .dot {
     position: absolute;
@@ -468,6 +487,8 @@ display: inherit!important;
     margin-left: -2px;
     left: 50%;
     bottom: 8px;
+    background-color: var(--upch-secondary)
+
 }
 
 }

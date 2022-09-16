@@ -19,6 +19,9 @@
     font-size: 16px;
     color: #2f2f2f;
     min-height:25px;
+    animation: fadeIn; 
+    animation-duration: 2s; /* don't forget to set a duration! */
+    --animate-delay: 2s;
     @media(max-width:767px){ 
         font-size: 13px;
         padding-top: 0.5rem;
