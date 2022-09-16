@@ -13,13 +13,13 @@
 }
 .form-body { 
     animation: fadeIn; 
-    animation-duration: 1s; /* don't forget to set a duration! */
+    animation-duration: 1s; 
     --animate-delay: 2s;
 }
 
 .animate-fade {
     animation: fadeIn; 
-    animation-duration: 1s; /* don't forget to set a duration! */
+    animation-duration: 1s; 
     --animate-delay: 2s;
 }
 
@@ -286,66 +286,7 @@ fieldset .form-body {
     }
 }
 }
-.accordion-payment { 
 
-.accordion-body { 
-    .d-flex {
-        display: block!important;
-    }
-    
-}
-}
-.bancos { 
-.nav-link {
-    padding: 0.5rem 0.25rem!important;
-    img {
-        margin:0!important;
-    }
-    span {
-        display: none;
-    }
-}
-}
-.accordion-flush {
-.accordion-item {
-    .accordion-button {
-        padding: 0.9rem 0 0.9rem 0 !important;
-        background: white !important;
-        border: 0 !important;
-        max-height: 42px;
-        .d-flex {
-            padding: 0!important
-        }
-        small, img {
-            display: none;
-        }
-        .form-check-input {
-            position: inherit!important;
-        }
-    }
-    .accordion-body {
-        div.text-center {
-            padding: 0 1.5rem;
-        }
-        .img-responsive {
-            width: 100%;
-        }
-        .img-safetypay {
-            display:block!important;
-            margin: 1rem 0;
-        }
-    }
-    
-}
-}
-.accordion-pensiones {
-.container-checkbox {
-    margin-bottom: 18px;
-    left: 0%!important;
-    top: 3px;
-}
-display: inherit!important;
-}
 .pago {
 .modality-selector {
         width: 100%!important;
@@ -491,6 +432,12 @@ display: inherit!important;
 
 }
 
+.bg-secondary-lighter {
+    background: #f1f1f1;
+}
+.fc-view-harness.fc-view-harness-active {
+    height:400px!important;
+}
 }
 
 .animate-warning {

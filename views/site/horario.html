@@ -205,7 +205,7 @@
                                               </span>
                                             </div>
                                           <div class=" d-block  d-md-none d-lg-none mt-3">
-                                            <select id="languages" name="languages" multiple>
+                                            <select id="asignaturas" name="asignaturas" multiple>
                                            
                                                 <option value="Psicología Cognitiva I">Psicología Cognitiva I</option>
                                              
@@ -220,12 +220,12 @@
                                           </div>
                                             
                                             <div class="d-flex mt-4 justify-content-between">
-                                              <p>Límite de asignaturas: 10</p>
-                                              <p>Límite de créditos: 10</p>
+                                              <p>Límite de asignaturas:<span class="fw-bold">10</span> </p>
+                                              <p>Límite de créditos: <span class="fw-bold">10</span></p>
 
                                             </div>
-                                            <div class="accordion accordion-schedule" id="accordionExample">
-                                              <div class="accordion-item" id="course-1">
+                                            <div class="accordion accordion-schedule" id="accordionExampleCourses">
+                                              <div class="accordion-item"  value="Psicología Cognitiva I" id="course-1">
                                                 <h2 class="accordion-header" id="headingOne">
                                                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                                                     <p class="mb-0 text-uppercase">PSICOLOGÍA COGNITIVA I </p>    
@@ -237,7 +237,7 @@
                                                   <div class="accordion-body">
                                                     <div class="">
                                                       <div class="title-group d-flex justify-content-between">
-                                                        <p class="fw-medium mb-0">Grupo PC1</p>
+                                                        <p class="fw-medium mb-0">Grupo <span>PC1</span></p>
                                                         <p class=" mb-0">Docente: <span class="fw-medium">Mariano Alcazar V.</span> </p>
                                                         <p class=" mb-0">Cupos: <span class="fw-medium">39</span></p>
                                                       </div>
@@ -282,7 +282,7 @@
                                                     </div>
                                                     <div class="borde-top">
                                                       <div class="title-group d-flex justify-content-between">
-                                                        <p class="fw-medium mb-0">Grupo PC1</p>
+                                                        <p class="fw-medium mb-0">Grupo <span>PC1</span></p>
                                                         <p class=" mb-0">Docente: <span class="fw-medium">Mariano Alcazar V.</span> </p>
                                                         <p class=" mb-0">Cupos: <span class="fw-medium">39</span></p>
                                                       </div>
@@ -328,7 +328,7 @@
                                                   </div>
                                                 </div>
                                               </div>
-                                              <div class="accordion-item" id="course-2">
+                                              <div class="accordion-item" id="course-2" value="Psicología de la Personalidad">
                                                 <h2 class="accordion-header" id="headingTwo">
                                                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                                     <p class="mb-0 text-uppercase" >PSICOLOGÍA DE LA PERSONALIDAD </p>                                                    <span class="icon-obli  fs-sm" data-bs-toggle="tooltip" data-bs-placement="right" title="Obligatorio" data-color="required" style="top: 0;"><span style="top: 6px;">O</span>  </span>
@@ -338,7 +338,7 @@
                                                 <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" >
                                                   <div class="accordion-body">
                                                     <div class="title-group d-flex justify-content-between">
-                                                      <p class="fw-medium mb-0">Grupo PP1</p>
+                                                      <p class="fw-medium mb-0">Grupo <span>PP1</span></p>
                                                       <p class=" mb-0">Docente: <span class="fw-medium">Mariano Alcazar V.</span> </p>
                                                       <p class=" mb-0">Cupos: <span class="fw-medium">39</span></p>
                                                     </div>
@@ -382,7 +382,7 @@
                                                   </div>
                                                 </div>
                                               </div>
-                                              <div class="accordion-item" id="course-3">
+                                              <div class="accordion-item" id="course-3" value="Psicología del desarrollo Humano I">
                                                 <h2 class="accordion-header" id="headingThree">
                                                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                                    <p class="mb-0 text-uppercase"> Psicología del desarrollo humano I</p>                                                     <span class="icon-obli mx-3 fs-sm" data-bs-toggle="tooltip" data-bs-placement="right" title="Obligatorio" data-color="required" style="top: 0;"><span style="top: 6px;">O</span>  </span>
@@ -392,7 +392,7 @@
                                                 <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" >
                                                   <div class="accordion-body">
                                                     <div class="title-group d-flex justify-content-between">
-                                                      <p class="fw-medium mb-0">Grupo PC1</p>
+                                                      <p class="fw-medium mb-0">Grupo <span>PC1</span></p>
                                                       <p class=" mb-0">Docente: <span class="fw-medium">Mariano Alcazar V.</span> </p>
                                                       <p class=" mb-0">Cupos: <span class="fw-medium">39</span></p>
                                                     </div>
@@ -446,7 +446,83 @@
                                             <div class="cal-wrapper"><div id="calendar"></div></div>
                                             <div>
                                               <p class="text-uppercase fw-bolder">RESUMEN DE CRÉDITOS Y HORAS</p>
-                                              <div class="table-responsive table-schedule">
+                                              <div class="d-block  d-md-none d-lg-none resumen-responsive">
+                                                <div class="border rounded-3">
+                                                  <div class="d-flex p-2 bg-secondary-lighter">
+                                                    <p class="fw-bold me-4 mb-0">PC001</p>
+                                                    <p class="mb-0">Psicología Cognitiva I</p>
+
+                                                  </div>
+                                                  <div class="d-flex border-top justify-content-between p-2">
+                                                    <p class="fw-medium me-2 mb-0">Tipo de Asignatura<br> <span >
+                                                       <button type="button" class="icon-obli ms-3 fs-sm" data-bs-toggle="tooltip" data-bs-placement="right" title="Obligatorio" data-color="required" style="top: 0;"><span >O</span>  </button>
+                                                    </span></p>
+                                                    <p class="fw-medium me-2 mb-0">Créditos <br> <span class="fw-regular">2</span ></p>
+                                                    <p class="fw-medium me-2 mb-0">Horas<br> <span class="fw-regular">2</span></p>
+                                                  </div>
+                                                </div>
+                                                <div class="border rounded-3 mt-3">
+                                                  <div class="d-flex p-2 bg-secondary-lighter">
+                                                    <p class="fw-bold me-4 mb-0">PC001</p>
+                                                    <p class="mb-0">Psicología Cognitiva I</p>
+
+                                                  </div>
+                                                  <div class="d-flex border-top justify-content-between p-2">
+                                                    <p class="fw-medium me-2 mb-0">Tipo de Asignatura<br> <span >
+                                                      <button type="button" class="icon-obli ms-3 fs-sm" data-bs-toggle="tooltip" data-bs-placement="right" title="Obligatorio" data-color="required" style="top: 0;"><span >O</span>  </button>
+                                                    </span></p>
+                                                    <p class="fw-medium me-2 mb-0">Créditos <br> <span class="fw-regular">2</span ></p>
+                                                    <p class="fw-medium me-2 mb-0">Horas<br> <span class="fw-regular">2</span></p>
+                                                  </div>
+                                                </div>
+                                                <div class="border rounded-3 mt-3">
+                                                  <div class="d-flex p-2 bg-secondary-lighter">
+                                                    <p class="fw-bold me-4 mb-0">PC001</p>
+                                                    <p class="mb-0">Psicología Cognitiva I</p>
+
+                                                  </div>
+                                                  <div class="d-flex border-top justify-content-between p-2">
+                                                    <p class="fw-medium me-2 mb-0">Tipo de Asignatura<br> <span >
+                                                      <button type="button" class="icon-obli ms-3 fs-sm" data-bs-toggle="tooltip" data-bs-placement="right" title="Obligatorio" data-color="required" style="top: 0;"><span >O</span>  </button>
+                                                    </span></p>
+                                                    <p class="fw-medium me-2 mb-0">Créditos <br> <span class="fw-regular">2</span ></p>
+                                                    <p class="fw-medium me-2 mb-0">Horas<br> <span class="fw-regular">2</span></p>
+                                                  </div>
+                                                </div>
+                                                <div class="total-resumen border rounded-3  mt-3">
+                                                  <div class="d-flex justify-content-between border-bottom px-2 py-1">
+                                                    <p class="fw-bold w-50 me-1 mb-0">Total Asignaturas</p>
+                                                    <p class="fw-medium me-1 mb-0">1 </p>
+                                                    
+                                                  </div>
+                                                  <div class="d-flex justify-content-between border-bottom px-2 py-1">
+                                                    <p class="fw-bold w-50 me-1 mb-0">Obligatorio</p>
+                                                    <p class="fw-medium me-1 mb-0">2 </p>
+                                                   
+                                                  </div>
+                                                  <div class="d-flex justify-content-between border-bottom px-2 py-1">
+                                                    <p class="fw-bold w-50 me-1 mb-0">Electivo</p>
+                                                    <p class="fw-medium me-1 mb-0">1 </p>
+                                                   
+                                                  </div>
+                                                  <div class="d-flex justify-content-between border-bottom px-2 py-1">
+                                                    <p class="fw-bold w-50 me-1 mb-0">Complementario</p>
+                                                    <p class="fw-medium me-1 mb-0">1 </p>
+                                                   
+                                                  </div>
+                                                  <div class="d-flex justify-content-between border-bottom px-2 py-1">
+                                                    <p class="fw-bold w-50 me-1 mb-0">Total Créd.</p>
+                                                    <p class="fw-medium me-1 mb-0">2 </p>
+                                                  
+                                                  </div>
+                                                  <div class="d-flex justify-content-between px-2 py-1">
+                                                    <p class="fw-bold w-50 me-1 mb-0">Total horas.</p>
+                                                    <p class="fw-medium me-1 mb-0">2 </p>
+                                                   
+                                                  </div>
+                                                </div>
+                                              </div>
+                                              <div class="table-responsive table-schedule d-none d-md-block d-lg-block">
                                                 <table class="table table-striped">
                                                     <thead class="table-light">
                                                         <th scope="col" >Cod.</th>

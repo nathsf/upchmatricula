@@ -361,12 +361,46 @@ ul li {
   padding: 0;
 }
 .btn-choosen i {
+  animation: pulse 2s infinite;
   font-size: 22px;
   vertical-align: middle;
   position: relative;
   top: 6px;
   left: -10px;
   color: var(--upch-primary);
+}
+.btn-choosen i:after {
+  animation: pulse 2s infinite;
+  box-shadow: 0 0 15px 0px rgba(184, 10, 40, 0.6196078431);
+  border-radius: 62%;
+  background: rgba(184, 10, 40, 0.21);
+  opacity: 0.3;
+}
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 15px 0px rgba(184, 10, 40, 0.6196078431);
+    border-radius: 62%;
+    background: rgba(184, 10, 40, 0.21);
+    opacity: 0.3;
+  }
+  30% {
+    box-shadow: 0 0 15px 0px rgba(184, 10, 40, 0.6196078431);
+    border-radius: 62%;
+    background: rgba(184, 10, 40, 0.21);
+    opacity: 0.5;
+  }
+  68% {
+    box-shadow: 0 0 15px 0px rgba(184, 10, 40, 0.6196078431);
+    border-radius: 62%;
+    background: rgba(184, 10, 40, 0.21);
+    opacity: 0.8;
+  }
+  100% {
+    box-shadow: 0 0 15px 0px rgba(184, 10, 40, 0.6196078431);
+    border-radius: 62%;
+    background: rgba(184, 10, 40, 0.21);
+    opacity: 1;
+  }
 }
 .btn-choosen span {
   line-height: 0.4;
@@ -513,27 +547,27 @@ button.change-btn {
 }
 
 .tooltip[data-color=required] .tooltip-inner {
-  background-color: #FF5B1F;
+  background-color: var(--upch-web-required);
 }
 
 .tooltip[data-color=required] .tooltip-arrow:before {
-  border-right-color: #FF5B1F;
+  border-right-color: var(--upch-web-required);
 }
 
 .tooltip[data-color=elective] .tooltip-inner {
-  background-color: #85754D;
+  background-color: var(--upch-web-elective);
 }
 
 .tooltip[data-color=elective] .tooltip-arrow:before {
-  border-right-color: #85754D;
+  border-right-color: var(--upch-web-elective);
 }
 
 .tooltip[data-color=complementary] .tooltip-inner {
-  background-color: #F6CE00;
+  background-color: var(--upch-web-complementary);
 }
 
 .tooltip[data-color=complementary] .tooltip-arrow:before {
-  border-right-color: #F6CE00;
+  border-right-color: var(--upch-web-complementary);
 }
 
 .tooltip[data-color=white] .tooltip-inner {
@@ -552,6 +586,18 @@ button.change-btn {
 
 .tooltip.show {
   opacity: 1;
+}
+
+.color-obli {
+  color: var(--upch-web-required);
+}
+
+.color-ele {
+  color: var(--upch-web-elective);
+}
+
+.color-com {
+  color: var(--upch-web-complementary);
 }
 
 /*form styles*/
@@ -1353,6 +1399,82 @@ th.fc-day-future:before {
   color: #174AE3 !important;
 }
 
+@media (max-width: 767px) {
+  .fc-theme-standard .fc-list {
+    border: 1px solid var(--upch-primary) !important;
+    border-radius: 6px;
+  }
+  .fc-scroller.fc-scroller-liquid {
+    border-radius: 6px;
+  }
+  .fc-theme-standard td, .fc-theme-standard th {
+    border: 1px solid var(--upch-primary);
+  }
+  .fc-theme-standard .fc-list-day-cushion {
+    background-color: var(--upch-red-light) !important;
+  }
+  .fc-list-day-text, .fc-list-day-side-text {
+    color: black;
+    text-decoration: none;
+  }
+}
+@media (max-width: 767px) {
+  #accordionExampleCourses {
+    margin-bottom: 3rem;
+  }
+  #accordionExampleCourses .accordion-item {
+    display: none;
+  }
+  #accordionExampleCourses .accordion-item .accordion-button p {
+    width: 82%;
+  }
+  #accordionExampleCourses .accordion-body .title-group span {
+    display: block;
+    font-weight: 500;
+  }
+  #accordionExampleCourses .icon-obli, #accordionExampleCourses .icon-ele, #accordionExampleCourses .icon-com {
+    margin: 0 !important;
+    position: absolute;
+    right: 42px;
+    top: 30% !important;
+  }
+  .accordion-payment .accordion-body .d-flex {
+    display: block !important;
+  }
+  .accordion-flush .accordion-item .accordion-button {
+    padding: 0.9rem 0 0.9rem 0 !important;
+    background: white !important;
+    border: 0 !important;
+    max-height: 42px;
+  }
+  .accordion-flush .accordion-item .accordion-button .d-flex {
+    padding: 0 !important;
+  }
+  .accordion-flush .accordion-item .accordion-button small, .accordion-flush .accordion-item .accordion-button img {
+    display: none;
+  }
+  .accordion-flush .accordion-item .accordion-button .form-check-input {
+    position: inherit !important;
+  }
+  .accordion-flush .accordion-item .accordion-body div.text-center {
+    padding: 0 1.5rem;
+  }
+  .accordion-flush .accordion-item .accordion-body .img-responsive {
+    width: 100%;
+  }
+  .accordion-flush .accordion-item .accordion-body .img-safetypay {
+    display: block !important;
+    margin: 1rem 0;
+  }
+  .accordion-pensiones {
+    display: inherit !important;
+  }
+  .accordion-pensiones .container-checkbox {
+    margin-bottom: 18px;
+    left: 0% !important;
+    top: 3px;
+  }
+}
 .nav-tabs.bancos .nav-item.show .nav-link, .nav-tabs.bancos .nav-link.active {
   color: #000000;
   background-color: #fff;
@@ -1381,6 +1503,17 @@ th.fc-day-future:before {
   font-weight: 500;
 }
 
+@media (max-width: 767px) {
+  .bancos .nav-link {
+    padding: 0.5rem 0.25rem !important;
+  }
+  .bancos .nav-link img {
+    margin: 0 !important;
+  }
+  .bancos .nav-link span {
+    display: none;
+  }
+}
 .vh-95 {
   height: 95vh;
 }
@@ -1880,13 +2013,13 @@ th.fc-day-future:before {
 
 .form-body {
   animation: fadeIn;
-  animation-duration: 1s; /* don't forget to set a duration! */
+  animation-duration: 1s;
   --animate-delay: 2s;
 }
 
 .animate-fade {
   animation: fadeIn;
-  animation-duration: 1s; /* don't forget to set a duration! */
+  animation-duration: 1s;
   --animate-delay: 2s;
 }
 
@@ -2123,51 +2256,6 @@ fieldset .form-body {
   .steps-container .card .card-body fieldset .form-check-inline .form-check-label {
     margin-left: 1.5rem;
   }
-  .accordion-payment .accordion-body .d-flex {
-    display: block !important;
-  }
-  .bancos .nav-link {
-    padding: 0.5rem 0.25rem !important;
-  }
-  .bancos .nav-link img {
-    margin: 0 !important;
-  }
-  .bancos .nav-link span {
-    display: none;
-  }
-  .accordion-flush .accordion-item .accordion-button {
-    padding: 0.9rem 0 0.9rem 0 !important;
-    background: white !important;
-    border: 0 !important;
-    max-height: 42px;
-  }
-  .accordion-flush .accordion-item .accordion-button .d-flex {
-    padding: 0 !important;
-  }
-  .accordion-flush .accordion-item .accordion-button small, .accordion-flush .accordion-item .accordion-button img {
-    display: none;
-  }
-  .accordion-flush .accordion-item .accordion-button .form-check-input {
-    position: inherit !important;
-  }
-  .accordion-flush .accordion-item .accordion-body div.text-center {
-    padding: 0 1.5rem;
-  }
-  .accordion-flush .accordion-item .accordion-body .img-responsive {
-    width: 100%;
-  }
-  .accordion-flush .accordion-item .accordion-body .img-safetypay {
-    display: block !important;
-    margin: 1rem 0;
-  }
-  .accordion-pensiones {
-    display: inherit !important;
-  }
-  .accordion-pensiones .container-checkbox {
-    margin-bottom: 18px;
-    left: 0% !important;
-    top: 3px;
-  }
   .pago .modality-selector {
     width: 100% !important;
   }
@@ -2282,6 +2370,12 @@ fieldset .form-body {
     left: 50%;
     bottom: 8px;
     background-color: var(--upch-secondary);
+  }
+  .bg-secondary-lighter {
+    background: #f1f1f1;
+  }
+  .fc-view-harness.fc-view-harness-active {
+    height: 400px !important;
   }
 }
 .animate-warning {

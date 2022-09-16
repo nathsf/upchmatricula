@@ -130,7 +130,44 @@ document.addEventListener('DOMContentLoaded', function() {
    
 });
 jQuery(function($) {
-  $('#languages').multiSelect({
+  $('#asignaturas').multiSelect({
     'noneText':'-- Seleccionar asignaturas --',
   });
+  
+   
+
+    $('.multi-select-menuitem input[id^="asignaturas"]').on('click', function() {
+
+      if($(this).attr('id') === "asignaturas_0"){
+        $('#course-1').toggleClass('course_active')
+        if($('#course-1').hasClass('course_active')) {
+          $('#course-1').show();
+        } 
+        else {
+        $('#course-1').hide();
+        }
+      }
+       if($(this).attr('id')  === "asignaturas_1"){
+        $('#course-2').toggleClass('course_active')
+        if($('#course-2').hasClass('course_active')) {
+          $('#course-2').show();
+        } 
+        else {
+        $('#course-2').hide();
+        }
+      }
+       if($(this).attr('id')  === "asignaturas_2"){
+        $('#course-3').toggleClass('course_active')
+        if($('#course-3').hasClass('course_active')) {
+          $('#course-3').show();
+        } 
+        else {
+        $('#course-3').hide();
+        }
+      }
+});
+
+
+
+  
 })
