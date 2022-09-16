@@ -1635,6 +1635,9 @@ th.fc-day-future:before {
   font-size: 16px;
   color: #2f2f2f;
   min-height: 25px;
+  animation: fadeIn;
+  animation-duration: 2s; /* don't forget to set a duration! */
+  --animate-delay: 2s;
 }
 @media (max-width: 767px) {
   #clock-wrapper {
@@ -1875,6 +1878,18 @@ th.fc-day-future:before {
   }
 }
 
+.form-body {
+  animation: fadeIn;
+  animation-duration: 1s; /* don't forget to set a duration! */
+  --animate-delay: 2s;
+}
+
+.animate-fade {
+  animation: fadeIn;
+  animation-duration: 1s; /* don't forget to set a duration! */
+  --animate-delay: 2s;
+}
+
 .no_seguro {
   display: none;
 }
@@ -2023,7 +2038,7 @@ fieldset .form-body {
 }
 
 .icon-pendiente.warning {
-  border-color: var(--upch-secondary);
+  border-color: var(--upch-primary);
 }
 
 .icon-pendiente.warning .body {
@@ -2034,7 +2049,7 @@ fieldset .form-body {
   top: 13px;
   border-radius: 2px;
   margin-left: -2px;
-  background-color: var(--upch-secondary);
+  background-color: var(--upch-primary);
 }
 
 .icon-pendiente.warning .dot {
@@ -2045,7 +2060,7 @@ fieldset .form-body {
   margin-left: -3px;
   left: 50%;
   bottom: 16px;
-  background-color: var(--upch-secondary);
+  background-color: var(--upch-primary);
 }
 
 @media (max-width: 991px) {
@@ -2245,6 +2260,9 @@ fieldset .form-body {
     border-radius: 50%;
     margin: 10px auto;
   }
+  .icon-pendiente.warning {
+    border-color: var(--upch-secondary);
+  }
   .icon-pendiente.warning .body {
     position: absolute;
     width: 5px;
@@ -2253,6 +2271,7 @@ fieldset .form-body {
     top: 8px;
     border-radius: 2px;
     margin-left: -2px;
+    background-color: var(--upch-secondary);
   }
   .icon-pendiente.warning .dot {
     position: absolute;
@@ -2262,6 +2281,7 @@ fieldset .form-body {
     margin-left: -2px;
     left: 50%;
     bottom: 8px;
+    background-color: var(--upch-secondary);
   }
 }
 .animate-warning {
