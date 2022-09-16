@@ -79,13 +79,36 @@
     //     }
     // }
     i {
+        animation: pulse 2s infinite; 
         font-size: 22px;
         vertical-align: middle;
         position: relative;
         top: 6px;
         left: -10px;
         color: var(--upch-primary);
+        &:after {
+            animation: pulse 2s infinite;
+            box-shadow: 0 0 15px 0px #b80a289e;
+            border-radius: 62%;
+            background: rgb(184 10 40 / 21%); opacity: 0.3;
+            @keyframes pulse {
+        
+                0% {  box-shadow: 0 0 15px 0px #b80a289e;
+                    border-radius: 62%;
+                    background: rgb(184 10 40 / 21%); opacity: 0.3;}
+                30% { box-shadow: 0 0 15px 0px #b80a289e;
+                    border-radius: 62%;
+                    background: rgb(184 10 40 / 21%); opacity: 0.5}
+                68% { box-shadow: 0 0 15px 0px #b80a289e;
+                    border-radius: 62%;
+                    background: rgb(184 10 40 / 21%); opacity: 0.8}
+                100% { box-shadow: 0 0 15px 0px #b80a289e;
+                    border-radius: 62%;
+                    background: rgb(184 10 40 / 21%);opacity: 1}
+        }
+        }
     }
+   
     span {
         line-height: 0.4;
         font-size: 12.5px;

@@ -22,3 +22,17 @@
     border-bottom: 1px solid #dee2e6;
     font-weight: 500;
 }
+
+@media(max-width:767px) {
+    .bancos { 
+        .nav-link {
+            padding: 0.5rem 0.25rem!important;
+            img {
+                margin:0!important;
+            }
+            span {
+                display: none;
+            }
+        }
+        }
+}

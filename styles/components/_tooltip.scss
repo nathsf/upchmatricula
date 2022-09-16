@@ -32,27 +32,27 @@
 }
 
 .tooltip[data-color=required] .tooltip-inner {
-	background-color: #FF5B1F;
+	background-color: var(--upch-web-required);
   }
   
 .tooltip[data-color=required] .tooltip-arrow:before {
-	border-right-color: #FF5B1F;
+	border-right-color: var(--upch-web-required);
   }
 
 .tooltip[data-color=elective] .tooltip-inner {
-	background-color: #85754D;
+	background-color: var(--upch-web-elective);
 }
   
 .tooltip[data-color=elective] .tooltip-arrow:before {
-	border-right-color: #85754D;
+	border-right-color: var(--upch-web-elective);
 }
   
 .tooltip[data-color=complementary] .tooltip-inner {
-	background-color: #F6CE00;
+	background-color: var(--upch-web-complementary);
 }
   
 .tooltip[data-color=complementary] .tooltip-arrow:before {
-	border-right-color: #F6CE00;
+	border-right-color: var(--upch-web-complementary);
 }
 
 .tooltip[data-color=white] .tooltip-inner {
@@ -73,4 +73,15 @@
 
 .tooltip.show {
 	opacity: 1;
+  }
+
+  .color-obli {
+	color: var(--upch-web-required);
+  }
+
+  .color-ele {
+	color: var(--upch-web-elective);
+  }
+  .color-com {
+	color: var(--upch-web-complementary);
   }
